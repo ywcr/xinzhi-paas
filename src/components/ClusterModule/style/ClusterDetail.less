@@ -1,0 +1,151 @@
+@borderColor:#d9d9d9;
+#clusterDetail {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 950px;
+  .topTitle {
+    line-height: 18px;
+    border-left: 5px solid #24a7eb;
+    font-size: 16px;
+    padding-left: 8px;
+    margin: 30px 0;
+  }
+  .back {
+    display: inline-block;
+    float: left;
+    height: 30px;
+    cursor: pointer;
+    .backjia {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-bottom: 15px solid transparent;
+      border-top: 15px solid transparent;
+      border-right: 15px solid #00A0E9;
+      font-size: 0;
+      line-height: 0;
+      cursor: pointer;
+    }
+    .btn-back {
+      display: inline-block;
+      background: #00A0E9;
+      color: white;
+      height: 30px;
+      line-height: 30px;
+      vertical-align: top;
+      width: 43px;
+      padding-left: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
+  .title {
+    float: left;
+    margin-top: 6px;
+    height: 18px;
+    line-height: 18px;
+    border-left: 5px solid #24a7eb;
+    font-size: 16px;
+    padding-left: 8px;
+    margin-left: 20px;
+  }
+  .formItem {
+    .h2{font-size: 20px;height: 30px;}
+    .list {line-height: 30px;}
+    .runningSpan{color:#33b867}
+    .errorSpan{color:#f23e3f}
+  }
+  .ClusterInfo {
+    font-size: 14px;
+    .clusterImg{
+      position: absolute;
+      left: -10px;
+      top: -10px;
+    }
+  }
+  .infoTabs {
+    // .ant-card-body {padding:20px 0}
+    margin-bottom: 20px;
+    .containers {
+      position: relative;
+      padding:0 20px;
+      .inputGroup {
+        display: inline-block;width: 170px;position: relative;
+        margin-left: 20px;
+        .anticon-search {
+          position: absolute;
+          right: 5px;top:10px;font-size: 14px;
+          cursor: pointer;
+          color: #999;
+        }
+      }
+    }
+    .dataTable {
+      padding-bottom: 20px;
+      margin-top: 10px;position: relative;
+      .ant-table-thead > tr > th{background: white;font-weight: 500;border-bottom: 1px solid @borderColor;}
+      .ant-pagination{position: absolute;top:-42px;right:0;margin:0;}
+    }
+    .topRow {
+      padding:10px 15px;
+      button {margin-right: 8px}
+    }
+    .strategyTable {
+      padding-bottom: 20px;
+    }
+  }
+  .hostInfo {
+    .wrapRow {clear: both;overflow: hidden;padding-left:20px;}
+    .host-list {
+      width: 45%;float: left;
+      height: 180px;margin-right: 50px;
+      min-width: 350px;
+      margin-top: 20px;
+      border:1px solid @borderColor;
+      border-radius: 5px;
+      .titles {line-height: 40px;padding-left: 10px;border-bottom: 1px solid @borderColor;
+          .quotaimg {
+             width: 12px;
+             height: 12px;
+             float:left;
+             margin-right:5px;
+           }
+           .size {
+             width: 12px;
+             line-height: 15px;
+  
+             height: 12px;
+             fill:#666;
+           }
+          .manageLabelButton{
+            color: #00a0e9;
+            border-color: #00a0e9;
+            padding:4px 8px;
+            float:right;
+            margin:5px 12px 0 0;
+            vertical-align: middle;
+        }
+      }
+      .labelContainer{
+        padding:10px 24px;
+        height: 120px;
+        overflow: auto;
+
+        .inner{
+          background: red;
+        }
+      }
+      .svg-icon {width: 16px;height: 17px;fill: gray;padding-top: 5px;}
+      .items {height: 40px;padding: 0 2em;}
+      .keys {display: block;width: 80px;float: left;height: 40px;}
+      .resources {width:65px;}
+      .versioninformation {text-align:center;}
+      .valus {color: #00A0E9;}
+    }
+    .Versionin {margin-right:0px}
+  }
+  .clusterTable {height: 160px;}
+}

@@ -1,0 +1,189 @@
+#TerminalModal{
+  height: 100%;
+  .titleBox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    cursor: row-resize;
+  }
+  .tips {
+    position: absolute;
+    width: 100%;
+    height: 50px !important;
+    line-height: 50px;
+    color: #F0F0F0;
+    background-color: rgba(43, 52, 61, 0.7);
+    padding: 0 10px;
+    i {
+      font-size: 16px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    .important {
+      color: #c09d25;
+      font-size: 14px;
+    }
+    .btns {
+      float: right;
+      button+button {
+        margin-left: 8px;
+      }
+    }
+  }
+  .ant-tabs {
+    height: 100%;
+    .ant-tabs-content {
+      position: relative;
+      height: calc(~"100% - 27px");
+      background-color: #000000;
+      iframe {
+        //      position: relative;
+        width: 100%;
+        height: 100%;
+        border-width: 0 !important;
+      }
+      div:first-child {
+        height: 100%;
+      }
+      .ant-tabs-tabpane {
+        position: relative;
+        height: 100%;
+      }
+    }
+    .ant-tabs-extra-content {
+      line-height: 40px;
+    }
+    .ant-tabs-nav-container {
+      height: 40px;
+      line-height: 31px;
+      .ant-tabs-nav-wrap {
+        height: 41px;
+      }
+    }
+  }
+  .ant-tabs-bar {
+    margin-bottom: 0;
+    .ant-tabs-ink-bar {
+      background-color: #3f71d7;
+    }
+  }
+  .ant-tabs-tab {
+    font-weight: 600;
+    .ant-tabs-tab-inner {
+      padding: 5px 5px;
+    }
+    .service-name {
+      margin-right: 12px;
+    }
+    .action-header {
+      .anticon{margin: 0}
+      button {padding:3px 6px;}
+    }
+    .closeBtn{
+      border:1px dashed #666;
+      &:hover {
+        color:#2db7f5;
+        border-color: #2db7f5;
+      }
+    }
+    .anticon-cross {
+      margin-right: 0px;
+      line-height: 14px;
+      border-radius: 3px;
+    }
+  }
+  .ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-inner {
+    color: #3f71d7;
+  }
+  .webLoadingBox {
+    z-index: 100;
+    position: absolute;
+    margin-left: -125px;
+    top: 50px;
+    left: 50%;
+    width: 250px;
+    height: 30px !important;
+    line-height: 30px;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #EFEFEF;
+    .terIcon {
+      display: inline-block;
+      margin-right: 7px;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      background-color: #3f71d7;
+      -webkit-animation: webterminalIcon 1s linear infinite;
+      animation: webterminalIcon 1s linear infinite;
+    }
+    .terIcon:nth-child(2) {
+      -webkit-animation-delay: 300ms;
+      animation-delay: 300ms;
+    }
+    .terIcon:nth-child(3) {
+      -webkit-animation-delay: 300ms;
+      animation-delay: 600ms;
+    }
+  }
+  .operaBox {
+    position: relative;
+    width: 60px;
+    font-size: 18px;
+    svg {
+      position: absolute;
+      padding: 0px 2px 2px 2px;
+      top: 8px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 1px 6px rgba(100, 100, 100, 0.8);
+      }
+    }
+    i {
+      margin-left: 22px;
+      margin-right: 10px;
+      padding: 2px;
+      border-radius: 3px;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 1px 6px rgba(100, 100, 100, 0.8);
+      }
+    }
+  }
+}
+@keyframes webterminalIcon{
+  0% {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.3, 1.3);
+  }
+  60% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes webterminalIcon{
+  0% {
+    -webkit-transform: scale(1, 1);
+  }
+  30% {
+    -webkit-transform: scale(1.3, 1.3);
+  }
+  60% {
+    -webkit-transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}

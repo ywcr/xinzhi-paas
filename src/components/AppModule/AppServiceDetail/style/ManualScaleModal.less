@@ -1,0 +1,47 @@
+#ManualScaleModal {
+  padding-left: 20px;
+  .cardItem {
+    height: 40px;
+    line-height: 40px;
+    .itemBody {
+      padding-left: 30px;
+    }
+  }
+  .ant-slider {
+    height: 20px;
+    margin: 10px 8px 10px 0;
+    .ant-slider-track {
+      height: 12px;
+      background-color: #19aaeb;
+      border: 1px solid #0094dc;
+      border-radius: 0;
+    }
+    .ant-slider-handle {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border-color: #c9c9c9;
+    }
+  }
+  .ant-slider-disabled {
+    background-color: #e5e5e5 !important;
+    .ant-slider-handle {
+      border-color: #c9c9c9;
+      &::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #dadada;
+      }
+    }
+  }
+  .ant-slider-disabled .ant-slider-track {
+    background-color: #999999 !important;
+    border: 1px solid #999999;
+  }
+}

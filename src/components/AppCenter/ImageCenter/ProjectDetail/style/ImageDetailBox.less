@@ -1,0 +1,165 @@
+#ImageDetailBox {
+  height: 100%;
+  overflow: auto;
+  background-color: #F8F8F8;
+  .headerBox {
+    padding: 30px;
+    background-color: #FFFFFF;
+    .imgBox {
+      float: left;
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #C2C2C2;
+      padding:20px;
+      svg{
+        width: 80px;height: 80px;
+      }
+    }
+    .closeBtn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+    .infoBox {
+      float: left;
+      margin-left: 30px;
+      width: calc(~"100% - 150px");
+      position: relative;
+      .imageName {
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .textareas{
+        width: calc(~"100% - 200px");
+        height: 75px;
+        overflow: auto;
+        float: left;
+        padding: 5px;
+      }
+      .leftBox {
+        float: left;
+        width: 60%;
+        word-wrap: break-word;
+        button {margin-left: 8px;}
+        #editInfo,.imagedescription{
+          margin-bottom: 8px;
+          height: 70px;
+        }
+        .type {
+          float: left;
+          line-height: 26px;
+          font-size: 14px;
+        }
+        .ant-switch {
+          width: 60px !important;
+          height: 25px !important;
+          line-height: 25px !important;
+        }
+        .ant-switch:after {
+          width: 21px !important;
+          height: 21px !important;
+        }
+        .ant-switch-checked:after {
+          left: 35px !important;
+        }
+      }
+      .rightBoxs {
+        float: right;
+        margin-right: 10px;
+        .rightBoxleft{
+          float: left;
+        }
+        .rightBoxright{
+          float: right;
+          button{
+            color: #2db7f5;
+            border-color:#2db7f5;
+          }
+        }
+        //button {
+        //  margin-right: 20px;
+        //  // height: 38px;
+        //  font-size: 14px;
+        //  line-height: 24px;
+        //}
+
+      }
+    }
+  }
+  .downloadBox {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #FFFFFF;
+    .code {
+      position: relative;
+      padding-left: 50px;
+      float: left;
+      width: 70%;
+      height: 40px;
+      font-size: 14px;
+      border-right: 1px solid #d6d6d6;
+      .pullCode {
+        color: #2db7f5;
+        width: 360px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .appcenterdownload {
+        left: 30px;
+      }
+    }
+    .appcentercopy {
+      z-index: 100;
+      right: 30px;
+      cursor: pointer;
+      use {
+        fill: #2db7f5;
+      }
+    }
+    .times {
+      padding-left: 95px;
+      position: relative;
+      float: left;
+      width: 30%;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      svg {
+        top: 12px;
+        left: 70px;
+      }
+    }
+    svg {
+      position: absolute;
+      top: 11px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .tabBox {
+    margin-top: 30px;
+    .itemList {
+      margin-left: 30px;
+      width: calc(~"100% - 60px");
+    }
+  }
+}
+#attribute {
+  li {
+    line-height: 40px;
+    font-size: 14px;
+  }
+  .leftKey {
+    span {
+      display: inline-block;
+      width: 80px;
+      margin-left: 10px;
+    }
+  }
+}

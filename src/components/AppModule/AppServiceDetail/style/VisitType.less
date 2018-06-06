@@ -1,0 +1,74 @@
+@themeColor:#2db7f5;
+#visitTypePage{
+  background-color: white;
+  .visitTypeTitle{
+    line-height: 18px;
+    font-size: 16px;
+    border-left: 5px solid @themeColor;
+    text-indent: 10px;
+    margin-bottom: 15px;
+  }
+  .visitTypeInnerBox{
+    padding: 16px;
+    &>.ant-btn{
+      margin-right: 20px;
+    }
+    .radioBox{
+      margin-top: 20px;
+      .ant-radio-wrapper{
+        font-size: 14px;
+        color: #747474;
+      }
+      .typeHint{
+        color: #999;
+        margin: 10px 0;
+      }
+      .deleteHint{
+        padding: 6px 12px;
+        margin-left: 20px;
+        border-radius: 4px;
+        background-color: #fffbf5;
+        border: 1px dashed #fedc9f;
+        i{
+          color: #fdbe00;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+  .visitTypeTopBox{
+    margin-bottom: 30px;
+  }
+  .visitAddrInnerBox{
+    padding: 0 15px;
+    margin-top: 30px;
+    .addrListBox{
+      margin-bottom: 20px;
+      .addrListTitle{
+        margin-bottom: 25px !important;
+        i{
+          font-size: 16px;
+          margin-right: 10px;
+        }
+      }
+      .addrList{
+        margin: 10px 0;
+        .domain{
+          margin-left: 35px;
+        }
+        i{
+          cursor: pointer;
+          font-size: 16px !important;
+          color: @themeColor;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+.deleteHintTitle{
+  display: inline-block;
+  width: 340px;
+  vertical-align: top;
+  font-weight: normal;
+}

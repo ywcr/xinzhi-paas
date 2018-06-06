@@ -1,0 +1,131 @@
+#TeamDetail {
+  .back {
+    display: inline-block;
+    float: left;
+    height: 30px;
+    .backjia {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-bottom: 15px solid transparent;
+      border-top: 15px solid transparent;
+      border-right: 15px solid #00A0E9;
+      font-size: 0;
+      line-height: 0;
+    }
+    .btn-back {
+      display: inline-block;
+      background: #00A0E9;
+      color: white;
+      height: 30px;
+      line-height: 30px;
+      vertical-align: top;
+      width: 43px;
+      padding-left: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
+  .title {
+    float: left;
+    margin-top: 6px;
+    height: 18px;
+    line-height: 18px;
+    border-left: 8px solid #24a7eb;
+    font-size: 16px;
+    padding-left: 8px;
+    margin-left: 20px;
+  }
+  .ant-alert {
+    line-height: 26px;
+    margin-bottom: 0;
+    color: #1a7db6;
+    font-size: 13px !important;
+    background-color: #d9edf6;
+    border: 1px dashed #85d7fd !important;
+  }
+  .memberOption {
+    height: 75px;
+    line-height: 75px;
+
+    .quitTeamBtn {
+      height: 35px;
+      margin: 20px 0;
+      font-size: 14px;
+      background-color: #00a1e9;
+      color: #fff;
+      border: 1px solid #00a1e9;
+    }
+    .delTeamBtn {
+      margin-left: 12px;
+      height: 35px;
+      font-size: 14px;
+      &:hover {
+        background-color: #00a1e9;
+        color: #fff
+      }
+    }
+    .rechargeBtn {
+      height: 35px;
+      margin-left: 12px;
+      font-size: 14px;
+      &:hover {
+        background-color: #00a1e9;
+        color: #fff
+      }
+    }
+    .total {
+      display: inline-block;
+      float: right;
+      margin-right: 160px;
+    }
+  }
+  .ant-card {
+    overflow: inherit;
+    .ant-card-body {
+      padding: 0;
+      .ant-table {
+        .memberName {
+          padding-left: 24px;
+        }
+        .tabOpt {
+          .tabOptBtn {
+            width: 98px;
+            height:28px;
+            background-color: #fff;
+            &:hover {
+              background-color: #00a1e9;
+              color: #fff
+            }
+          }
+          .hoverRed {
+            &:hover {
+              color: #fff;
+              border: 1px solid #f85a59;
+              background-color: #f85a59;
+            }
+          }
+        }
+      }
+      /*.ant-table-pagination {
+        margin: 16px 46px;
+        position: absolute;
+        top: -67px;
+        right: -40px;
+      }*/
+    }
+  }
+  .content {
+    color: #666;
+    background-color: #fff;
+    .balance {
+      font-size: 14px;
+      span {
+        font-size: 20px;
+      }
+    }
+
+  }
+}

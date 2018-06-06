@@ -1,0 +1,103 @@
+#quickCreateAppConfigureService {
+  padding-top: 15px;
+  .ant-form-item-required {
+    &:before {
+      display: none;
+    }
+  }
+  .ant-form-explain {
+    word-break: break-all !important;
+    height: auto !important;
+    white-space: normal !important;
+  }
+  .ant-form-item-label {
+    text-align: left;
+    label {
+      font-size: 14px;
+      padding-left: 25px;
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .formItemLabel {
+    font-size: 14px;
+    padding-left: 25px;
+  }
+  .ant-form-item-control {
+    .ant-select-lg {
+      width: 100%;
+    }
+    .ant-select-lg .ant-select-selection--single .ant-select-selection__rendered {
+      line-height: 30px;
+      height: 30px;
+    }
+  }
+  .ant-collapse {
+    background-color: inherit !important;
+    border: 0 !important;
+    .ant-collapse-item {
+      border: 0 !important;
+    }
+    .ant-collapse-header {
+      position: relative;
+      padding: 0 !important;
+      i {
+        position: absolute;
+        margin-left: 96%;
+        margin-left: -webkit-calc(~"98% - 30px");
+        margin-left: -moz-calc(~"98% - 30px");
+        margin-left: calc(~"98% - 30px");
+        font-size: 20px;
+      }
+      i:before {
+        content: "\e601" !important;
+      }
+    }
+    .ant-collapse-header[aria-expanded="true"] .arrow {
+      transform: scale(0.58333333) rotate(90deg) !important;
+    }
+    .ant-collapse-content {
+      clear: both;
+      padding: 0;
+    }
+  }
+  .configBoxHeader {
+    background-color: #F5F5F5;
+    height: 40px;
+    line-height: 37px;
+    .headerLeft {
+      position: relative;
+      clear: both;
+      .line {
+        margin-top: 10px;
+        float: left;
+        width: 5px;
+        height: 16px;
+        border-left: 5px solid #00a1ea;
+        margin-left: 10px;
+      }
+      .title {
+        padding-left: 10px;
+        width: 100px;
+        font-size: 16px;
+      }
+    }
+    .desc {
+      padding-top: 2px;
+      font-size: 12px;
+    }
+  }
+  .headerBox {
+    background-color: #F5F5F5;
+    .configBoxHeader {
+      background-color: transparent;
+    }
+  }
+  .lastFormItem {
+    margin-bottom: 0;
+  }
+  .clearBoth {
+    clear: both;
+  }
+}

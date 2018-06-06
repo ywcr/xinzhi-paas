@@ -1,0 +1,142 @@
+{
+  "version": "1.0",
+  "services": {
+    "wordpress": {
+      "replicas": 4,
+      "containers": [
+        {
+          "name": "wordpress",
+          "image": "index.tenxcloud.com/tenxcloud/wordpress-stack:latest",
+          "links": [
+            "mysql"
+          ],
+          "ports": [
+            {
+              "containerPort": 80
+            }
+          ],
+          "syncTimeZoneWithNode": false,
+          "env": [
+            {
+              "name": "WORDPRESS_DB_PASSWORD",
+              "value": "duolcxnet"
+            }
+          ],
+          "volumeMounts": [
+            {
+              "name": "volume1",
+              "mountPath": "/data"
+            }
+          ],
+          "resources": {
+            "limits": {
+              "cpu": "500m",
+              "memory": "128Mi"
+            }
+          },
+          "livenessProbe": {
+            "httpGet": {
+              "path": "/healthz",
+              "port": 80
+            },
+            "initialDelaySeconds": 3,
+            "timeoutSeconds": 10,
+            "periodSeconds": 5
+          }
+        }
+      ],
+      "volumes": [
+        {
+          "name": "volume1"
+        }
+      ],
+      "dependsOn": [
+        "mysql",
+        "web"
+      ]
+    },
+    "mysql": {
+      "replicas": 1,
+      "containers": [
+        {
+          "name": "mysql",
+          "image": "index.tenxcloud.com/tenxcloud/mysql:latest",
+          "ports": [
+            {
+              "containerPort": 80
+            }
+          ],
+          "syncTimeZoneWithNode": true,
+          "env": [
+            {
+              "name": "TEST",
+              "value": "1234"
+            }
+          ],
+          "livenessProbe": {
+            "tcpSocket": {
+              "port": 80
+            },
+            "initialDelaySeconds": 3,
+            "timeoutSeconds": 10,
+            "periodSeconds": 5
+          }
+        }
+      ]
+    },
+    "web": {
+      "replicas": 2,
+      "containers": [
+        {
+          "name": "web",
+          "image": "index.tenxcloud.com/tenxcloud/quickstart-node:latest",
+          "links": [
+            "redis"
+          ],
+          "ports": [
+            {
+              "containerPort": 80
+            }
+          ]
+        }
+      ]
+    },
+    "redis": {
+      "replicas": 3,
+      "containers": [
+        {
+          "name": "redis",
+          "image": "index.tenxcloud.com/tenxcloud/redis:latest",
+          "ports": [
+            {
+              "containerPort": 80
+            }
+          ],
+          "syncTimeZoneWithNode": true,
+          "env": [
+            {
+              "name": "TESTABC",
+              "value": "1234"
+            }
+          ],
+          "livenessProbe": {
+            "tcpSocket": {
+              "port": 80
+            },
+            "initialDelaySeconds": 3,
+            "timeoutSeconds": 10,
+            "periodSeconds": 5
+          }
+        }
+      ],
+      "volumes": [
+        {
+          "name": "volume1",
+          "type": "rbd",
+          "disk": "disk-stack-redis-1",
+          "fsType": "ext4"
+        }
+      ]
+    }
+  }
+}

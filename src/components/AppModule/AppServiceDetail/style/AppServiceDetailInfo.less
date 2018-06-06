@@ -1,0 +1,195 @@
+.AppServiceRental{
+  padding:30px 30px 50px;
+  border:1px solid #d9d9d9;
+}
+#AppServiceDetailInfo{
+  width: 100%;
+  background-color: #FFFFFF !important;
+  margin-bottom: 50px;
+  .commonBox{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    overflow: hidden;
+     border-bottom: 1px solid #E5E5E5;
+    .titleSpan{
+      padding-left: 10px;
+      display: block;
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      border-left: 5px solid #00A1EA;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .titleBox{
+      margin-top: 30px;
+      padding: 0px !important;
+      padding-left: 20px !important;
+      font-size: 14px;
+      color: #666;
+      line-height: 30px;
+    }
+    .commonTitle{
+      padding-right: 10px;
+      float: left;
+      width: 33%;
+      word-break: break-all;
+    }
+    .commonValue{
+      padding-right: 10px;
+      float: left;
+      width: 66%;
+      line-height: 30px;
+      text-align: left;
+      word-break: break-all;
+    }
+    .dataBox{
+      padding-left: 20px;
+      font-size: 12px;
+      color: #999;
+      clear: both;
+    }
+  }
+  .info{
+    padding-top: 0px;
+    .titleSpan{
+      padding-left: 10px;
+      display: block;
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      border-left: 5px solid #00A1EA;
+      color: #333;
+    }
+    .starts{
+      margin-top: 15px;
+      padding:0 20px;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    p{line-height: 35px;}
+
+  }
+
+  .bindNodes{
+    .bindnodeTitle{
+      height: 28px;
+      line-height: 28px;
+    }
+    .label{
+      float: left;
+      height: 24px;
+      line-height: 24px;
+      background: #2db7f5;
+      transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+      vertical-align: middle;
+      opacity: 1;
+      overflow: hidden;
+      margin: 2px 4px 2px 0;
+      cursor: pointer;
+      padding: 0 8px;
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 12px;
+    }
+  }
+
+  .DetailInfo__MyComponent{
+    //padding-left: 20px;
+    .environment{
+      border-bottom: 0px;
+      position: relative;
+      &>button{
+        margin-left: 18px;
+      }
+      .editTip{
+        position: absolute;
+        top: 5px;
+        left: 0;
+        padding: 10px 20px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background-color: rgb(255, 247, 230);
+        &:after{
+          content:'';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 10px solid rgb(255, 247, 230);
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          bottom: -6px;
+          left: 50px;
+        }
+      }
+
+    }
+    .noData{
+      text-align: center;
+    }
+    .editButton{
+      width: 100px;
+    }
+    .dataBox{
+      padding: 5px 0;
+      line-height: 28px;
+      padding-left: 20px;
+      .ant-row{
+        margin-bottom: 0;
+      }
+    }
+    .checkbox{
+      clear: both;
+    }
+    .commonTitleName{
+      padding-right: 10px;
+      float: left;
+      width: 33%;
+      word-break: break-all;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow : ellipsis;
+    }
+    .commonTitleValue{
+      padding-right: 10px;
+      float: left;
+      width: 33%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow : ellipsis;
+    }
+    .saveBtn{
+      margin-right: 5px;
+    }
+    .pushRow{
+      height: 40px;line-height: 50px;text-align: center;
+      color: #2db7f5;
+    }
+  }
+  .priceCount{
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    .unit{color: #00A0EA}
+    .blod{font-size: 30px;}
+  }
+  .table{
+    border-radius: 5px;
+    border-collapse: collapse;
+    width: 100%;border:1px solid #E5E5E5;
+    td{height:50px;line-height: 50px;padding-left:10px;border-top: 1px solid #E5E5E5;}
+    th{text-align: left;height: 40px;line-height: 40px;padding-left:10px;}
+  }
+}
+.ModalDeleteInfo{
+  .ModalColor{
+    color: #00a0ea;
+    .modali{
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,207 @@
+.BuildImageList {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  #TenxFlowList {
+    .ant-card-body {
+      padding: 0 !important;
+    }
+    .ant-alert {
+      margin-bottom: 0 !important;
+      padding: 14px 24px !important;
+      line-height: 20px;
+      color: #1a7db6;
+      font-size: 14px !important;
+      background-color: #d9edf6;
+      border: 1px dashed #85d7fd !important;
+    }
+    .operaBox {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      .createBtn {
+        padding: 5px 15px !important;
+      }
+      .searchBox {
+        // float: right;
+        margin-left: 20px;
+        width: 180px;
+        height: 32px;
+        padding-right: 28px;
+      }
+      .fa-search {
+        position: relative;
+        // top: 28px;
+        // right: 10px;
+        margin-left: -20px;
+        font-size: 14px;
+        color: #999999;
+      }
+    }
+    .tenxflowBox {
+      .name {
+        padding-left: 44px;
+        float: left;
+        width: 12%;
+        @media(max-width:1350px){
+          padding-left: 28px;
+        }
+        span {
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .time {
+        padding-left: 10px;
+        float: left;
+        width: 13%;
+        .timeSpan {
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .code {
+        padding-left: 44px;
+        float: left;
+        width: 28%;
+        span {
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .image {
+        padding-left: 44px;
+        float: left;
+        width: 15%;
+        @media(max-width:1350px){
+          padding-left: 20px;
+        }
+        span {
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .status {
+        padding-left: 10px;
+        float: left;
+        width: 10%;
+        .fa{margin-right: 8px; }
+      }
+      .status-1{
+        color: #f23e3f
+      }
+      .status-0{
+        color: #33b867
+      }
+      .status-null{
+        color: orange
+      }
+      .opera {
+        padding-left: 10px;
+        float: left;
+        width: 20%;
+        .ant-menu.ant-menu-vertical {
+          width:75px;
+          height: 35px;
+          margin-top: 5px;
+          padding-left: 0px;
+          float: left;
+          border-right:0;
+          li{border:0;padding:0}
+        }
+      }
+      .titleBox {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #F2F2F2;
+      }
+      .tenxflowDetail {
+        transition: all 0.3s;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #F2F2F2;
+        .name {
+          color: #00A1EA;
+          cursor: pointer;
+        }
+        .logBtn {
+          margin-right: 20px;
+          float: left;
+          margin-top: 10px;
+        }
+        &:hover {
+          background-color: #eaf8fe;
+        }
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.TenxFlowBuildLogModal {
+  width: 800px !important;
+  .ant-modal-body {
+    padding: 0 !important;
+    font-size: 14px !important;
+  }
+  .ant-modal-footer,
+  .ant-modal-close-x {
+    display: none !important;
+  }
+  .codeSpan {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    word-break: keep-all;
+    color: #3d6cb4;
+    background-color: #F8F8F8;
+  }
+  .bigModal {
+    transition: all 0.3s;
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    .paddingBox {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .rightInfo {
+      max-height: 768px !important;
+    }
+    #TenxFlowStageBuildLog {
+      max-height: none !important;
+    }
+  }
+  .smallModal {
+    width: 800px;
+    height: 100%;
+    top: 100px;
+    left: calc(~"50% - 335px");
+    .paddingBox {
+      width: 100%;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+  }
+}
+.ant-modal-body .ant-alert-warning{
+  background-color: #fffbf5;
+  border: 1px dashed #fedb9f;
+  .ant-alert-message {line-height: 30px}
+}

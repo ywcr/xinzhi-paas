@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tenxcloud Container Terminal</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/js/lib/xterm/xterm.css?_=20170330">
+  <script src="/js/lib/xterm/xterm.js?_=20170330"></script>
+  <script src="/js/lib/xterm/addons/attach/attach.js?_=20170330"></script>
+  <script>
+    "use strict";
+    var health_timeout = 120000 // 2 minutes for real timeout
+    var ws
+    var term
+    var connected = false;
+    var termCallback = window.parent.webTerminalCallBack || function () {}
+    function utf8_to_b64(str) {
+      return window.btoa(window.unescape(encodeURIComponent(str)));
+    }
+    // Initialize everything when the window finishes loading
+    window.addEventListener("load", function (event) {
+      webSocketConnect()
+      //Close websocket on time
+      window.addEventListener('message', function (event) {
+        if (!event.isTrusted) return
+        if (event.data === 'close') {
+          closeWebSocket(ws, term)
+        }
+        if (event.data === 'reshow') {
+          webSocketConnect()
+        }
+      })
+    });
+    window.addEventListener("resize", function (e) {
+      var rowsNum = parseInt(e.target.innerHeight / 12) - 2;
+      var colsNum = parseInt((e.target.innerWidth - 40) / 12) - 2;
+      if (colsNum <= 5) {
+        colsNum = 5;
+      }
+      if (rowsNum <= 5) {
+        rowsNum = 5;
+      }
+      if (connected) {
+        term.resize(colsNum, rowsNum)
+        term.element.focus();
+      }
+    })
+    function webSocketConnect() {
+      var params = location.href.split('?')[1].split('&');
+      var data = {}
+      for (var ii = 0; ii < params.length; ii++) {
+        var temp = params[ii].split('=')[0];
+        data[temp] = params[ii].split('=')[1];
+      }
+
+      var host = window.location.host
+      var protocol = window.location.protocol == 'http:' ? 'ws:' : 'wss:'
+      var wsUrl = protocol + '//' + host + '/api/v1/cluster/' + data['cluster'] + '/namespaces/' + data['namespace'] + '/pods/' + data['pod'] + '/exec/' + data['containers']
+
+      termCallback(data['pod'], 'connect')
+      setTimeout(function () {
+        if (!connected) {
+          termCallback(data['pod'], 'timeout')
+        }
+      }, 10000); // 10 seconds for timeout
+      terminalConnect();
+      // Create a new terminal connection to a container
+      function terminalConnect() {
+        var rowsNum = parseInt(window.innerHeight / 12) - 2;
+        var colsNum = parseInt((window.innerWidth - 40) / 12) - 2;
+        term = new Terminal({
+          cols: colsNum,
+          rows: rowsNum,
+          cursorBlink: true
+        });
+        ws = new WebSocket(wsUrl, "base64.channel.k8s.io");
+        ws.addEventListener("open", function (event) {
+          term.attach(ws);
+          termCallback(data['pod'], 'success')
+          connected = true;
+          term.open(document.body.terminal);
+          term.write("*****************************************************\r\n");
+          term.write("*   ______              _____ _                 _  *\r\n");
+          term.write("*  |  ____|            / ____| |               | |  *\r\n");
+          term.write("*  | |__   _ __  _ __ | |    | | ___  _   _  __| |  *\r\n");
+          term.write("*  |  __| | '_ \\| '_ \\| |    | |/ _ \\| | | |/ _` |  *\r\n");
+          term.write("*  | |____| | | | | | | |____| | (_) | |_| | (_| |  *\r\n");
+          term.write("*  |______|_| |_|_| |_|\\_____|_|\\___/ \\__,_|\\__,_|  *\r\n");
+          // term.write("$$$$$$$$\ $$ |  $$ |$$ |  $$ |\$$$$$$  |$$ |\$$$$$$  |\$$$$$$  |\$$$$$$$ | \r\n");
+          // term.write("\________|\__|  \__|\__|  \__| \______/ \__| \______/  \______/  \_______| \r\n");
+          term.write("******************* EnnCloud Container Terminal ***** \r\n");
+          term.refresh(term.x, term.y);
+          term.focus();
+          var inputCmd = ''
+          term.on('data', function (_data) {
+            inputCmd += _data
+            if (_data == '\r' || _data == '\n') {
+              if (inputCmd.trim() == 'exit') {
+                term.destroy()
+                term = null
+                termCallback(data['pod'], 'exit')
+              }
+              inputCmd = ''
+            }
+            if (ws && ws.readyState === 1) {
+              ws.send("0" + utf8_to_b64(_data));
+            }
+          });
+        });
+      }
+    }
+
+    function closeWebSocket(ws, term) {
+      if (ws) {
+        if (ws.readyState == 1) {
+          // exit sh process
+          ws.send("0" + utf8_to_b64('e'));
+          ws.send("0" + utf8_to_b64('x'));
+          ws.send("0" + utf8_to_b64('i'));
+          ws.send("0" + utf8_to_b64('t'));
+          ws.send("0DQ==");//enter
+        }
+        // ws.onopen = ws.onmessage = ws.onerror = ws.onclose = null;
+        if (ws.readyState < 2) {
+          ws.close();
+          ws = null;
+        }
+      }
+      if (term) {
+        term.detach(ws);
+        term.destroy();
+        term = null;
+      }
+    }
+
+    // For parent use
+    function focusTerminal() {
+      term.showCursor();
+      term.refresh(term.x, term.y);
+      term.focus();
+    }
+
+    // For parent use
+    function closeTerminal() {
+      closeWebSocket(ws, term);
+    }
+  </script>
+</head>
+
+<body>
+  <div id="terminal"></div>
+</body>
+
+</html>

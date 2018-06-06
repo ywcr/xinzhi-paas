@@ -1,0 +1,103 @@
+#ContinueIntegration{
+  overflow: hidden;
+  .table{
+    border: 1px solid #e5e5e5;
+  }
+  .tableHeader{
+    height:48px;
+    line-height: 48px;
+    background: #f2f2f2;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    .tableHeadertd{
+      padding-left: 13px;
+      float: left;
+    }
+    .imageClass{
+      width:20%;
+    }
+    .UserDefinedName{
+      width:30%;
+    }
+    .UserDefinedAddress{
+      width:36%;
+    }
+    .handle{
+      width:9%;
+      min-width: 76px;
+    }
+  }
+  .tablebody{
+    .nodata{
+      text-align: center;
+      height:60px;
+      padding-top: 20px;
+    }
+    .tablecolum{
+      height:48px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-top: 7px;
+      vertical-align: top;
+      clear: both;
+      .ant-row,
+      .ant-form-item{
+        margin: 0;
+      }
+      .tablecell{
+        float: left;
+        padding-left: 13px;
+        .formitem{
+          height: 48px;
+        }
+      }
+      .imageClass{
+        width:20%;
+      }
+      .UserDefinedName{
+        width:30%;
+      }
+      .UserDefinedAddress{
+        width:36%;
+      }
+      .handle{
+        width:9%;
+        padding-top: 2px;
+        min-width: 76px;
+        .buttonleft{
+          margin-right: 13px;
+          @media(max-width: 1440px){
+            margin-right: 2px;
+          }
+        }
+        .edit{
+          color:#2db7f5;
+        }
+        .check {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .clearfloat{
+    clear: both;
+  }
+  .tablefooter{
+    height: 54px;
+    padding:16px 0;
+    vertical-align: middle;
+    .handlefooter{
+      cursor: pointer;
+      .footeradd{
+        font-size: 18px;
+        margin-right: 8px;
+        float: left;
+      }
+      .footerspan{
+        float: left;
+      }
+    }
+    .handlefooter:hover{
+      color: #2db7f5;
+    }
+  }
+}

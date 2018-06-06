@@ -1,0 +1,356 @@
+@borderColor: #f2f2f2;
+.ImageStoreBox {
+  position: absolute;
+  padding: 20px 20px 50px 20px;
+  height: calc(~"100% - 55px");
+  overflow-y: scroll;
+  width: calc(~"100% - 500px");
+  .green{
+    border-top-color:#04c578!important;
+  }
+  .storeBody{
+    .topSearch{
+      width:200px;float: right;
+      position: relative;
+    }
+    .topCreateButton{
+      height: 60px;
+      line-height: 60px;
+      text-align: right;
+      .createButton{
+        padding:6px 8px;
+        font-size: 14px;
+        //float:right;
+      }
+    }
+  }
+  .createPrivateApp{
+    .infoBox{
+      width: 100%;
+      margin:20px auto;
+      .commonBox{
+        .title{
+          width: 200px;
+        }
+        .inputBox{
+          width: calc(100% - 380px);
+        }
+      }
+    }
+  }
+
+  .moduleDetail {
+    margin-bottom: 30px;
+    width: 100%;
+    .bigTitle {
+      margin-bottom: 15px;
+      padding-left: 10px;
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      font-weight: 600;
+      border-left: 8px solid #24a7eb;
+    }
+
+    .imageDetail {
+      .triangle-topright{
+        width: 0px;
+        height: 0px;
+        border-top: 40px solid #24a7eb;
+        border-left: 40px solid transparent;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        span{
+          position: absolute;
+          top: -27px;
+          right: 3px;
+          color: #fff;
+          margin-top: -12px;
+          white-space:nowrap;
+        }
+      }
+      .ant-card-body {
+        padding: 0;
+      }
+      float: left;
+      width: 200px;
+      height:195px;
+      border: 1px solid @borderColor;
+      background-color: #FFFFFF;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      .imgBox {
+        padding-top: 5px;
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        line-height: 140px;
+        cursor: pointer;
+        overflow: hidden;
+        img {
+          max-width: 100%;
+          height: calc(~"100% - 20px");
+        }
+      }
+      .intro {
+        width: 100%;
+        border-top: 1px solid @borderColor;
+        height: 45px;
+        line-height: 45px;
+        clear: both;
+        .span7{
+          width: 70%;
+          float: left;
+          padding-left: 10px;
+        }
+        .span2{
+          width: 20%;
+          float: left;
+        }
+        .btn-deploy{
+          padding:5px 10px;
+          background: white;
+        }
+        .btn-deploy:hover{
+          background: #21ADEB;
+          border-color: #0092DB;
+          color: white;
+        }
+      }
+    }
+  }
+  .nav {
+    position: fixed;
+    width: 200px;
+    top: 80px;
+    right: 0;
+    z-index: 10;
+    .navItem {
+      height: 14px;
+      line-height: 14px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .currentNav {
+      font-size: 14px;
+      color: #24a7eb;
+    }
+    .line {
+      margin-left: 6px;
+      width: 10px;
+      height: 30px;
+      border-left: 1px dashed #D9D9D9;
+    }
+    .fa-star-o {
+      color: #D9D9D9;
+    }
+    .fa-star {
+      color: #24a7eb;
+    }
+  }
+}
+.createPrivateApp{
+    #quickCreateAppSelectImage{
+      .selectImage{
+          .searchInputBox{
+            float: right;
+            right: 20px;
+          }
+      }
+   }
+
+
+  .infoBox{
+    width: 100%;
+    margin:20px auto;
+    .portBox {
+       margin: 20px 0;
+      .title{
+        //float: left;
+        display: inline-block;
+        padding-right: 30px;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        text-align: right;
+        vertical-align: top;
+      }
+      .portList {
+        //float: left;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        .portTitle {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          border: 1px solid #E5E5E5;
+          border-bottom: 0;
+          background-color: #F2F2F2;
+          .portCommonTitle {
+            padding-left: 10px;
+            float: left;
+            width: 25%;
+            text-align: left;
+          }
+          .protocol {
+            width: 20%;
+          }
+          .mapping {
+            width: 35%;
+          }
+          .opera {
+            width: 15%;
+          }
+        }
+        ul {
+          border: 1px solid #E5E5E5;
+          border-bottom: 0;
+        }
+        .addBtn{
+          margin-top: 20px;
+          cursor: pointer;
+        }
+        .portDetail {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 100%;
+          height: 50px;
+          border-bottom: 1px solid #E5E5E5;
+          .input {
+            padding-left: 10px;
+            float: left;
+            width: 25%;
+            .ant-form-item{
+              margin-bottom: 0;
+            }
+            input {
+              width: 100%;
+            }
+          }
+          .select {
+            padding-left: 10px;
+            float: left;
+            width: 25%;
+            .portGroupForm{
+              margin-bottom:0;
+            }
+            .portGroup {
+              width: 80%;
+            }
+          }
+          .protocol {
+            width: 20%;
+          }
+          .mapping {
+            padding-left: 10px;
+            float: left;
+            width: 35%;
+            .podPort {
+              width: 100%;
+              min-height: 1px;
+            }
+            .httpSpan,
+            .tcpDiv {
+              line-height: 32px;
+            }
+            .composeUrl {
+              width: 90%;
+            }
+            .tcpSelect {
+              float: left;
+              padding-top: 1px;
+              width: 100px;
+            }
+            .tcpInputForm {
+              position: relative;
+              margin-left: 15px;
+              padding-top: 1px;
+              float: left;
+              line-height: 32px;
+              .has-error {
+                height: 50px;
+              }
+              .ant-form-explain {
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                width: 200px;
+              }
+            }
+          }
+          .opera {
+            padding-left: 10px;
+            float: left;
+            width: 15%;
+            font-size: 20px;
+            .fa {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+    }
+   .commonBox{
+     height: 60px;
+      line-height: 60px;
+      .title{
+        width: 200px;
+        height: 60px;
+      }
+      .selectHost{
+        margin-left:50px;
+      }
+      .inputBox{
+        height: 60px;
+        line-height: 60px;
+        width: calc(100% - 380px);
+        .ant-form-item{
+          margin-bottom: 0;
+        }
+        .selectHost{
+          margin-bottom: 10px;
+          .ant-form-item{
+            padding: 9px 0;
+          }
+        }
+        .ant-select{
+          // margin-top: 9px;
+        }
+
+        .profileOption{
+          width: 500px;
+          height: 200px;
+          line-height: 16px;
+          overflow: scroll;
+          resize:none;
+          border-radius: 3px;
+        }
+        .previewImage{
+           width: 100px;
+          height: 100px;
+          img{
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+
+    .define{
+      height:200px;
+      margin-top:20px;
+      .ant-form-item-control{
+        height: 200px;
+        .ant-form-explain{
+          bottom:-20px;
+        }
+      }
+    }
+  }
+}

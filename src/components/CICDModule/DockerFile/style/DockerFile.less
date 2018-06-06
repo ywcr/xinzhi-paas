@@ -1,0 +1,141 @@
+#dockerFile {
+  .ant-alert {
+    margin-bottom: 0 !important;
+    padding: 14px 24px !important;
+    line-height: 20px;
+    color: #1a7db6;
+    font-size: 14px !important;
+    background-color: #d9edf6;
+    border: 1px dashed #85d7fd !important;
+  }
+  .tenxflowBox {
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+  .operaBox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    .searchBox {
+      width: 180px;
+      height: 32px;
+      padding-right: 28px;
+    }
+    .fa-search {
+      position: absolute;
+      top: 28px;
+      left: 157px;
+      font-size: 14px;
+      color: #999;
+    }
+  }
+  .tenxflowBox {
+    .titleBox,
+    .CodeTable {
+      transition: all 0.3s;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #F2F2F2;
+      .name {
+        width: 25%;
+        float: left;
+        padding-left: 30px;
+      }
+      .editTime {
+        width: 25%;
+        float: left;
+        padding-left: 10px;
+      }
+      .action {
+        width: 25%;
+        float: left;
+        padding-left: 10px;
+      }
+      .type {
+        width: 25%;
+        float: left;
+        padding-left: 10px;
+      }
+      .type.public {
+        color: #5FB962;
+        button {
+          background: #5FB962;
+          color: white;
+        }
+      }
+      .type.private {
+        color: #00A0EA;
+        button {
+          background: #5FB962;
+          color: white;
+        }
+      }
+    }
+    .CodeTable:hover {
+      background-color: #eaf8fe;
+    }
+  }
+}
+//  show dockerFile modal
+.dockerFileModal {
+  .ant-modal-header {
+    display: none;
+    border: 0;
+    .ant-modal-title {
+      color: #16B9FE;
+    }
+  }
+  .ant-modal-close {
+    display: none;
+  }
+  .ant-modal-content {
+    background-color: #090300;
+  }
+  .ant-modal-body {
+    padding: 0;
+    color: #eee;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    .hrs {
+      background: url('../../../../assets/img/cicd/bj_hr.png') repeat-x;
+      width: 140%;
+      height: 10px;
+      margin-left: -20%;
+    }
+  }
+}
+.dockerFileEditModal {
+  .ant-modal-header {
+    display: none;
+    border: 0;
+    .ant-modal-title {
+      color: #16B9FE;
+    }
+  }
+  .ant-modal-close {
+    display: none;
+  }
+  .ant-modal-body {
+    padding: 0;
+    border-radius: 5px;
+    background-color: #333333;
+    .btnBox {
+      padding-right: 16px;
+      height: 50px;
+      line-height: 50px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: #333333;
+      button {
+        float: right;
+        margin-top: 9px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+}

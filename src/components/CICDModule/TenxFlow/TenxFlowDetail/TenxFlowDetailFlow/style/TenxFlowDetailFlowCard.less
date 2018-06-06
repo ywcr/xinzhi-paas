@@ -1,0 +1,237 @@
+#TenxFlowDetailFlowCard {
+  float: left;
+  margin-bottom: 20px;
+  width: 500px;
+  .disabledBoxForToolTip {
+    display: inline-block;
+    float: left;
+    padding: 3px 0 3px 5px;
+    position: relative;
+    top: -3px;
+  }
+  .commonCard {
+    position: relative;
+    float: left;
+    width: 400px;
+    min-height: 240px;
+    box-shadow: 0 0 10px #dadada;
+    .ant-card-body {
+      padding: 0 !important;
+    }
+    .statusBox {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 90px;
+      height: 240px;
+      text-align: center;
+      background-color: #f8f8f8;
+      .status {
+        width: 90px;
+        height: 240px;
+        i {
+          line-height: 220px;
+          font-size: 30px;
+        }
+        p {
+          position: absolute;
+          font-size: 14px;
+          bottom: 80px;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .finishStatus {
+        color: #5CB85C;
+      }
+      .runningStatus {
+        color: #00A1EA;
+        .fa {
+          font-size: 35px;
+        }
+      }
+      .failStatus {
+        color: #F85A5A;
+      }
+    }
+    .infoBox {
+      position: absolute;
+      right: 0;
+      top:0;
+      margin-bottom: 0;
+      padding: 15px;
+      width: 310px;
+      .commonInfo {
+        height: 40px;
+        font-size: 14px;
+        border-bottom: 1px dashed #EFEFEF;
+      }
+      .title {
+        padding-left: 0;
+        font-size: 12px;
+        color: #666666;
+        float: left;
+        width: 50px;
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+      }
+      .info {
+        float: left;
+        width: 209px;
+        height: 40px;
+        line-height: 40px;
+        .infoSpan {
+          float: left;
+          display: block;
+          width: 89%;
+          height: 40px;
+          line-height: 40px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        i {
+          float: left;
+          margin-right: 7px;
+          line-height: 40px;
+          font-size: 14px;
+        }
+      }
+    }
+    .btnBox {
+      float: none !important;
+      padding-top: 13px;
+      width: 100% !important;
+      height: 50px;
+      button {
+        float: left !important;
+        margin-right: 0 !important;
+        padding: 5px !important;
+        i {
+          margin-right: 7px;
+        }
+      }
+      .startBtn,
+      .logBtn {
+        margin-right: 10px !important;
+      }
+      .logBtn {
+        position: relative;
+        padding-left: 22px !important;
+        svg {
+          position: absolute;
+          top: 8px;
+          left: 5px;
+          width: 14px;
+          height: 14px;
+        }
+      }
+      .editBtn {
+        position: relative;
+        float: left;
+        .anticon {
+          margin-right: 0;
+        }
+        button:first-child {
+          padding-left: 22px !important;
+        }
+        svg {
+          position: absolute;
+          top: 8px;
+          left: 5px;
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+    .indexBox {
+      padding-right: 1px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #dadada;
+      border-radius: 9px;
+      text-align: center;
+      line-height: 16px;
+      color: #dadada;
+    }
+    .cicdBox {
+      position: absolute;
+      padding-top: 15px;
+      top: 0;
+      right: 0;
+      height: 85px;
+      width: 85px;
+      text-align: center;
+      background-color: #ffffff;
+      .switchTitile {
+        font-size: 14px;
+      }
+      .viewP {
+        color: #00A1EA;
+        cursor: pointer;
+      }
+    }
+  }
+  .runningCard {
+    border-image: -webkit-linear-gradient( #5cb85c, #00a1ea) 10 10;
+    border-image: -moz-linear-gradient( #5cb85c, #00a1ea) 10 10;
+    border-image: linear-gradient( #5cb85c, #00a1ea) 10 10;
+  }
+  .edittingCard {
+    width: 700px !important;
+  }
+  .arrowBox {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 80px;
+    height: 240px;
+    line-height: 240px;
+    font-size: 79px;
+    .fileButton {
+      z-index: 10;
+      padding-left: 12px;
+      position: absolute;
+      top: 70px;
+      width: 100%;
+      text-align: center;
+    }
+    .fileUrl {
+      position: absolute;
+      width: 100%;
+      top: 140px;
+      left: 0;
+      font-size: 12px;
+      line-height:20px;
+      color: #00A1EA;
+      word-break: break-all;
+    }
+  }
+  .finishArrow {
+    color: #5CB85C;
+  }
+  .runningArrow {
+    color: #00A1EA;
+  }
+  svg {
+    width: 80px;
+    height: 240px;
+  }
+}
+.TenxFlowDetailFlowCardBigDiv {
+  width: 100% !important;
+}
+.tenxFlowCicdSetting {
+  .ant-modal-body {
+    padding: 0 !important;
+  }
+  .ant-modal-close,
+  .ant-modal-footer {
+    display: none;
+  }
+}

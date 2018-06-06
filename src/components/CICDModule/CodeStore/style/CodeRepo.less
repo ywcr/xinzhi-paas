@@ -1,0 +1,153 @@
+@border: #D9D9D9;
+#codeRepo{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  .codeContent{
+    border:1px solid @border;
+    background: white;
+    border-radius: 3px;
+    .headBox{
+      height: 80px;
+      line-height: 30px;
+      font-size: 1.2em;
+      padding: 10px 30px 0px 30px;
+      .topText{
+        text-align: center;
+        font-size: 1.2em;
+        line-height: 10px;
+      }
+    }
+  }
+  // tabs head
+  .card-container{
+    border-top: 1px solid @border;
+    .ant-tabs-nav-container {height: 130px;padding-left:20px;}
+    .codelink {
+      .ant-tabs-nav-container {
+        height: 60px;padding-left:0px;
+        .ant-tabs-nav{line-height: 45px;}
+        }
+    }
+    #gogList{
+      .ant-tabs-bar{display: none;}
+    }
+    .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+      background: white;
+      border:0;
+    }
+    .ant-tabs-tab-active{
+      .section{
+        border-color:#0099E9;
+        background: #F0F9FE;
+        color: #0099E9;
+        .gitlab{ background-position: -54px 10px;  }
+        .github{ background-position: -54px -33px;}
+        .svn{ background-position: -50px -78px;}
+        .bibucket{ background-position: -54px -117px;}
+        .gogs{ background-position: -54px -165px;}
+      }
+    }
+    .section{
+      width: 100px;
+      height: 90px;
+      border:1px solid @border;
+      overflow: hidden;
+      float: left;
+      text-align: center;
+      border-radius: 2px;
+      position: relative;
+      .node-number{
+        position: absolute;
+        right: 3px;
+        top:3px;
+        padding:2px 4px;
+        border-radius: 50%;
+        background: #26B0EE;
+        font-size: 12px;
+        min-width: 20px;
+        color: white;
+        border:1px solid @border;
+        box-shadow: 0 0 2px #999;
+      }
+      .icon{
+        background: url('../../../../assets/img/cicd/ci-fa-lg.png')no-repeat;
+        display: block;
+        margin:5px auto;
+        width:50px;height: 45px;
+      }
+      .gitlab{ background-position: 0 10px;}
+      .github{ background-position: 0px -33px;}
+      .svn{ background-position: 4px -78px;}
+      .bibucket{ background-position: 0 -117px;}
+      .gogs{ background-position: 0 -165px;}
+    }
+  }
+  // code row
+  .codelink{
+    padding:20px 30px 30px 30px;
+    .tableHead{
+      padding-bottom:20px;
+      border-bottom:1px solid @border;
+      font-size: 1.2em;
+      i{cursor: pointer;}
+      i:hover{color: #009CE9}
+      .right-search{
+        position:relative;
+        left: 20px;
+        display: inline-block;
+        .fa-search{
+          color: #999;
+          position: absolute;
+          top:8px;
+          left: 160px;
+        }
+      }
+    }
+    .CodeTable{
+      clear: both;
+      height: 50px;
+      line-height: 50px;
+      border-bottom:1px solid @border;
+      // cursor: pointer;
+      .name,.type{
+        width:40%;
+        float: left;
+        padding-left: 20px;
+
+      }
+      .action{
+        width: 20%;
+        float: left;
+        button{width: 70px;padding:0;line-height: 26px;}
+      }
+      &:hover{
+        background-color: #eaf8fe;
+      }
+      &:active{
+        background: #EFFDFF;
+      }
+    }
+  }
+
+}
+
+/*       svn  modal         */
+.svnModal{
+  .ant-switch {
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+  }
+  .ant-switch:after {
+    width: 21px;
+    height: 21px;
+  }
+  .ant-switch-checked:after {
+    left: 35px;
+  }
+  .ant-form-item-label label:before{content:''}
+  .ant-form-item-label label:after{content: '：'}
+
+}

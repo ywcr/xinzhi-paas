@@ -1,0 +1,268 @@
+#AppServiceList {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  @media screen and (min-width:1120px){
+    .operationBoxa {
+      display:block;
+    }
+    .operationBoxb {
+      display:none;
+    }
+  }
+  @media screen and (max-width:1120px){
+    .operationBoxa {
+      display:none;
+    }
+    .operationBoxb {
+      display:block;
+    }
+  }
+  .operationBox {
+    width: 100%;
+    min-height: 35px;
+    margin-bottom: 20px;
+    .leftBox {
+      float: left;
+      button {
+        margin-right: 10px;
+        padding: 5px 10px;
+        background: white;
+        i {
+          margin-right: 5px;
+        }
+      }
+      .Arrow {
+        margin-right:0px;
+        margin-left:5px;
+      }
+    }
+    .rightBox {
+      position: relative;
+      float: left;
+      .littleLeft {
+        z-index: 10;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 15px;
+        color: #949494;
+        cursor: pointer;
+      }
+      .littleRight {
+        float: left;
+      }
+    }
+    .pageBox {
+      float: right;
+      height: 35px;
+      .totalPage {
+        float: left;
+        margin-right: 8px;
+        line-height: 35px;
+      }
+      .paginationBox {
+        float: left;
+        margin-top: 0 !important;
+        padding-top: 5px;
+      }
+    }
+  }
+  .ant-card {
+      overflow: inherit !important;
+    }
+  .appBox {
+    .appTitle {
+      margin-top: 0px;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #E5E5E5;
+      .commonTitle {
+        float: left;
+        // padding-left: 5px;
+      }
+      .selectIconTitle {
+        width: 5%;
+        text-align: center;
+      }
+      .name {
+        width: 12%;
+      }
+      .createTime {
+        width: 10%;
+      }
+      .service {
+        width: 18%;
+      }
+      .appname, .alarm{
+        width: 8%
+      }
+      .status {
+        width: 11%;
+      }
+      .image {
+        width: 14%;
+      }
+      .actionBox {
+        width: 14%;
+      }
+    }
+    .dataBox {
+      padding-bottom: 20px;
+      .commonData {
+        float: left;
+        // padding-left: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .viewBtn {
+          color: #2db7f5;
+          cursor: pointer;
+          .standrand{
+            display: inline-block;
+            height:16px;
+            width:16px;
+            line-height: 16px;
+            text-align: center;
+            border-radius: 8px;
+            color: #ffffff;
+            margin-right: 8px;
+          }
+          .netcolor{
+            background: #cacaca;
+          }
+          .privateColor{
+            background: #56bc56;
+          }
+          .publicColor{
+            background: #2cb8f6;
+          }
+        }
+      }
+      .selectIconTitle {
+        width: 5%;
+        text-align: center;
+      }
+      .name {
+        width: 12%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .createTime {
+        width: 10%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .service {
+        width: 18%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .status {
+        width: 11%;
+      }
+      .appname {
+        width: 8%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .alarm {
+        width: 8%;
+        i {
+          font-size: 16px;
+          cursor: pointer;
+          line-height: 2;
+          transition: all 0.2s ease-in-out;
+          color: #C7CBCE;
+          vertical-align: middle;
+          &:hover {
+            color: #10B5FF;
+            transform: rotate(40deg);
+            -webkit-transform: rotate(40deg);
+            -moz-transform: rotate(40deg);
+            -o-transform: rotate(40deg);
+            -ms-transform: rotate(40deg);
+          }
+        }
+        .managemoniter {
+          width: 18px;height: 18px;
+          fill: #C7CBCE;
+          cursor: pointer;
+          margin-right: 12px;
+          vertical-align: middle;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            fill:#10B5FF;
+          }
+        }
+
+      }
+      .image {
+        width: 14%;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .actionBox {
+        width: 14%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .instanceDetail {
+        .allSvcListDomain {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          height: 60px;
+          line-height: 60px;
+          .ant-tooltip-inner {
+            width: 100% !important;
+            min-width: 190px;
+            max-width: none;
+          }
+          .ant-popover-arrow {
+            border-right-color: #36baf5 !important;
+          }
+          .ant-popover-inner {
+            border: 1px solid #36baf5;
+            min-width: inherit;
+          }
+        }
+        transition: all 0.3s;
+        line-height: 60px;
+        border-bottom: 1px solid #E5E5E5;
+        &:hover {
+          background-color: #eaf8fe;
+        }
+      }
+      .selectedInstance {
+        background-color: #effdff;
+      }
+      .TenxStatus{
+        width: 90%;
+      }
+    }
+  }
+
+}
+.Moreoperation {
+  font-size:14px;
+}
+
+#allservicelistDropdownMenu{
+  .ant-dropdown-menu{
+    @media(max-width:1500px){
+      left:-112px;
+    }
+  }
+}

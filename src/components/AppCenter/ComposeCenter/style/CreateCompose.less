@@ -1,0 +1,68 @@
+#createCompose {
+  padding: 50px 40px 100px !important;
+  height: 100%;
+  overflow-y: scroll;
+  .commonInput {
+    margin-bottom: 5px;
+    width: 100%;
+    min-height: 50px; //  line-height: 50px;
+    .leftBox {
+      float: left;
+      width: 120px;
+      height: 50px;
+      line-height: 50px;
+      text-align: left;
+    }
+    .rightBox {
+      float: left;
+      width: calc(~"100% - 150px"); //    height: 50px;
+      input {
+        /*margin-top: 8px;*/
+        width: 220px !important;
+      }
+      textarea {
+        margin-top: 18px !important;
+        width: 100%;
+      }
+      .ant-switch {
+        width: 55px !important;
+      }
+      .ant-switch-checked:after {
+        left: 33px !important;
+      }
+      .has-success.has-feedback:after,
+      .has-warning.has-feedback:after,
+      .has-error.has-feedback:after,
+      .is-validating.has-feedback:after {
+        right: -35px !important;
+      }
+    }
+  }
+  .switch {
+    .has-success.has-feedback:after {
+      display: none;
+    }
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+  .intro,
+  .file {
+    .has-feedback:after {
+      top: 18px !important;
+    }
+  }
+  .btnBox {
+    padding-top: 14px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    text-align: center;
+    background-color: #dadada;
+    button {
+      width: 80px !important;
+    }
+  }
+}

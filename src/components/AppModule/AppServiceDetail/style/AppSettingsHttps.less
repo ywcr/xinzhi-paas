@@ -1,0 +1,104 @@
+@borderColor: #E5E5E5;
+#settingsHttps {
+  .topHead {
+    height: 45px;line-height: 45px;
+    .settingsIcon{
+      display: inline-block;
+      width: 22px;height: 22px;
+      border-radius: 12px;
+      vertical-align: middle;
+      overflow: hidden;
+      background: #39B8F2;
+      line-height: normal;
+      margin-left: 20px;
+      cursor: pointer;
+      svg{
+        width:16px;height: 16px;
+        margin-left: 3px;
+        vertical-align: middle;
+        margin-top: 3px;fill: white;
+      }
+    }
+  }
+  .content{
+    .titleSpan {
+      padding-left: 10px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      border-left: 5px solid #00a1ea;
+      color: #333;
+    }
+    .setting {
+      padding-left: 16px;padding-top:30px;
+      .commonTitle {width: 50%;float: left;line-height: 30px;}
+      .links {color: #37B8F2;cursor: pointer;}
+      .linked {color: #33b867;}
+    }
+    .hrs {border-top: 1px solid @borderColor;clear:both;height: 30px;margin-top: 30px;}
+    .certificate {
+      padding-left: 16px;padding-top: 16px;
+      .alertTips {
+        background: #D9EDF6;
+        color: #4F96C1;
+        border:1px dashed #92DAFB;
+        line-height: 45px;height: 45px;
+        border-radius: 6px;
+        padding: 0 20px;
+        margin:20px 0;
+      }
+      .headTab {
+        .tabKey {
+          padding: 0 20px;border:1px solid;
+          border-color: @borderColor;
+          border-bottom: 0;
+          height: 35px;line-height: 35px;
+          display: inline-block;
+          position: relative;
+          cursor: pointer;
+        }
+        .tabKey.tabs-active::after {
+          content: '';
+          position: absolute;
+          left:0;
+          width: 100%;
+          top: 30px;
+          background: white;
+          height: 10px;
+        }
+        .tabKey.tabs-active{
+          border-color: #37B8F2;
+          color: #37B8F2;
+          border-bottom:1px solid white;
+        }
+        .tabKey:nth-of-type(1) {
+          border-top-left-radius: 6px;
+        }
+        .tabKey:nth-of-type(2) {
+          border-top-right-radius: 6px;
+        }
+      }
+      .tabsBody {
+        border-top: 1px solid @borderColor;
+        padding-top: 20px;
+        .tabs {
+          display: none;
+        }
+        .tabs-active {
+          display: block
+        }
+      }
+      .certificateTable{
+        margin-top: 20px;
+        th,td{font-weight: 400;line-height: 40px;border-bottom: 1px solid @borderColor;padding-left: 6px;}
+      }
+    }
+  }
+  .notice {line-height: 50px;}
+}
+.createSslModal {
+  z-index: 1080;
+  .ant-modal-body {
+    .ant-form-item{margin-bottom:10px}
+  }
+}

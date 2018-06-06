@@ -1,0 +1,57 @@
+#configMapConfigureService {
+  padding-top: 38px;
+  .configMap {
+    // width: 84%;
+    .configMapHeader {
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #e5e5e5;
+      background-color: #f2f2f2;
+      > div {
+        padding-left: 10px;
+      }
+    }
+    .configMapBody {
+      .configMapItem {
+        clear: both;
+        border: 1px solid #e5e5e5;
+        border-top: 0;
+        > div {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 10px;
+          vertical-align: middle;
+        }
+        .ant-form-item {
+          margin-bottom: 0;
+          .ant-input-number {
+            width: 70%;
+          }
+          .ant-select {
+            width: 100%;
+          }
+          .ant-checkbox-wrapper {
+            margin-left: 0;
+            margin-right: 8px;
+            max-width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            float: left;
+          }
+        }
+        .deleteBtn {
+          margin-top: 5px;
+        }
+      }
+      .addConfigMap {
+        display: inline-block;
+        padding-top: 15px;
+        cursor: pointer;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

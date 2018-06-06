@@ -1,0 +1,314 @@
+#Ordinary {
+  
+  .ant-card-head-title {
+    font-weight: normal;
+  }
+  .stateDot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    @media(max-width:1066px){
+      margin-right: 3px;
+    }
+  }
+  .title {
+    border-left:3px solid #46b2fa;
+    color: #46b2fa;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 13px;
+  }
+  .content {
+    .clusterCost {
+      .ant-card-body {
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .costInfo {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 300px;
+        height: 152px;
+        justify-content: space-between;
+      }
+      .loginUser {
+        width: 100%;
+        max-width: 300px;
+        justify-content: space-between;
+        .logAvatar {
+          width: 46px;
+          height: 46px;
+          line-height: 46px;
+          border-radius: 50%;
+          color: #fff;
+          background-color: #D2EDFE;
+          float: left;
+          text-align: center;
+          font-size: 38px;
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        .loginText {
+          float: left;
+          padding-left: 7px;
+          width: calc(~"100% - 50px");
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          .text {
+            line-height: 20px;
+            padding-top: 8px;
+            .userName {
+              width: 100%;
+              font-size: 16px;
+              color: #46b2fa;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              .edition {
+                width: 15px;
+                height: 15px;
+                margin-left: 5px;
+              }
+            }
+            .email {
+              width: 100%;
+              font-size: 12px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .loginTag {
+          float: right;
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+          font-size: 12px;
+          width: 40px;
+          margin-top: 18px;
+          border-radius: 2px;
+          color: #fff;
+          background-color: #c4c4c4;
+        }
+      }
+      .userCost {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 10px 0;
+        i {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin-right: 5px;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+        .costNum {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          text-align: left;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        button {
+          padding: 4px 10px;
+        }
+      }
+    }
+    .clusterStatus{
+      .clusterStatusTitle{
+        height: 35px;
+        line-height: 46px;
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+      }
+      .statusBottomcontent{
+        border-top: 1px solid #e7ecf2;
+        .statusBottomleft{
+          float: left;
+          width:65px;
+          height:32px;
+          line-height: 32px;
+          padding: 0;
+          .statusBottomItem{
+            font-size: 14px;
+            margin-left: 7px;
+            width:16%;
+          }
+        }
+        .statusBottomright{
+          height:32px;
+          line-height: 35px;
+          margin-left: 65px;
+          .statusBottomrightitem{
+
+          }
+        }
+        .statusBottomthird{
+          cursor: pointer;
+          text-align: center;
+          margin-left: 7px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #979797;
+        }
+      }
+    }
+    .sysState {
+      .errorDot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        tr {
+          border: 1px solid #e2e2e2;
+          td {
+            height:34px;
+            line-height: 34px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .clusterRecord {
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        tr {
+          border: 1px solid #e2e2e2;
+          padding: 0 10px;
+          td {
+            font-size: 13px;
+            line-height: 33px;
+            .recordNum {
+              text-align: right;
+              padding-right: 10px;
+              font-size: 13px;
+              color: #666;
+            }
+          }
+        }
+      }
+      .teamRecSvg {
+        width: 15px;
+        height: 18px;
+        margin: 0 5px;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+      }
+    }
+    .stateSvg {
+      width: 15px;
+      height: 18px;
+      margin: 0 10px;
+      display: inline-block;
+      position: relative;
+      top: 3px;
+    }
+    .stateImg {
+      vertical-align: middle;
+      margin: 0 8px;
+      display: inline-block;
+    }
+    .hostState {
+      table {
+        font-size: 13px;
+        width: 100%;
+        padding-left: 24px;
+        tr {
+          height: 27px;
+          line-height: 27px;
+          color: #666;
+          .hostNum {
+            text-align: right;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .storage {
+      .storageInf {
+        height: 100%;
+        .storageInfList {
+          position: relative;
+          top: 50%;
+          padding-left: 5px;
+          transform: translate(0,-50%);
+          .storageInfItem {
+            font-size: 13px;
+            height: 25px;
+            line-height: 25px;
+            color: #666;
+          }
+        }
+      }
+    }
+    .dataBase {
+      table {
+        font-size: 14px;
+        width: 100%;
+        tr {
+          height: 27px;
+          line-height: 27px;
+          font-size: 13px;
+          .dbNum {
+            text-align: right;
+          }
+        }
+      }
+      .dbImg {
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+      }
+      .dbInf {
+        position: absolute;
+        top: 45%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      .seleted {
+        .dataBtn{
+          color: #46b2fa;
+          border: 1px solid #46b2fa;
+        }
+      }
+    }
+  }
+
+}

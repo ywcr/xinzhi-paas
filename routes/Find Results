@@ -1,0 +1,816 @@
+Searching 1442 files for "新智云"
+
+/Users/zhang/Documents/user-portal-dev/routes/no_auth.js:
+   50    // alert
+   51    router.get('/alerts/invitations/join', function* (){
+   52:     yield this.render(global.indexHtml, { title: '邮箱验证 | 新智云', body: '' })
+   53    })
+   54    router.get('/alerts/invitations/join-code', alertController.acceptInvitation)
+
+/Users/zhang/Documents/user-portal-dev/services/oem_info.js:
+   36  const customDefaultInfo = {
+   37    company: {
+   38:     name: "© 2017 北京云思畅想科技有限公司  |  新智云企业版 v2.2.0",
+   39:     productName: "新智云",
+   40      visible: true
+   41    },
+
+/Users/zhang/Documents/user-portal-dev/src/components/AccountModal/_Standard/UserBalance/Payment.js:
+  610              <br />
+  611              <div className="tips">
+  612:               <p className="list-top">1. 转账或汇款至新智云指定收款账号  <span className="timeout">注意：请妥善保管银行回单</span></p>
+  613                <Row className="list-row">
+  614                  <Col span="8">开户银行</Col>
+
+/Users/zhang/Documents/user-portal-dev/src/components/AccountModal/_Standard/UserInfo/Authentication.js:
+  387            <p className="blod">{individualCert.failure_message}</p>
+  388            <p className="blod">请您修改信息后, 重新提交</p>
+  389:           <div>如有任何疑问，请您与新智云团队联系</div>
+  390            <div>电话：<a>400-626-1876</a> 邮箱： <a href="mailto:service@paas.enncloud.cn">service@paas.enncloud.cn</a></div>
+  391          </Modal>
+  ...
+  500  
+  501            <p className="blod">请您 “重新输入”以上认证信息，重新认证</p>
+  502:           <div>如有任何疑问，请您与新智云团队联系</div>
+  503            <div>电话：<a>400-626-1876</a> 邮箱： <a href="mailto:service@paas.enncloud.cn">service@paas.enncloud.cn</a></div>
+  504          </Modal>
+
+/Users/zhang/Documents/user-portal-dev/src/components/AccountModal/_Standard/UserInfo/index.js:
+  318              const { reason } = message
+  319              if (reason === 'WeChatAlreayBounded') {
+  320:               notification.error('绑定微信帐户失败', '您的微信已绑定其他新智云平台账户')
+  321                return
+  322              }
+
+/Users/zhang/Documents/user-portal-dev/src/components/AccountModal/DelTeamModal/index.js:
+  191            </Col>
+  192            <Col className="tipText" span={22} style={{color:'#8f8e8c'}}>
+  193:             团队余额将退回至“{userName}（创建者）”帐户，稍后请查收个人帐户的充值记录【来源显示：新智云（注：团队解散退款）】
+  194            </Col>
+  195          </Row>
+
+/Users/zhang/Documents/user-portal-dev/src/components/AppCenter/ImageCenter/ImageDetail/Mirrorsafety.js:
+  211          { (mode === standard && envEdition == 0) ?
+  212            <div className='envEdition'>
+  213:             此服务仅支持『专业版』，去查看『新智云|专业版』功能优势
+  214              <Button className='envEditionButton' onClick={this.handleUpgrade}>点击查看</Button>
+  215            </div>:
+
+/Users/zhang/Documents/user-portal-dev/src/components/AppCenter/ImageCenter/ProjectDetail/Mirrorsafety.js:
+  225          { (mode === standard && envEdition == 0) ?
+  226            <div className='envEdition'>
+  227:             此服务仅支持『专业版』，去查看『新智云|专业版』功能优势
+  228              <Button className='envEditionButton' onClick={this.handleUpgrade}>点击查看</Button>
+  229            </div>:
+
+/Users/zhang/Documents/user-portal-dev/src/components/AppCenter/ImageCenter/PublicSpace.js:
+  149              <div className='msgDetail'>
+  150                <div className='square'></div>
+  151:               <span>企业版支持关联新智云·公有云的镜像仓库。</span>
+  152              </div>
+  153              <div className='msgDetail'>
+  154                <div className='square'></div>
+  155:               <span>只需填写新智云官网注册的用户名和密码即可快速关联。</span>
+  156              </div>
+  157            </div>
+  ...
+  159          <Button className='bindBtn' type='primary' size='large' onClick={this.openBindModal}>
+  160            <Icon type='plus' />
+  161:           <span>新智云镜像Hub</span>
+  162          </Button>
+  163:         <p className='alert'>目前您还没有关联新智云·公有云镜像</p>
+  164:         <Modal className='liteBindCenterModal' title='关联新智云镜像Hub' visible={scope.state.bindModalShow}
+  165            onCancel={this.closeBindModal} onOk={this.submitBind}
+  166          >
+  167:           <Alert message={[<span><Icon type='exclamation-circle' style={{ marginRight: '7px', color: '#2db7f5' }} /><span>关联新智云·公有云的镜像仓库，请填写新智云官网注册的用户名和密码</span></span>]} type="info" />
+  168            <div className='inputBox'>
+  169              <span className='title'>用户名</span>
+
+/Users/zhang/Documents/user-portal-dev/src/components/DatabaseCache/MysqlCluster.js:
+  232            <Title  title="关系型数据库" />
+  233            <div className='databaseHead'>
+  234:             { mode === standard ? <div className='alertRow'>您的 MySql 集群 创建在新智云平台，如果帐户余额不足时，1 周内您可以进行充值，继续使用。如无充值，1 周后资源会被彻底销毁，不可恢复。</div> : <div></div>}
+  235              <Tooltip title={title} placement="right"><Button type='primary' size='large' onClick={this.createDatabaseShow} disabled={!canCreate}>
+  236                <i className='fa fa-plus' />&nbsp;MySQL集群
+
+/Users/zhang/Documents/user-portal-dev/src/components/DatabaseCache/RedisCluster.js:
+  212            <Title title="缓存" />
+  213            <div className='databaseHead'>
+  214:             { mode === standard ? <div className='alertRow'>您的 Redis 集群创建在新智云平台，如果帐户余额不足时，1 周内您可以进行充值，继续使用。如无充值，1 周后资源会被彻底销毁，不可恢复。</div> : <div></div>}
+  215              <Tooltip title={title} placement="right"><Button type='primary' size='large' onClick={this.createDatabaseShow} disabled={!canCreate}>
+  216                <i className='fa fa-plus' />&nbsp;Redis集群
+
+/Users/zhang/Documents/user-portal-dev/src/components/DatabaseCache/StatefulCluster.js:
+  248            <div className='databaseHead'>
+  249              {mode === standard ?
+  250:               <div className='alertRow'>您的 {literal.displayName} 集群创建在新智云平台，如果帐户余额不足时，1 周内您可以进行充值，继续使用。如无充值，1 周后资源会被彻底销毁，不可恢复。</div> :
+  251                <div></div>}
+  252              <Tooltip title={title} placement="right"><Button type='primary' size='large' onClick={this.createDatabaseShow} disabled={!canCreate}>
+
+/Users/zhang/Documents/user-portal-dev/src/components/Home/Enterprise/Ordinary/MySpace.js:
+  582    headTitle: {
+  583      id: 'ManageMonitor.operationalAudit.headTitle',
+  584:     defaultMessage: '操作审计 | 新智云',
+  585    },
+  586    title: {
+
+/Users/zhang/Documents/user-portal-dev/src/components/Home/Standard/Ordinary/index.js:
+ 1104          <Modal visible={this.state.oldTestingKonwShow} className='testingKnowModal' width='600'>
+ 1105            <div className='titleBox'>
+ 1106:             <p>欢迎使用新智云</p>
+ 1107              <Icon className='closeBtn' type='cross' onClick={this.closeNavModal} />
+ 1108            </div>
+ 1109            <div className='infoBox'>
+ 1110              <div className='infoDetail'>
+ 1111:               <span className='info'>欢迎使用新智云 2.0 新版本控制台！检测当前为新智云老用户，以下信息与你同步：</span>
+ 1112              </div>
+ 1113              <div className='infoDetail'>
+ ....
+ 1143              <div className='infoDetail'>
+ 1144                <div className='numBox' style={{ marginLeft: '12px' }}>2</div>
+ 1145:               <span className='info' style={{ paddingLeft: '0px' }}>【新智云官方】自动迁移  </span>
+ 1146              </div>
+ 1147              <div className='infoDetail'>
+ 1148                <div className='squareIcon'></div>
+ 1149:               <div className='info' style={{ marginLeft: '33px' }}>新智云团队会在通知的迁移日期，自动将旧平台的运行应用迁移至新平台Portal；</div>
+ 1150              </div>
+ 1151              <div className='infoDetail'>
+ ....
+ 1161          <Modal visible={this.state.newTestingKonwShow} className='testingKnowModal' width='600'>
+ 1162            <div className='titleBox'>
+ 1163:             <p>欢迎使用新智云</p>
+ 1164              <Icon className='closeBtn' type='cross' onClick={this.closeNavModal} />
+ 1165            </div>
+ 1166            <div className='infoBox'>
+ 1167              <div className='infoDetail'>
+ 1168:               <span className='info'>欢迎使用新智云 2.0 新版本 Portal 控制台，这里你几乎可以实现关于容器的一切想法，快来体验新时代的云计算平台吧！ </span>
+ 1169              </div>
+ 1170              <div className='infoDetail' style={{ marginTop: '20px', marginBottom: '10px' }}>
+ 1171:               <span className='info'>为了让你更好的上手新智云平台，我们做了一些小Demo，请享用！</span>
+ 1172              </div>
+ 1173              <div className='infoDetail' style={{ lineHeight: '30px' }}>
+
+/Users/zhang/Documents/user-portal-dev/src/components/Home/Standard/Ordinary/MySpace.js:
+  558    headTitle: {
+  559      id: 'ManageMonitor.operationalAudit.headTitle',
+  560:     defaultMessage: '操作审计 | 新智云',
+  561    },
+  562    title: {
+
+/Users/zhang/Documents/user-portal-dev/src/components/IntegrationModule/index.js:
+  258                      <span className='title'><FormattedMessage {...menusText.appType} /></span>
+  259                      <span className={ this.state.currentAppType == '1' ? 'selectedType commonType' : 'commonType'} onClick={this.onChangeAppType.bind(this, '1')}>Iaas平台</span>
+  260:                     <span className={ this.state.currentAppType == '2' ? 'selectedType commonType' : 'commonType'} onClick={this.onChangeAppType.bind(this, '2')}>新智云公有云</span>
+  261                      <span className={ this.state.currentAppType == '3' ? 'selectedType commonType' : 'commonType'} onClick={this.onChangeAppType.bind(this, '3')}>存储平台</span>
+  262                      <span className={ this.state.currentAppType == '4' ? 'selectedType commonType' : 'commonType'} onClick={this.onChangeAppType.bind(this, '4')}>安全工具</span>
+
+/Users/zhang/Documents/user-portal-dev/src/components/IntegrationModule/IntegrationDetail.js:
+   59  
+   60    componentWillMount() {
+   61:     document.title = '集成中心 | 新智云';
+   62      const { getIntegrationDateCenter, integrationId } = this.props;
+   63      const scope = this;
+
+/Users/zhang/Documents/user-portal-dev/src/components/ManageMonitor/OperationalAudit.js:
+   30    headTitle: {
+   31      id: 'ManageMonitor.operationalAudit.headTitle',
+   32:     defaultMessage: '操作审计 | 新智云',
+   33    },
+   34    title: {
+
+/Users/zhang/Documents/user-portal-dev/src/components/ManageMonitor/QueryLog.js:
+   36    headTitle: {
+   37      id: 'ManageMonitor.QueryLog.headTitle',
+   38:     defaultMessage: '日志查询 | 新智云',
+   39    },
+   40    title: {
+
+/Users/zhang/Documents/user-portal-dev/src/components/QuickEntry/index.js:
+  127                        <img src={APIImg} alt=""/>
+  128                        <div className='middle'>API文档</div>
+  129:                       <div className='bottom'>通过API的方式与新智云容器服务平台进行交互</div>
+  130                      </div>
+  131                    </a>
+
+/Users/zhang/Documents/user-portal-dev/src/components/SettingModal/API/index.js:
+   44        <div id='API'>
+   45          <Title title="开放 API" />
+   46:         <Row className="APITitle">新智云开放 API</Row>
+   47          <Row className="APIInfo">以下是用于访问 EnnCloud 开放 API 的 token 信息及相关文档</Row>
+   48          <table className="APITable">
+
+/Users/zhang/Documents/user-portal-dev/src/components/SettingModal/GlobalConfig/index.js:
+  654            {
+  655              liteFlag &&
+  656:             <span className="tips">Tips：新智云官方不支持企业版 Lite 配置私有的镜像仓库，如有需要请联系新智云购买企业版 Pro</span>
+  657            }
+  658          </div>
+  ...
+  886            {
+  887              liteFlag &&
+  888:             <span className="tips">Tips：新智云官方不支持企业版 Lite 配置存储服务，如有需要请联系新智云购买企业版 Pro</span>
+  889            }
+  890          </div>
+
+/Users/zhang/Documents/user-portal-dev/src/components/SettingModal/License/index.js:
+  266                </div>
+  267                <div className="ant-col-20 oneTips">
+  268:                 ③ 访问新智云的公有云控制台：<a href="https://portal.paas.enncloud.cn" target="_blank">portal.paas.enncloud.cn</a>（即将上线在线购买许可证
+  269                  License功能）
+  270                </div>
+
+/Users/zhang/Documents/user-portal-dev/src/components/SettingModal/Personalized/index.js:
+  240                <Col span="3"style={{width:150}}>产品名称</Col>
+  241                <Col span="20" style={{width:600}}>
+  242:                 <div className="row-text">此处文字用于替换平台上的“新智云 | 新智云企业版”字样，如：浏览器标签文字；</div>
+  243                  <Input style={{width:200}} id="productName"  size="large" placeholder="请输入产品名称"  />
+  244                  <Button size="large" onClick={()=> this.clearProductName()} style={{margin:'0 10px'}}>取消</Button>
+
+/Users/zhang/Documents/user-portal-dev/src/components/Sider/Standard/index.js:
+  678          <Modal visible={this.state.oldTestingKonwShow} className='testingKnowModal' width='600' footer={null}>
+  679            <div className='titleBox'>
+  680:             <p>欢迎使用新智云</p>
+  681              <Icon className='closeBtn' type='cross' onClick={this.closeNavModal} />
+  682            </div>
+  683            <div className='infoBox'>
+  684              <div className='infoDetail'>
+  685:               <span className='info'>欢迎使用新智云 2.0 新版本控制台！检测当前为新智云老用户，以下信息与你同步：</span>
+  686              </div>
+  687              <div className='infoDetail'>
+  ...
+  717              <div className='infoDetail'>
+  718                <div className='numBox' style={{ marginLeft: '12px' }}>2</div>
+  719:               <span className='info' style={{ paddingLeft: '0px' }}>【新智云官方】自动迁移  </span>
+  720              </div>
+  721              <div className='infoDetail'>
+  722                <div className='squareIcon'></div>
+  723:               <div className='info' style={{ marginLeft: '33px' }}>新智云团队会在通知的迁移日期，自动将旧平台的运行应用迁移至新平台Portal；</div>
+  724              </div>
+  725              <div className='infoDetail'>
+  ...
+  735          <Modal visible={this.state.newTestingKonwShow} className='testingKnowModal' width='600' footer={null}>
+  736            <div className='titleBox'>
+  737:             <p>欢迎使用新智云</p>
+  738              <Icon className='closeBtn' type='cross' onClick={this.closeNavModal} />
+  739            </div>
+  740            <div className='infoBox'>
+  741              <div className='infoDetail'>
+  742:               <span className='info'>欢迎使用新智云 2.0 新版本 Portal 控制台，这里你几乎可以实现关于容器的一切想法，快来体验新时代的云计算平台吧！ </span>
+  743              </div>
+  744              <div className='infoDetail' style={{ marginTop: '20px', marginBottom: '10px' }}>
+  745:               <span className='info'>为了让你更好的上手新智云平台，我们做了一些小Demo，请享用！</span>
+  746              </div>
+  747              <div className='infoDetail' style={{ lineHeight: '30px' }}>
+
+/Users/zhang/Documents/user-portal-dev/src/components/StorageModule/Storage.js:
+  670    }
+  671    componentWillMount() {
+  672:     document.title = '存储 | 新智云'
+  673      this.props.loadStorageList(this.props.currentImagePool, this.props.cluster)
+  674      this.props.SnapshotList({clusterID: this.props.cluster})
+  ...
+  918        <QueueAnim className="StorageList" type="right">
+  919          <div id="StorageList" key="StorageList">
+  920:           { mode === standard ? <div className='alertRow'>您的存储创建在新智云平台，如果帐户余额不足时，1 周内您可以进行充正，继续使用。如无充正，1 周后资源会被彻底销毁，不可恢复。</div> : <div></div> }
+  921            <div className="operationBox">
+  922              <div className="leftBox">
+
+/Users/zhang/Documents/user-portal-dev/src/containers/Invite/index.js:
+   99                <div className="formTip">*&nbsp;注册表示您同意遵守&nbsp;
+  100                  <a href="https://www.paas.enncloud.cn/terms" target="_blank" style={{color:'#4691d2'}}>
+  101:                   新智云&nbsp;TenxCloud&nbsp;服务条款
+  102                  </a>
+  103                </div>
+  ...
+  106          </div>
+  107          <div className="footer">
+  108:                    沪公网安备31011002001592号
+
+  109          </div>
+  110          <Modal
+
+/Users/zhang/Documents/user-portal-dev/src/containers/Login/Standard/index.js:
+  405            <Row style={{ textAlign: 'center' }}>
+  406              <span className='logoLink'>
+  407:               <div className='logTitle'>新智云</div>
+  408                <div className='logDesc'>技术领先的容器云技术服务商</div>
+  409              </span>
+  ...
+  463              <div className='footerTip'>
+  464                <div className='toRegister'>
+  465:                 <span>*&nbsp;还没有新智云帐户?</span>
+  466                  <Link to='/signup'>立即注册</Link>
+  467                </div>
+  ...
+  508          {this.renderLogin()}
+  509          <div className="footer">
+  510:          新智云 沪公网安备31011002001592号
+  511          </div>
+  512        </div>
+
+/Users/zhang/Documents/user-portal-dev/src/containers/Register/AccountType.js:
+   41            </div>
+   42            <ul className="accountList accountListR">
+   43:             <li>可使用新智云所有容器服务</li>
+   44:             <li>可使用新智云所有 DevOps、CI/CD 服务</li>
+   45:             <li>可使用新智云数据库与缓存产品服务</li>
+   46              <li>个人开发者级别的资源配额</li>
+   47              <li>认证帐户后可获得代金券￥5</li>
+   ..
+   59            </div>
+   60            <ul className="accountList accountListL">
+   61:             <li>可使用新智云所有容器服务</li>
+   62:             <li>可使用新智云所有 DevOps、CI/CD 服务</li>
+   63:             <li>可使用新智云数据库与缓存产品服务</li>
+   64              <li>企业生产级别的资源配额</li>
+   65              <li>认证帐户后可获得代金券￥50</li>
+
+/Users/zhang/Documents/user-portal-dev/src/containers/Register/Company.js:
+  589          <div className="formTip">*&nbsp;注册表示您同意遵守&nbsp;
+  590            <a href="https://www.paas.enncloud.cn/aboutus.html?serviceList" target="_blank" style={{color:'#4691d2'}}>
+  591:             新智云&nbsp;TenxCloud&nbsp;服务条款
+  592            </a>
+  593          </div>
+
+/Users/zhang/Documents/user-portal-dev/src/containers/Register/Person.js:
+  559      const { login } = this.props
+  560      let notification = new NotificationHandler()
+  561:     notification.info(`您的微信已绑定新智云账户，即将登录...`)
+  562      login({accountType: 'wechat'}, {
+  563        success: {
+  ...
+  626        <div className="formTip">*&nbsp;注册表示您同意遵守&nbsp;
+  627          <a href="https://www.paas.enncloud.cn/aboutus.html?serviceList" target="_blank" style={{color:'#4691d2'}}>
+  628:           新智云&nbsp;TenxCloud&nbsp;服务条款
+  629          </a>
+  630        </div>
+
+/Users/zhang/Documents/user-portal-dev/static/js/lib/ie-blocker/ie-blocker.zh.js:
+   16      html += "            <p>为了访问 ";
+   17      html += "                <a href=\"https:\/\/portal.paas.enncloud.cn\">";
+   18:     html += "                    <strong>控制台Portal | 新智云<\/strong> ";
+   19      html += "                </a>";
+   20      html += "                具有更佳的极速体验，请使用以下浏览器进行访问。";
+
+/Users/zhang/Documents/user-portal-dev/static/locales/backend/zh/common.json:
+    3    "console": "控制台",
+    4    "login": "登录",
+    5:   "tenxcloud": "新智云",
+    6    "status": {
+    7      "status": "状态",
+
+/Users/zhang/Documents/user-portal-dev/static/locales/frontend/en.json:
+  522    "ManageMonitor.operationalAudit.clusterTitle": "Cluster",
+  523    "ManageMonitor.operationalAudit.areaTitle": "Area",
+  524:   "ManageMonitor.QueryLog.headTitle": "日志查询 | 新智云",
+  525    "ManageMonitor.QueryLog.title": "Query Log",
+  526    "ManageMonitor.QueryLog.user": "Space:",
+
+/Users/zhang/Documents/user-portal-dev/static/locales/frontend/zh.json:
+  435    "CICD.Tenxflow.CICDSettingModal.cicdTitle": "持续集成触发规则",
+  436    "this.is.an.commnent": "/------------------------Manage Monitor 管理与监控-----------------------/",
+  437:   "ManageMonitor.operationalAudit.headTitle": "操作审计 | 新智云",
+  438    "ManageMonitor.operationalAudit.title": "操作审计",
+  439    "ManageMonitor.operationalAudit.time": "时间",
+  ...
+  538    "ManageMonitor.operationalAudit.clusterTitle": "集群名",
+  539    "ManageMonitor.operationalAudit.areaTitle": "区域",
+  540:   "ManageMonitor.QueryLog.headTitle": "日志查询 | 新智云",
+  541    "ManageMonitor.QueryLog.title": "日志查询",
+  542    "ManageMonitor.QueryLog.user": "空间：",
+
+/Users/zhang/Documents/user-portal-dev/templates/email/alarm_email.html:
+   26                      background-color: #2bb9f7;color: #fff;font-size: 16px;border-radius: 3px 3px 0 0;border-bottom: 1px solid #dfdfdf;
+   27                      width: 740px;">
+   28:                   [新智云]&nbsp;邮件报警&nbsp;|&nbsp;邮箱验证
+   29                  </td>
+   30                </tr>
+   ..
+   40                        <tr>
+   41                          <td style="height: 24px;">
+   42:                           您好！您的邮箱被新智云<b>%invitorName%</b>用户选为告警发送邮箱，已验证通过！
+   43                          </td>
+   44                        </tr>
+   ..
+   51                          <td style="height: 24px;">
+   52                            <br></br>
+   53:                           新智云团队
+   54                            <br/> %date%
+   55                          </td>
+   ..
+   69              <td>
+   70                如有任何疑问，请联系邀请者%invitorName%(<span><a href="mailto:%invitorEmail%" style="color: #2bbbfa;">%invitorEmail%</a></span>)
+   71:               或新智云(
+   72                <span>
+   73                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/alarm_group.html:
+   26                      background-color: #2bb9f7;color: #fff;font-size: 16px;border-radius: 3px 3px 0 0;border-bottom: 1px solid #dfdfdf;
+   27                      width: 740px;">
+   28:                   [新智云]&nbsp;告警通知组&nbsp;|&nbsp;邮箱验证
+   29                  </td>
+   30                </tr>
+   ..
+   40                        <tr>
+   41                          <td style="height: 24px;">
+   42:                           您好！您的邮箱被新智云<b>%invitorName%</b>用户选为告警接收邮箱，如您同意请点击以下按钮通过验证：
+   43                          </td>
+   44                        </tr>
+   ..
+   72                          <td style="height: 24px;">
+   73                            <br></br>
+   74:                           新智云团队
+   75                            <br/> %date%
+   76                          </td>
+   ..
+   90              <td>
+   91                如有任何疑问，请联系邀请者%invitorName%(<span><a href="mailto:%invitorEmail%" style="color: #2bbbfa;">%invitorEmail%</a></span>)
+   92:               或新智云(
+   93                <span>
+   94                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/alarm_warning.html:
+   18              <td style="height: 40px;line-height: 40px;text-align: center;
+   19                      background-color: #2bb9f7;color: #fff;font-size: 16px;border-radius: 3px 3px 0 0;border-bottom: 1px solid #dfdfdf;
+   20:                     width: 740px;">[新智云]&nbsp;告警提醒</td>
+   21            </tr>
+   22            <tr>
+   ..
+   25                <tbody>
+   26                  <tr>
+   27:                   <td style="color: #565656;height: 33px;">亲爱的新智云用户 :</td>
+   28                  </tr>
+   29                  <tr>
+   ..
+   41                    <td style="height: 24px;"><br />
+   42                    <br />
+   43:                   新智云团队<br />
+   44                    %date%</td>
+   45                  </tr>
+   ..
+   55            <tr style="height: 40px;">
+   56              <td style="width: 200px;padding: 0 23px 0 35px;"><img alt="EnnCloud" src="https://dn-tenxcloud-static.qbox.me/logoBig.png" /></td>
+   57:             <td>如有任何疑问，欢迎联系新智云( <span> <a href="mailto:%systemEmail%" style="color: #2bbbfa;" target="_blank">%systemEmail%</a> </span>)</td>
+   58            </tr>
+   59          </tbody>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/cancel_invitation.html:
+   35                        <tr>
+   36                          <td style="color: #565656;height: 33px;">
+   37:                           亲爱的新智云用户 :
+   38                          </td>
+   39                        </tr>
+   ..
+   46                          <td style="height: 24px;">
+   47                            <br></br>
+   48:                           新智云团队
+   49                            <br/>
+   50                            %date%
+   ..
+   64                  </td>
+   65                  <td>
+   66:                   如有任何疑问,欢迎联系新智云(
+   67                    <span>
+   68                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/charge_success.html:
+   34                        <tr>
+   35                          <td style="color: #565656;height: 33px;">
+   36:                           亲爱的新智云用户 :
+   37                          </td>
+   38                        </tr>
+   ..
+   74                          <td style="height: 24px;">
+   75                            <br></br>
+   76:                           新智云团队
+   77                            <br/>
+   78                            %date%
+   ..
+   92                  </td>
+   93                  <td>
+   94:                   如有任何疑问,欢迎联系新智云团队
+   95                    <div>
+   96                      <span>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/dismiss_team_admin.html:
+   35                        <tr>
+   36                          <td style="color: #565656;height: 33px;">
+   37:                           亲爱的新智云用户 :
+   38                          </td>
+   39                        </tr>
+   ..
+   64                                  团队余额退回至"%teamAdminName%（创建者）"帐户<br/>
+   65                                  稍后请查收个人帐户的充值记录<br/>
+   66:                                 【来源显示：新智云（注：团队解散退款）】
+   67                                </td>
+   68                                <td style="background-color: #f4f4f4;color: #575757;padding: 0 50px; display: %showNoRefund%">
+   ..
+   76                          <td style="height: 24px;">
+   77                            <br></br>
+   78:                           新智云团队
+   79                            <br/>
+   80                            %date%
+   ..
+   94                  </td>
+   95                  <td>
+   96:                   如有任何疑问,欢迎联系新智云(
+   97                    <span>
+   98                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/dismiss_team_user.html:
+   35                        <tr>
+   36                          <td style="color: #565656;height: 33px;">
+   37:                           亲爱的新智云用户 :
+   38                          </td>
+   39                        </tr>
+   ..
+   74                          <td style="height: 24px;">
+   75                            <br/>
+   76:                           新智云团队
+   77                            <br/>
+   78                            %date%
+   ..
+   93                  <td>
+   94                    如有任何疑问,欢迎联系团队管理员%teamAdminName%(<span><a href="mailto:%teamAdminEmail%" style="color: #2bbbfa;">%teamAdminEmail%</a></span>)
+   95:                   或新智云(
+   96                    <span>
+   97                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/invite_team_member.html:
+   36                          <td style="color: #565656;height: 33px;"
+   37                          >
+   38:                           亲爱的新智云用户 :
+   39                          </td>
+   40                        </tr>
+   ..
+   77                          <td style="height: 24px;">
+   78                            <br></br>
+   79:                           新智云团队
+   80                            <br/>
+   81                            %date%
+   ..
+   96                  <td>
+   97                    如有任何疑问,欢迎联系团队管理员%invitorName%(<span><a href="mailto:%invitorEmail%" style="color: #2bbbfa;">%invitorEmail%</a></span>)
+   98:                   或新智云(
+   99                    <span>
+  100                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/private_balance_payments.html:
+   35                        <tr>
+   36                          <td style="color: #565656;height: 33px;">
+   37:                           亲爱的新智云用户 :
+   38                          </td>
+   39                        </tr>
+   40                        <tr>
+   41                          <td style="line-height: 25px;">
+   42:                           根据您在<font color="#2bbbfa">“充值中心”</font>中的<font color="#2bbbfa">“设置提醒”</font>，新智云提醒您，您的余额不足 <font color="#F72C28">%pay_balance%</font>。
+   43                            <div>如不尽快充值，您正在使用的资源将会被系统收回，为避免影响您的使用，请尽快充值。</div>
+   44                            <br/>
+   ..
+  100                  </td>
+  101                  <td>
+  102:                   如有任何疑问,欢迎联系新智云团队
+  103                    <div>
+  104                      <span>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/private_recharge.html:
+   35                        <tr>
+   36                          <td style="color: #565656;height: 33px;">
+   37:                           亲爱的新智云用户 :
+   38                          </td>
+   39                        </tr>
+   ..
+   99                  </td>
+  100                  <td>
+  101:                   如有任何疑问,欢迎联系新智云团队
+  102                    <div>
+  103                      <span>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/public_balance_payments.html:
+   35                        <tr>
+   36                          <td style="color: #565656;height: 33px;">
+   37:                           亲爱的新智云用户 :
+   38                          </td>
+   39                        </tr>
+   40                        <tr>
+   41                          <td style="line-height: 25px;">
+   42:                           根据您在<font color="#2bbbfa">“充值中心”</font>中的<font color="#2bbbfa">“设置提醒”</font>，新智云提醒您，您的余额不足 <font color="#F72C28">%pay_balance%</font>。
+   43                            <div>如不尽快充值，您正在使用的资源将会被系统收回，为避免影响您的使用，请尽快充值。</div>
+   44                            <br/>
+   ..
+  126                  </td>
+  127                  <td>
+  128:                   如有任何疑问,欢迎联系新智云团队
+  129                    <div>
+  130                      <span>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/public_recharge.html:
+   35                        <tr>
+   36                          <td style="color: #565656;height: 33px;">
+   37:                           亲爱的新智云用户 :
+   38                          </td>
+   39                        </tr>
+   ..
+  124                  </td>
+  125                  <td>
+  126:                   如有任何疑问,欢迎联系新智云团队
+  127                    <div>
+  128                      <span>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/remove_team_member.html:
+   35                        <tr>
+   36                          <td style="color: #565656;height: 33px;">
+   37:                           亲爱的新智云用户 :
+   38                          </td>
+   39                        </tr>
+   ..
+   46                          <td style="height: 24px;">
+   47                            <br></br>
+   48:                           新智云团队
+   49                            <br/>
+   50                            %date%
+   ..
+   64                  </td>
+   65                  <td>
+   66:                   如有任何疑问,欢迎联系新智云(
+   67                    <span>
+   68                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/reset_password.html:
+   36                          <td style="color: #565656;height: 33px;"
+   37                          >
+   38:                           亲爱的新智云用户 :
+   39                          </td>
+   40                        </tr>
+   ..
+   71                          <td style="height: 24px;">
+   72                            <br></br>
+   73:                           新智云团队
+   74                            <br/>
+   75                            %date%
+   ..
+   89                  </td>
+   90                  <td>
+   91:                   如有任何疑问,欢迎联系新智云(
+   92                    <span>
+   93                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/system_recovery.html:
+    6  </head>
+    7  <body>
+    8:   <!--       新智云 资源收回通知         -->
+    9    <table style="font-family: 'Microsoft YaHei';background: #edf5f8;width: 100%;height: 100%;font-size: 14px;">
+   10      <tbody>
+   ..
+   35                        <tr>
+   36                          <td style="color: #565656;height: 33px;">
+   37:                           亲爱的新智云用户 :
+   38                          </td>
+   39                        </tr>
+   ..
+   99                  </td>
+  100                  <td>
+  101:                   如有任何疑问,欢迎联系新智云团队
+  102                    <div>
+  103                      <span>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/upgrade_alert.html:
+    4    <head>
+    5      <meta charset="UTF-8">
+    6:     <title>【产品升级】新智云 2.0 升级通知</title>
+    7    </head>
+    8  
+    .
+   27                      background-color: #2bb9f7;color: #fff;font-size: 16px;border-radius: 3px 3px 0 0;border-bottom: 1px solid #dfdfdf;
+   28                      width: 740px;">
+   29:                     【产品升级】新智云 2.0 升级通知
+   30                    </td>
+   31                  </tr>
+   ..
+   36                          <tr>
+   37                            <td style="color: #565656;height: 33px;font-size: 12px;">
+   38:                             亲爱的新智云用户 :
+   39                            </td>
+   40                          </tr>
+   41                          <tr>
+   42                            <td style="font-size: 12px;line-height: 24px;">
+   43:                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017新年伊始，经过数月的潜心研发锤炼，全新的新智云2.0版本终于要和大家见面了。正式开放2.0之前，我们已邀请若干资深企业用户及开发者用户对新产品进行了深度的测试使用，经过了数轮的反馈体验及改良。新智云团队决定将我们的新产品于2017年1月9号正式开放！
+   44                            </td>
+   45                          </tr>
+   46                          <tr style="height: 30px">
+   47                            <td style="color: #505050;font-weight: 600;font-size: 14px;padding-top: 10px;">
+   48:                             新智云 2.0 抢鲜亮点
+   49                            </td>
+   50                          </tr>
+   ..
+   87                          <tr style="height: 30px;">
+   88                            <td style="color: #505050;font-weight: 600;font-size: 14px;padding-top: 10px;">
+   89:                             新智云 2.0 升级计划
+   90                            </td>
+   91                          </tr>
+   92                          <tr>
+   93                            <td style="font-size: 12px;line-height: 24px;">
+   94:                             为了给用户提供更优质的服务，将全面启用自有的高性能数据中心支撑新智云公有云服务。经过团队的慎重考虑，对于原有的北京一区、北京二区、杭州区，我们将陆续把应用迁移到新的数据中心，待迁移完成后将停止上述三个区域的服务。北美区采用In-Place Upgrade的方式，届时将直接升级至2.0。
+   95                            </td>
+   96                          </tr>
+   ..
+  137                            <td style="font-size: 12px;line-height: 24px;color: #737373;">
+  138                              <div style="width: 18px;height: 18px;border-radius: 4px;color: #FFFFFF;line-height: 18px;background-color: #2bb9f7;display: inline-block;text-align: center;font-size: 12px;">2</div>
+  139:                             <span>在官方给出的升级日前夜，新智云团队将对用户仍在旧平台运行的应用，自动完成迁移。</span>
+  140                            </td>
+  141                          </tr>
+  ...
+  179                          <tr>
+  180                            <td style="height: 30px;text-align: right;line-height: 20px">
+  181:                             <span style="color: #444444;font-size: 14px;">新智云 2.0 团队</span>
+  182                              <br/>
+  183                              <span style="color: #8f8f8f;font-size: 12px;">2017年1月6日</span>
+  ...
+  197                    </td>
+  198                    <td>
+  199:                     如有任何疑问,欢迎联系新智云(
+  200                      <span>
+  201                      <a href="mailto:service@paas.enncloud.cn" target="_blank" style="color: #2bbbfa;">service@paas.enncloud.cn</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/user_activation.html:
+   36                          <td style="color: #565656;height: 33px;"
+   37                          >
+   38:                           亲爱的新智云用户 :
+   39                          </td>
+   40                        </tr>
+   ..
+   71                          <td style="height: 24px;">
+   72                            <br></br>
+   73:                           新智云团队
+   74                            <br/>
+   75                            %date%
+   ..
+   89                  </td>
+   90                  <td>
+   91:                   如有任何疑问,欢迎联系新智云(
+   92                    <span>
+   93                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/templates/email/user_creation.html:
+   36                          <td style="color: #565656;height: 33px;"
+   37                          >
+   38:                           亲爱的新智云用户 :
+   39                          </td>
+   40                        </tr>
+   ..
+   42                          <td style="height: 24px;"
+   43                          >
+   44:                           %creatorName%(<a href="mailto:%creatorEmail%" target="_blank" style="color: #2bbbfa;">%creatorEmail%</a>) 已为您创建新智云帐号，您可能会被添加成为某个团队中的团队成员！<br/><br/>
+   45                            您的帐号为：<b>%userName%</b><br/>
+   46                            您的密码为：<b>%userPassword%</b><br/>
+   ..
+   50                        <tr>
+   51                          <td style="height: 24px;">
+   52:                           点击以下按钮，立即登陆您的新智云帐户！
+   53                          </td>
+   54                        </tr>
+   ..
+   80                          <td style="height: 24px;">
+   81                            <br></br>
+   82:                           新智云团队
+   83                            <br/>
+   84                            %date%
+   ..
+   99                  <td>
+  100                    如有任何疑问,欢迎联系团队管理员%creatorName%(<span><a href="mailto:%creatorEmail%" style="color: #2bbbfa;">%creatorEmail%</a></span>)
+  101:                   或新智云(
+  102                    <span>
+  103                      <a href="mailto:%systemEmail%" target="_blank" style="color: #2bbbfa;">%systemEmail%</a>
+
+/Users/zhang/Documents/user-portal-dev/utils/email.js:
+  197  exports.sendUserCreationEmail = function(to, creatorName, creatorEmail, userName, userPassword) {
+  198    const method = "sendUserCreationEmail"
+  199:   const subject = `已为您创建新智云帐号`
+  200    const systemEmail = config.mail_server.service_mail
+  201    const date = moment(new Date()).format("YYYY-MM-DD")
+  ...
+  436  exports.sendResetPasswordEmail = function(to, resetPasswordURL) {
+  437    const method = "sendResetPasswordEmail"
+  438:   const subject = `新智云用户重置密码`
+  439    const systemEmail = config.mail_server.service_mail
+  440    const date = moment(new Date()).format("YYYY-MM-DD")
+  ...
+  512    const method = "sendUserActivationEmail"
+  513  
+  514:   const subject = `新智云用户完成注册`
+  515    const systemEmail = config.mail_server.service_mail
+  516    const date = moment(new Date()).format("YYYY-MM-DD")
+  ...
+  561  
+  562  exports.sendNotifyGroupInvitationEmail = function* (to, invitorName, invitorEmail, code,transport) {
+  563:   const subject = `[新智云]告警通知组|邮箱验证`
+  564    const systemEmail = config.mail_server.service_mail
+  565    const date = moment(new Date()).format("YYYY-MM-DD")
+  ...
+  583  
+  584  exports.sendGlobalConfigVerificationEmail = function* (body,invitorName, invitorEmail) {
+  585:   const subject = `[新智云]邮件报警|邮箱验证`
+  586    const systemEmail = config.mail_server.service_mail
+  587    const date = moment(new Date()).format("YYYY-MM-DD")
+
+143 matches across 54 files

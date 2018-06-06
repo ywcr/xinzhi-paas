@@ -1,0 +1,93 @@
+---
+kind: Deployment
+apiVersion: v1
+metadata:
+  name: test-mysql
+  labels:
+    name: test-mysql
+spec:
+  replicas: 1
+  selector:
+    name: test-mysql
+  template:
+    metadata:
+      labels:
+        name: test-mysql
+    spec:
+      containers:
+      - name: test-mysql
+        image: 192.168.1.113/tenxcloud/mysql:latest
+        ports:
+        - containerPort: 3306
+          protocol: TCP
+        - containerPort: 5000
+          protocol: TCP
+        env:
+        - name: test
+          value: '123'
+        resources:
+          limits:
+            memory: 256Mi
+          requests:
+            cpu: 60m
+            memory: 256Mi
+        args:
+        - "/run/run.sh"
+        command:
+        - "docker-entrypoint.sh"
+        imagePullPolicy: Always
+        volumeMounts:
+        - name: volume-1
+          mountPath: "/var/lib/mysql"
+        - name: tenxcloud-time-zone
+          mountPath: "/etc/localtime"
+          readOnly: true
+        livenessProbe:
+          httpGet:
+            port: 5000
+            path: "/health"
+          initialDelaySeconds: 5
+          timeoutSeconds: 5
+          periodSeconds: 5
+      nodeSelector: {}
+      volumes:
+      - name: volume-1
+        rbd:
+          monitors:
+          - 192.168.1.86:6789
+          - 192.168.1.87:6789
+          - 192.168.1.88:6789
+          pool: tenx-k8s
+          user: admin
+          keyring: "/etc/ceph/ceph.client.admin.keyring"
+          fsType: ext4
+          mails: ''
+          image: zhangpc.test-mysql
+          readOnly: true
+      - name: tenxcloud-time-zone
+        hostPath:
+          path: "/etc/localtime"
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: test-mysql-1
+  labels:
+    name: test-mysql-1
+  annotations:
+    test-mysql-1: TCP
+    test-mysql-1-1: TCP
+spec:
+  ports:
+  - name: test-mysql-1
+    protocol: TCP
+    port: 25003
+    targetPort: 3306
+  - name: test-mysql-1-1
+    protocol: TCP
+    port: 45880
+    targetPort: 5000
+  selector:
+    name: test-mysql-1
+  externalIPs:
+  - 192.168.1.103

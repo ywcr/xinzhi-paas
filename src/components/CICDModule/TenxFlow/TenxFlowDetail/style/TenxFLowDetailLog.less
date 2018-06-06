@@ -1,0 +1,105 @@
+#TenxFLowDetailLog {
+  .LogDetail {
+    width: 100%;
+    height: 125px;
+    .leftBox {
+      position: relative;
+      padding-top: 13px;
+      float: left;
+      width: 100px;
+      height: 125px;
+      text-align: left;
+      border-right: 2px solid #EFEFEF;
+      cursor: default;
+      .normal {
+        color: #5CB85C;
+      }
+      .fail {
+        color: #f85a5a;
+      }
+      .runing {
+        color: #00A1EA;
+      }
+      .wait {
+        color: #00A1EA;
+      }
+      .title {
+        font-size: 14px;
+      }
+      .space {
+        color: #999999;
+        display: block;
+        width: 70px;
+        line-height: 35px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: default;
+      }
+      .dot {
+        position: absolute;
+        top: 15px;
+        right: -8px;
+        font-size: 16px;
+        background-color: #fff;
+      }
+    }
+    .rightBox {
+      padding-top: 9px;
+      padding-left: 30px;
+      float: left;
+      width: calc(~"100% - 100px");
+      height: 125px;
+      .title {
+        line-height: 30px;
+        color: #333333;
+        font-size: 16px;
+        cursor: default;
+      }
+      .infoBox {
+        padding-bottom: 25px;
+        color: #999999;
+        border-bottom: 1px solid #E5E5E5;
+        .user,
+        .updateTime,
+        .costTime {
+          float: left;
+          display: block;
+          width: 100px;
+          line-height: 30px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          cursor: default;
+          i {
+            margin-right: 5px;
+          }
+        }
+        .updateTime {
+          width: 150px;
+        }
+      }
+      .btnBox {
+        float: right;
+        min-width: 240px;
+        button {
+          float: left;
+          margin-right: 0;
+        }
+        .operaBtn {
+          float: right;
+          margin-right: 10px;
+          .ant-btn:first-child:not(:last-child) {
+            padding-left: 8px;
+          }
+        }
+        .viewBtn {
+          float: right;
+          margin-right: 10px;
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+      }
+    }
+  }
+}

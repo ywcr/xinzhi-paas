@@ -1,0 +1,276 @@
+#CreateTenxFlowModal {
+  padding-bottom: 80px !important;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  .removeShellCodeIcon {
+    height: 32px;
+    line-height: 46px;
+    vertical-align: middle;
+  }
+  .titleBox {
+    margin-bottom: 30px;
+    padding: 0 30px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: #F8F8F8;
+    i {
+      float: right;
+      line-height: 40px;
+      cursor: pointer;
+    }
+  }
+  .commonBox {
+    margin-bottom: 5px;
+    width: 100%;
+    min-height: 50px;
+    line-height: 50px;
+    .title {
+      padding-left: 30px;
+      float: left;
+      width: 120px;
+      height: 50px;
+      line-height: 50px;
+      text-align: left;
+      font-size: 14px;
+    }
+    .input {
+      position: relative;
+      float: left;
+      width: calc(~"100% - 150px");
+      min-height: 50px;
+      text-align: left;
+      .ant-form-item {
+        margin-bottom: 0 !important;
+        .ant-form-item-control {
+          >.ant-input-wrapper {
+            >input {
+              margin-top: 8px;
+              width: 220px !important;
+            }
+          }
+        }
+      }
+      .ant-form-explain {
+        position: absolute;
+        bottom: -13px;
+      }
+      .has-success.has-feedback:after,
+      .has-warning.has-feedback:after,
+      .has-error.has-feedback:after,
+      .is-validating.has-feedback:after {
+        top: 8px !important;
+      }
+    }
+    .codeRepo {
+      position: relative;
+      float: left;
+      width: calc(~"100% - 150px");
+      min-height: 50px;
+      text-align: left;
+      .ant-form-item {
+        margin-bottom: 0px;
+      }
+    }
+    .noCodeStoreSpan {
+      opacity: 1 !important;
+    }
+    .CodeStoreSpan {
+      opacity: 0;
+      transition: all 0.3s linear;
+      position: absolute;
+      bottom: -29px;
+      left: 0;
+      color: #f50;
+    }
+    .flowType {
+      .flowTypeForm {
+        float: left;
+        width: 150px;
+      }
+      .otherFlowTypeInput {
+        float: left;
+        width: 220px;
+      }
+    }
+    .selectCodeBtn {
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      position: relative;
+      padding-left: 35px;
+      svg {
+        position: absolute;
+        top: 6.5px;
+        left: 15px;
+        width: 15px;
+        height: 15px;
+        use {
+          transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+      }
+      &:hover {
+        svg use {
+          fill: #57c5f7;
+        }
+      }
+    }
+    .noCodeStoreButton {
+      border-color: #f50 !important;
+      box-shadow: 0 0 0 2px rgba(255, 85, 0, 0.2);
+    }
+    .imageName {
+      .defineEnvBtn {
+        transition: all 0.3s;
+        margin-left: 15px;
+        color: #00A1EA;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .emptyImageEnv {
+        color: #f50;
+      }
+      .emptyImageEnvError {
+        position: absolute;
+        top: 26px;
+        left: 236px;
+        color: #f50;
+      }
+    }
+    .services {
+      .defineEnvBtn {
+        transition: all 0.3s;
+        margin-left: 15px;
+        color: #00A1EA;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .addServicesBtn {
+        margin-top: 10px;
+        width: 100px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        cursor: pointer;
+        i {
+          margin-right: 7px;
+        }
+      }
+    }
+    .serviceDetail {
+      position: relative;
+      i {
+        margin-left: 7px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .commonItem{
+        .ant-select{
+          display: inline-block;
+        }
+      }
+      .emptyImageEnv {
+        color: #f50;
+      }
+      .emptyImageEnvError {
+        position: absolute;
+        top: 26px;
+        left: 116px;
+        color: #f50;
+      }
+    }
+    .shellCode {
+      .serviceForm {
+        float: left;
+        width: 90%;
+        margin-top: 10px;
+        textarea{
+          line-height: 20px;
+        }
+      }
+      .fa {
+        margin-left: 15px;
+        font-size: 14px;
+        line-height: 50px;
+        cursor: pointer;
+      }
+    }
+    .imageType {
+      .ant-radio-input {
+        width: 100px !important;
+      }
+      .has-success.has-feedback:after,
+      .has-warning.has-feedback:after,
+      .has-error.has-feedback:after,
+      .is-validating.has-feedback:after {
+        right: -35px !important;
+      }
+    }
+    .dockerFileInputAnimate {
+      float: left;
+      padding-top: 9px;
+      width: calc(~"100% - 225px");
+      height: 50px;
+      .ant-input-wrapper {
+        float: left;
+      }
+      .ant-input-group {
+        width: 170px !important;
+      }
+      .dockerFileInput {
+        float: left;
+        margin-top: 0 !important;
+        width: 140px !important;
+      }
+      .dockerIcon {
+        float: left;
+        font-size: 14px;
+        line-height: 50px;
+      }
+    }
+  }
+  .line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #EFEFEF;
+  }
+  .modalBtnBox {
+    padding-top: 8px;
+    padding-right: 40px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    text-align: center;
+    background-color: #F8F8F8;
+    button {
+      float: none !important;
+      margin-right: 15px;
+      min-width: 80px;
+    }
+  }
+  .customizeBaseImage, .relyOnService {
+    color: #999999;
+    height: 25px;
+    line-height: 25px;
+    .link {
+      color: #00A1EA;
+      cursor: pointer;
+    }
+  }
+}
+.tenxFlowServiceEnvModal {
+  .ant-btn-ghost {
+    display: none;
+  }
+}
+
+.dockerfileEditModeList {
+  border: 0;
+  .ant-menu-item {
+    border: 0;
+  }
+}

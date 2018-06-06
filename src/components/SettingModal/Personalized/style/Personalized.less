@@ -1,0 +1,114 @@
+// .Personalized{background: white;}
+#Personalized{
+  margin-bottom: 30px;
+  .toptitle{
+    height:16px;
+    line-height: 16px;
+    font-size: 16px;
+    border-left:6px solid #46b2fa;
+    padding-left: 9px;
+    margin:20px 0 12px 0;
+}
+  .image-push{
+    margin-top: 15px;
+    font-size: 13px;
+    .ant-card-head{border: 0;}
+    .ant-card-head-title{font-weight:400;}
+    .ant-card-body{
+      padding:0;
+    }
+    .row-text{height: 40px;}
+    .img-icon{width: 18px;vertical-align: middle;margin-right: 5px;}
+    .btnRestore{
+      padding: 4px 8px;
+      border-color: #37B8F2;
+      color: #37B8F2;
+      background: white;
+    }
+  }
+  .image-row {
+    border-top: 1px solid #E5EAF0;
+    padding:30px;
+    .logo{height: 50px;}
+    .wrap-image{
+      background: #CBEBFA;
+      cursor: pointer;
+      border-radius: 5px;
+      // padding:10px;
+      position: relative;
+      // width:200px;
+      height: 60px;
+      padding: 5px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      .push-icon{
+        position: absolute;
+        left: 45%;
+        top: 35%;
+        font-size: 20px;
+        z-index: 2;
+        color: #2DB7F5;
+        display: none;
+      }
+    }
+    .wrap-image:hover{
+      background: #D5F1FD;
+      .push-icon{display: inline-block;}
+      .logo{opacity: 0.5}
+      .uploadStyle{
+        visibility: visible;
+      }
+    }
+    .inswitch {
+      height: 28px;
+      width: 55px;
+      line-height: 28px;
+      &:after{
+        height: 24px;
+        width:24px;
+      }
+
+      .ant-switch-inner{
+        left:28px;
+        &:after{
+          height: 24px;
+          width:24px;
+        }
+      }
+    }
+    .ant-switch-checked{
+      &:after{left:27px;}
+      .ant-switch-inner{
+        left:5px;
+      }
+    }
+    .switchText{
+      margin:0 10px;
+      color: #62B661;
+      font-size: 14px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .colorMap {
+      .list {
+        width:50px;
+        height: 50px;
+        display: inline-block;
+        margin-right: 30px;
+        cursor: pointer;
+        border: 2px solid white;
+      }
+      .list.selected{border:2px solid #38BFFC;}
+      .color-1{ background: #2b333d;}
+      .color-2{ background: #32414C;}
+      .color-3{ background: #2D3A45;}
+      .color-4{ background: #272d36;}
+      .color-5{ background: #0b5472;}
+      .color-6{ background: #667ae3;}
+      .color-7{ background: #1e91e5;}
+      .color-8{ background: #0aad89;}
+    }
+    .colorButton{margin-top: 20px;}
+  }
+}

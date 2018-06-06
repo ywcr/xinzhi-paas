@@ -1,0 +1,27 @@
+{
+  "desc": "防止冗余，保存后端的一些通用字段",
+  "console": "Console",
+  "login": "Sign in",
+  "tenxcloud": "TenxCloud",
+  "status": {
+    "status": "Status",
+    "run_status": "Status",
+    "run_status_colon": "Status: ",
+    "use_status": "Status",
+    "normal": "Normal",
+    "abnormal": "Abnormal",
+    "unknown": "Unknown",
+    "loading": "Loading...",
+    "failed": "Failed",
+    "stopped": "Stopped",
+    "closed": "Closed",
+    "opened": "Opened",
+    "success": "Success"
+  },
+  "license": {
+    "NO_LICENSE": "Your system need add license, please contact the administrator to add license!",
+    "LICENSE_ERROR": "Your system license abnormal, please contact the administrator!",
+    "LICENSE_OK": "Your system license is available",
+    "TRAIL_EXPIRED": "Your trail has ended, please contact the administrator to buy a license"
+  }
+}

@@ -1,0 +1,82 @@
+version: "1.0"
+services:
+  wordpress: # 服务名
+    replicas: 4
+    containers: # 实例
+      - name: wordpress # 实例内的容器名
+        image: index.tenxcloud.com/tenxcloud/wordpress-stack:latest
+        links:
+          - mysql
+        ports:
+          - containerPort: 80
+        # syncTimeZoneWithNode: false
+        env:
+          - name: WORDPRESS_DB_PASSWORD
+            value: duolcxnet
+        volumeMounts: # 关联存储
+          - name: volume1
+            mountPath: /data
+        resources: 
+          limits:
+            cpu: 500m
+            memory: 128Mi
+        livenessProbe:
+          httpGet: 
+            path: /healthz
+            port: 80
+          initialDelaySeconds: 3
+          timeoutSeconds: 10
+          periodSeconds: 5
+    volumes: # 存储 格式与http://kubernetes.io/docs/api-reference/extensions/v1beta1/definitions/#_v1_volume相同
+      - name: volume1
+    dependsOn:
+      - mysql
+      - web
+  mysql:
+    replicas: 1
+    containers:
+      - name: mysql
+        image: index.tenxcloud.com/tenxcloud/mysql:latest
+        ports:
+          - containerPort: 80
+        syncTimeZoneWithNode: true
+        env:
+          - name: TEST
+            value: "1234"
+        livenessProbe:
+          tcpSocket: 
+            port: 80
+          initialDelaySeconds: 3
+          timeoutSeconds: 10
+          periodSeconds: 5
+  web:
+    replicas: 2
+    containers:
+      - name: web
+        image: index.tenxcloud.com/tenxcloud/quickstart-node:latest
+        links: 
+          - redis
+        ports:
+          - containerPort: 80
+  redis:
+    replicas: 3
+    containers:
+      - name: redis
+        image: index.tenxcloud.com/tenxcloud/redis:latest
+        ports:
+          - containerPort: 80
+        syncTimeZoneWithNode: true
+        env:
+          - name: TESTABC
+            value: "1234"
+        livenessProbe:
+          tcpSocket: 
+            port: 80
+          initialDelaySeconds: 3
+          timeoutSeconds: 10
+          periodSeconds: 5
+    volumes: # 存储
+      - name: volume1
+        type: rbd
+        disk: disk-stack-redis-1
+        fsType: ext4

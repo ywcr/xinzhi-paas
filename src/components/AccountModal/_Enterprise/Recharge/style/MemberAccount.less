@@ -1,0 +1,75 @@
+.memberItem,.spaceItem{
+  font-size: 14px;
+  margin-top:10px;
+  .list {
+    height: 40px;
+    .itemKey{display: inline-block;width: 90px;float: left;line-height: 30px;}
+    .pushMoney {
+        // margin-top: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        width: 70px;
+        float: left;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        position: relative;
+        border: 1px solid #e4e8f3;
+        border-radius: 6px;
+        vertical-align: middle;
+        margin-right: 10px;
+        i {
+          display: none;
+          font-size: 8px;
+          position: absolute;
+          right: 0;
+          bottom: -2px;
+          z-index: 2;
+          color: #fff
+      }
+      .triangle {
+          display: none;
+          width: 0;
+          height: 0;
+          border-bottom: 0 solid transparent;
+          border-top: 20px solid transparent;
+          border-right: 23px solid #00a1ec;
+          font-size: 0;
+          line-height: 0;
+          position: absolute;
+          top: 14px;
+          right: 0
+      }
+    }
+    .pushMoney.selected {
+      border-bottom-right-radius: 0;
+      border: 1px solid #2db7f5;
+      color: #2db7f5;
+      i,.triangle{display: inline-block}
+    }
+    .ant-form-explain {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+.spaceItem {
+  .list{
+    margin: 20px 0;
+  }
+  .ant-modal-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    .parameter{float: left;}
+  }
+  .wrapTable {
+    max-height:305px;
+    overflow:auto;
+    .ant-table-thead> tr >th{
+      background: white;
+      border-bottom: 1px solid #e9e9e9;
+    }
+    .ant-table-tbody> tr>td{padding:0 8px;height: 50px;}
+    .push{font-size: 14px;}
+  }
+}

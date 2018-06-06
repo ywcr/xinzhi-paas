@@ -1,0 +1,113 @@
+@blueColor: #2db7f5;
+#quickCreateApp {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  .ant-card-head-title {
+    font-weight: initial;
+    padding: 0 15px;
+  }
+  .leftCard {
+    .ant-card-head {
+      padding: 0;
+      .ant-card-head-title {
+        padding: 0;
+      }
+    }
+    .steps {
+      padding-left: 25%;
+      padding-right: 25%;
+      margin-top: 15px;
+      .ant-steps-title {
+        font-weight: inherit;
+      }
+    }
+    .footerSteps {
+      margin-top: 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      .configureSteps {
+        position: relative;
+        clear: both;
+        .left {
+          float: left;
+        }
+        .right {
+          float: right;
+          button + button {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .rightCard {
+    .title {
+      .textAlignRight {
+        text-align: right;
+      }
+    }
+    .noService {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .serviceList {
+      // min-width: 300px;
+      .serviceItem {
+        padding: 10px 15px;
+        .btns {
+          text-align: right;
+          button+button {
+            margin-left: 10px;
+          }
+        }
+      }
+      .active {
+        background: #e4f5fd;
+      }
+    }
+    .resourcePrice {
+      margin-top: 15px;
+      font-size: 14px;
+      border-radius: 6px;
+      background-color: #e4f5fd;
+      border: 1px solid #85d7fd;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .resource {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #85d7fd;
+        span {
+          font-size: 16px;
+          color: @blueColor;
+        }
+      }
+      .price {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+        .hourPrice {
+          font-size: 18px;
+          color: @blueColor;
+        }
+        font {
+          font-size: 12px;
+        }
+        .monthPrice {
+          font-size: 12px;
+          color: @blueColor;
+        }
+      }
+    }
+    .createApp {
+      text-align: center;
+      padding: 25px 20px 0 20px;
+    }
+  }
+}

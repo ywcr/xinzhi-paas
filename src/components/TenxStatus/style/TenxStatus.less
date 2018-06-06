@@ -1,0 +1,81 @@
+.TenxStatus{
+  line-height: 30px;
+  .Pending, .Starting, .Deploying {
+    color: #0b9eeb;
+    position: relative;
+    top: 5px;
+    .ant-progress-bg {
+      border-radius: 100px;
+      background-color: #0eb4ff;
+      background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+
+      transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+      position: relative;
+    }
+  }
+  .Running, .Restarting, .Redeploying, .Rebuilding, .Succeeded {
+    color: #33b867;
+    position: relative;
+    top: 5px;
+    .ant-progress-bg {
+      border-radius: 100px;
+      background-color: #2fb866;
+      background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+      transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+      //transition: width .6s ease;
+      position: relative;
+    }
+  }
+  .Unknown {
+    color: #636363;
+    position: relative;
+    top: 5px;
+  }
+  .Terminating, .Abnormal {
+    color: #ed9325;
+    position: relative;
+    top: 5px;
+    .ant-progress-bg {
+      border-radius: 100px;
+      background-color: #eda946;
+      background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+
+      transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+      position: relative;
+    }
+  }
+  .Stopping, .Stopped, .Failed {
+    color: #f23e3f;
+    position: relative;
+    top: 5px;
+    .ant-progress-bg {
+      border-radius: 100px;
+      background-color: #f0383a;
+      background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+      transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+      position: relative;
+    }
+  }
+  .Scaling {
+    color: #7f81f0;
+    position: relative;
+    top: 5px;
+    .ant-progress-bg {
+      border-radius: 100px;
+      background-color: #5a5beb;
+      background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+
+      transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+      position: relative;
+    }
+  }
+  .text {
+    color: grey;
+    position: relative;
+    top: -2px;
+  }
+  .ant-progress-line {
+    position: relative;
+    top: -7px;
+  }
+}

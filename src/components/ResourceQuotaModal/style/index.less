@@ -1,0 +1,54 @@
+@warnColor: #f7d09a;
+@redColor: #f65755;
+.wrapResourceQuotaModal {
+  z-index: 2100 !important;
+  .ResourceQuotaModal {
+     width: 550px !important;
+    .ant-modal-body {
+      font-size: 14px;
+      .red {
+        color: @redColor;
+      }
+      .tips {
+        margin-bottom: 20px;
+        display: inline-block;
+        padding: 0 15px;
+        height: 45px;
+        width: 100%;
+        line-height: 45px;
+        color: @redColor;
+        background-color: #fffcf5;
+        border: 1px dashed @warnColor;
+        border-radius: 4px;
+        .exclamationIcon {
+          vertical-align: middle;
+          font-size: 18px;
+          color: orange;
+          margin-right: 8px;
+        }
+      }
+      .row {
+        height: 35px;
+        line-height: 33px;
+        .Progress {
+          padding-right: 8px;
+          .ant-progress-inner {
+            border-radius: 0px;
+          }
+          .ant-progress-bg {
+            border-radius: 0px;
+            background-color: @redColor
+          }
+        }
+      }
+      .textRow {
+        height: 35px;
+        line-height: 35px;
+        .restResources {
+          font-size: 18px;
+          color: #39aeeb;
+        }
+      }
+    }
+  }
+}

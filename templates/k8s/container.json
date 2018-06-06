@@ -1,0 +1,17 @@
+{
+  "name": "",
+  "image": "",
+  "resources": {
+    "limits": {
+      "memory": "256Mi"
+    },
+    "requests": {
+      "cpu": "60m",
+      "memory": "256Mi"
+    }
+  },
+  "args": [
+    "/run/run.sh"
+  ],
+  "imagePullPolicy": "Always"
+}

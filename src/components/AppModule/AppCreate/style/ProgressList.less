@@ -1,0 +1,48 @@
+#ProgressList {
+  width: 200px;
+  .blockBox {
+    width: 200px;
+    height: 1px;
+  }
+  .step {
+    position: relative;
+    width: 100%;
+    height: 93px;
+    span {
+      position: absolute;
+      left: 85px;
+      top: 4px;
+    }
+  }
+  .commonCircle {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    use{
+      fill: #999999;
+    }
+  }
+  .commonLine {
+    position: absolute;
+    top: 24px;
+    left: 28px;
+    width: 70px;
+    height: 70px;
+    use{
+      fill: #999999;
+    }
+  }
+  .firstStep {
+    margin-top: 60px;
+    use {
+      fill: #00a1ea;
+    }
+  }
+  .currentStep{
+    use {
+      fill: #00a1ea !important;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+#AppStore {
+  padding: 40px;
+  
+  .searchInputBox {
+    position: relative;
+    padding-left: 20px;
+    height: 35px;
+    input {
+      width: 180px;
+    }
+    i {
+      position: absolute;
+      right: 10px;
+      top: 28px;
+      color: #999;
+    }
+  }
+  .operaBox {
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid #E5E5E5;
+    span {
+      float: left;
+      font-size: 14px;
+    }
+    input {
+      margin-top: 20px;
+      margin-left: 30px;
+      float: left;
+      width: 180px;
+    }
+    .line {
+      margin-top: 25px;
+      float: left;
+      width: 18px;
+      height: 20px;
+      border-left: 3px solid #00A1EA;
+    }
+  }
+  .AppList {
+    padding: 20px 40px;
+    width: 100%;
+    max-height: 600px;
+    overflow-y: auto;
+    border-bottom: 1px solid #E5E5E5;
+    .AppDetail {
+      padding: 10px;
+      position: relative;
+      float: left;
+      width: 120px;
+      height: 150px;
+      cursor: pointer;
+      .imgBox {
+        position: static;
+        width: 100px;
+        height: 100px;
+        .ant-card-body {
+          width: 100px;
+          height: 100px;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+        }
+        img {
+          // position: absolute;
+          // top: 12px;
+          // left: 12px;
+          max-width: 70px;
+          max-height: 70px;
+          border-radius: 6px;
+        }
+        .selectIcon {
+          display: none;
+          position: absolute;
+          bottom: 47px;
+          right: 19px;
+          color: #00A1EA;
+          font-size: 15px;
+        }
+      }
+      span {
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+    .selectedApp {
+      .imgBox {
+        border: 2px solid #00A1EA;
+        box-shadow: 3px #999999;
+        .selectIcon {
+          display: block;
+        }
+      }
+    }
+  }
+  .btnBox{
+    margin-top: 50px;
+    text-align: center;
+    button{
+      margin-right: 30px;
+      width: 110px;
+    }
+  }
+}

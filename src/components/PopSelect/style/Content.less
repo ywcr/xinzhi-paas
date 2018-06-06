@@ -1,0 +1,63 @@
+.PopSelectContent {
+  width: 204px;
+  .ant-collapse-content > .ant-collapse-content-box {
+    padding-top: 0;
+  }
+  .searchInt {
+    width: 150px;
+    margin: 0px 15px;
+  }
+  .titlesearch {
+    position: relative;
+    display:block;
+    width:165px;
+    margin:5px 0px 5px 5px;
+    .titleicon {
+      position:absolute;
+      top: 11px;
+      right:12px;
+      cursor: pointer;
+    }
+  }
+  .searchList {
+    border-top: 1px solid #eee;
+    max-height: 160px;
+    overflow: auto;
+    .searchItem {
+      cursor: pointer;
+      height: 32px;
+      line-height: 32px;
+      padding-left: 25px;
+      &:hover {
+        background-color: #effdfe;
+        color: #37afee;
+      }
+    }
+    .myItem {
+      cursor: pointer;
+      height: 32px;
+      line-height: 32px;
+      padding-left: 15px;
+      &:hover {
+        background-color: #effdfe;
+        color: #37afee;
+      }
+    }
+    .itemDisabled {
+      color: #ccc;
+      cursor: not-allowed;
+      user-select: none;
+      &:hover {
+        background-color: #fff;
+        color: #ccc;
+      }
+    }
+  }
+  .ant-search-btn {
+    height: 26px;
+  }
+  .ant-collapse {
+    border: 0;
+    border-radius: 0;
+  }
+}

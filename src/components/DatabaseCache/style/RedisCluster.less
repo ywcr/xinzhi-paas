@@ -1,0 +1,100 @@
+@borderColor: #F2F2F2;
+@activeColor: #2db7f5;
+@boxColor: #C2C2C2;
+#RedisDatabase {
+  .ant-btn {
+    padding: 6px 8px;
+  }
+  .databaseCol {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .databaseHead {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    clear: both;
+    .rightSearch {
+      float: right;
+      position: relative;
+      .fa {
+        z-index: 10;
+        position: absolute;
+        top: 7px;
+        right: 0px;
+        font-size: 15px;
+        color: #949494;
+      }
+    }
+  }
+  .layoutBox {
+    margin-left: -12px;
+    margin-right: -12px;
+    font-size: 1.2em;
+    .List {
+      margin-bottom: 15px;
+      padding: 2px 10px;
+      float: left;
+      width: 25%;
+      min-width: 285px;
+      .list-wrap:hover {
+        border: 2px solid @activeColor;
+      }
+      .list-wrap {
+        background: white;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        box-shadow: 0 0 5px @boxColor;
+        transition: all 0.2s;
+      }
+      .detailHead {
+        clear: both;
+        padding: 25px;
+        overflow: hidden;
+        border-bottom: 1px solid @borderColor;
+        .detailName {
+          padding-left: 90px;
+          line-height: 34px;
+          color: @activeColor;
+          display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+        }
+        img {
+          float: left;
+          width: 65px;
+          height: 65px;
+          border: 1px solid #d7d7d7;
+          border-radius: 5px;
+        }
+      }
+      .detailParse {
+        padding: 25px;
+        li {
+          border-bottom: 1px solid @borderColor;
+          line-height: 40px;
+        }
+        li:last-child {
+          border: 0;
+        }
+        .listKey {
+          display: block;
+          float: left;
+          width: 60px;
+        }
+      }
+    }
+  }
+  .listLink {
+    float: left;
+    display:block;
+    width: calc(~"100% - 70px");
+    color: #2db7f5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .li {
+    line-height: 40px;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+}

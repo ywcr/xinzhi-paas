@@ -1,0 +1,95 @@
+#AppContainerList {
+  .operaBox {
+    button {
+      margin-right: 20px;
+      height: 38px;
+      line-height: 28px;
+      i {
+        margin-right: 7px;
+      }
+    }
+    .leftBox {
+      float: left;
+    }
+    .rightBox {
+      float: right;
+      line-height: 38px;
+    }
+  }
+  .dataBox {
+    padding: 0;
+    background-color: #FFFFFF !important;
+    .ant-card-body {
+      padding: 0 !important;
+      max-height: 550px;
+      overflow-y: auto;
+    }
+    .commonData {
+      float: left;
+    }
+    .selectIconTitle {
+      width: 5%;
+      text-align: center;
+    }
+    .name {
+      width: 20%;
+    }
+    .status {
+      width: 15%;
+    }
+    .image {
+      width: 25%;
+    }
+    .address {
+      width: 20%;
+    }
+    .createTime {
+      width: 15%;
+      line-height: 60px;
+    }
+    .titleBox {
+      padding: 0;
+      height: 50px;
+      line-height: 50px;
+      background-color: inherit;
+    }
+    .containerDetail {
+      transition: all 0.3s;
+      border-top: 1px solid #E5E5E5;
+      .selectIconTitle,
+      .name {
+        padding-right: 10px;
+        line-height: 60px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .status,
+      .image {
+        line-height: 60px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .image {
+        padding-right: 10px;
+      }
+      .normal {
+        color: #5cb85c;
+      }
+      .error {
+        color: #f85a5a;
+      }
+      .address {
+        span {
+          line-height: 60px;
+          display: block;
+          width: 95%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

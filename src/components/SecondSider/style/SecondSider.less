@@ -1,0 +1,62 @@
+#SecondSider {
+  transition: all 0.3s;
+  opacity: 1;
+  padding-top: 25px;
+  width: 140px;
+  font-size: 14px;
+  ul {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    li {
+      border: 0;
+      width: 140px;
+      a {
+        color: #333333;
+        font-size: 14px;
+      }
+    }
+  }
+  .ant-menu-item-selected {
+    border-right: 2px solid #2db7f5;
+    background-color: #eaf8fe;
+    a {
+      color: #2db7f5;
+    }
+  }
+  .ant-menu-item-selected:hover {
+    width: 140px !important;
+  }
+  .ant-menu-item-active {
+    width: 139px;
+  }
+  .siderBtnBox {
+    z-index: 999;
+    position: absolute;
+    top: calc(~"50% - 62.5px");
+    right: 0;
+    width: 15px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    .fa {
+      z-index: 10;
+      position: absolute;
+      top: 8px;
+      left: 4px;
+    }
+    .btnBack {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 30px;
+      border-top: 7px solid transparent;
+      border-right: 15px solid #e7eaea;
+      border-bottom: 7px solid transparent;
+    }
+  }
+  .hideBtnBox {
+    right: -15px;
+  }
+}

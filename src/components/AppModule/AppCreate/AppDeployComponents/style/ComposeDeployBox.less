@@ -1,0 +1,110 @@
+#ComposeDeployBox {
+  .composeBox {
+    padding-left: 40px;
+    padding-right: 24px;
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+    .title {
+      display: block;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+    }
+    .composeList {
+      width: 100%;
+      .composeTitle {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        border-bottom: 1px solid #E5E5E5;
+        background-color: #F2F2F2;
+        .composeCommonTitle {
+          padding-left: 10px;
+          float: left;
+          width: 20%;
+          text-align: left;
+        }
+      }
+      ul {
+        border: 1px solid #E5E5E5;
+        border-bottom: 0;
+      }
+      .composeDetail {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        min-height: 40px;
+        border-bottom: 1px solid #E5E5E5;
+        .input {
+          padding-left: 10px;
+          float: left;
+          width: 20%;
+          input {
+            width: 150px;
+          }
+        }
+        .inputCover {
+          padding-left: 10px;
+          float: left;
+          width: 20%;
+        }
+        .select {
+          padding-left: 10px;
+          float: left;
+          width: 20%;
+          .composeGroup {
+            width: 150px !important;
+          }
+        }
+        .check {
+          padding-left: 10px;
+          float: left;
+          width: 20%;
+          .ant-checkbox-wrapper {
+            margin-left: 0;
+            margin-right: 8px;
+            max-width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+        }
+        .opera {
+          padding-left: 10px;
+          float: left;
+          width: 20%;
+          font-size: 20px;
+          .fa {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .addBtn {
+      position: relative;
+      margin-top: 10px;
+      padding-left: 25px;
+      width: 70px;
+      height: 30px;
+      font-size: 14px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      &:hover {
+        color: #2db7f5;
+      }
+      i {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        font-size: 18px;
+      }
+      span {
+        line-height: 30px;
+      }
+    }
+  }
+}

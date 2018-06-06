@@ -1,0 +1,230 @@
+#VersionNoraml {
+  width: 100%;
+  .firstPage {
+    margin-top: 20px;
+    width: 100%;
+    .bigTitle {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      width: 100%;
+      height: 14px;
+      line-height: 14px;
+      font-size: 14px;
+      border-left: 5px solid #00A1EA;
+      span {
+        margin-left: 20px;
+        font-size: 14px;
+      }
+    }
+    .infoCard {
+      padding: 0 !important;
+      .ant-card-body {
+        padding: 0 !important;
+      }
+      .topTitle {
+        padding-left: 20px;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        border-bottom: 1px solid #E5E5E5;
+        button {
+          margin-left: 30px;
+        }
+      }
+      .box {
+        padding: 20px 30px;
+        .commonBox {
+          width: 100%;
+          min-height: 80px;
+          border-bottom: 1px solid #E5E5E5;
+          .commonTitleBox {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            .commonIcon {
+              margin-right: 20px;
+              margin-bottom: 2px;
+              display: inline-block;
+              width: 6px;
+              height: 6px;
+              line-height: 40px;
+              background-color: #5CB85C;
+            }
+            .commonTitle {
+              font-size: 14px;
+              line-height: 40px;
+            }
+          }
+          .commonInfo {
+            padding-left: 24px;
+            width: 100%;
+            .commonSpan {
+              display: inline-block;
+              margin-right: 10px;
+              color: #999999;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .secondPage {
+    .backBtn {
+      margin-top: 20px;
+      margin-left: 16px;
+      margin-bottom: 20px;
+      width: 43px;
+      height: 30px;
+      line-height: 30px;
+      color: #FFFFFF;
+      font-size: 14px;
+      text-align: center;
+      background-color: #00A0E9;
+      cursor: pointer;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      &:before {
+        border: 15px solid transparent;
+        border-right: 15px solid #00A0E9;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: -14px;
+        content: '';
+      }
+    }
+    .middleBox {
+      float: left;
+      width: 160px;
+      min-height: 100px;
+      text-align: center;
+      .aniBox {
+        margin-top: 17.5px;
+        margin-bottom: 17.5px;
+        margin-left: 45px;
+        position: relative;
+        width: 70px;
+        height: 20px;
+        overflow: hidden;
+        img {
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          left: 0;
+          width: 70;
+          height: 20px;
+        }
+        .colorLine {
+          z-index: 10;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          width: 280px;
+          height: 20px;
+          background: -webkit-linear-gradient(left, #4ccfaf, #51b5f3, #4ccfaf, #51b5f3);
+          background: -o-linear-gradient(left, #4ccfaf, #51b5f3, #4ccfaf, #51b5f3);
+          background: -moz-linear-gradient(left, #4ccfaf, #51b5f3, #4ccfaf, #51b5f3);
+          background: linear-gradient(left, #4ccfaf, #51b5f3, #4ccfaf, #51b5f3); 
+          -webkit-animation: versionAnimate 2s linear infinite;
+          animation: versionAnimate 2s linear infinite;
+        }
+      }
+    }
+    .leftBox,
+    .rightBox {
+      float: left;
+      width: calc(~"50% - 80px");
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 3px 3px #DADADA;
+      background-color: #FFFFFF;
+      .commonBigTitle {
+        padding-left: 20px;
+        width: 100%;
+        height: 55px;
+        line-height: 55px;
+            color: #FFFFFF;
+        .versionTitle {
+          margin-right: 30px;
+          font-size: 14px;
+        }
+        .priceTitle {
+          font-size: 14pa;
+        }
+      }
+      .box {
+        padding: 20px 30px;
+        .commonBox {
+          position: relative;
+          width: 100%;
+          min-height: 80px;
+          border-bottom: 1px solid #E5E5E5;
+          .commonImg {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+          .commonTitleBox {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            .commonIcon {
+              margin-right: 20px;
+              margin-bottom: 2px;
+              display: inline-block;
+              width: 6px;
+              height: 6px;
+              line-height: 40px;
+              background-color: #5CB85C;
+            }
+            .commonTitle {
+              font-size: 14px;
+              line-height: 40px;
+            }
+          }
+          .commonInfo {
+            padding-left: 24px;
+            width: 100%;
+            .commonSpan {
+              display: inline-block;
+              margin-right: 10px;
+              color: #999999;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+    .leftBox {
+      .commonBigTitle {
+        background-color: #4ccfaf;
+      }
+    }
+    .rightBox {
+      .commonBigTitle {
+        background-color: #51b5f3;
+      }
+      .commonIcon {
+        background-color: #51b5f3 !important;
+      }
+    }
+  }
+}
+@keyframes versionAnimate {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(140px);
+  }
+}
+@-webkit-keyframes versionAnimate {
+  0% {
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(140px);
+  }
+}

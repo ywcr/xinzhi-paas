@@ -1,0 +1,84 @@
+#ComposeGroup{
+  width: 100%;
+  .ant-popover-content{width: 300px;}
+  .titleBox{
+    padding: 0px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    background-color: rgba(0,0,0,0) !important;
+    width: 100%;
+    .commonTitle{
+      float: left;
+      width: 33%;
+      height: 40px;
+      line-height: 40px;
+      text-align: left;
+    }
+  }
+  .composeList{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    .ant-card-body{
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+    .composeDetail{
+      width: 100%;
+      border-bottom: 1px solid #E5E5E5;
+      .commonData{
+        padding-left: 10px;
+        float: left;
+        width: 33%;
+        height: 40px;
+        line-height: 40px;
+      }
+      .composefile{
+        overflow: initial;
+        span{
+          color: #2db7f5;
+          cursor: pointer;
+          float: left;
+          max-width: 100%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        .more {
+          display: inline-block;
+          position: absolute;
+          margin-left: 5px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 15px;
+          height: 16px;
+          cursor: pointer;
+          use{fill: #c7c7c7;}
+        }
+      }
+    }
+    .composeDetail:last-child{
+      border-bottom: 0px;
+    }
+  }
+}
+.read-configFile{
+  .ant-modal-body{
+    .configFile-name{
+      .key{text-align: right;padding-right: 5px;}
+      height: 40px;line-height: 40px;clear: both;
+    }
+    .configFile-wrap{
+      margin-top: 10px;
+      overflow: auto;
+      max-height: 300px;clear: both;
+      .key{text-align: right;padding-right: 5px;}
+      .configFile-content{
+        border:1px solid #d9d9d9;
+        padding:5px;
+        border-radius: 5px;
+        overflow: auto;
+        max-height: 280px;
+      }
+    }
+  }
+}

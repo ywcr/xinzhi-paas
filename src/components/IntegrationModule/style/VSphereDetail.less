@@ -1,0 +1,216 @@
+#VSphereDetail {
+  padding: 20px;
+  .selectBox {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .leftBox {
+    float: left;
+    width: 65%;
+    height: 260px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    .titleBox {
+      padding-left: 10px;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    .littleLeft {
+      float: left;
+      width: 35%;
+      min-width: 156px;
+    }
+    .littelMiddle {
+      float: left;
+      width: 35%;
+      min-width: 156px;
+    }
+    .littelRight {
+      padding: 0 10px;
+      float: left;
+      width: 30%;
+      p {
+        margin-top: 17px;
+        margin-bottom: 47px;
+        font-size: 14px;
+        text-align: center;
+      }
+      .colorBox {
+        margin-right: 10px;
+        float: left;
+        width: 14px;
+        height: 14px;
+        border-radius: 3px;
+      }
+      .rightSpan {
+        float: right;
+      }
+      .podNum {
+        margin-bottom: 15px;
+        line-height: 14px;
+        .colorBox {
+          background-color: #46b2fa;
+        }
+      }
+      .healthPod {
+        margin-bottom: 15px;
+        line-height: 14px;
+        .colorBox {
+          background-color: #2abe84;
+        }
+      }
+      .unstartPod {
+        line-height: 14px;
+        .colorBox {
+          background-color: #a2d8fc;
+        }
+      }
+    }
+  }
+  .rightBox {
+    margin-left: 20px;
+    float: left;
+    width: calc(~"35% - 20px");
+    height: 260px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    .titleBox {
+      padding-left: 10px;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    .littleLeft {
+      padding-top: 60px;
+      padding-left: 10px;
+      float: left;
+      width: 140px;
+      #ProgressBox {
+        width: 100%;
+        .boxContainer {
+          top: 0;
+          transform: translate(0, 0);
+        }
+      }
+    }
+    .littelRight {
+      padding-top: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+      float: left;
+      width: calc(~"100% - 140px");
+      height: 220px;
+      .commonBox {
+        margin-bottom: 10px;
+        .leftSpan {
+          float: left;
+        }
+        .rightSpan {
+          float: right;
+        }
+      }
+    }
+  }
+  .bottomBox {
+    margin-top: 20px;
+    width: 100%;
+    height: 240px;
+    .commonBox {
+      position: relative;
+      padding-top: 170px;
+      float: left;
+      width: 19%;
+      height: 240px;
+      border-radius: 5px;
+      border: 1px solid #E5E5E5;
+      overflow: hidden;
+    }
+    img {
+      position: absolute;
+      margin-left: -100px;
+      left: 50%;
+      top: 0;
+      width: 200px;
+      height: 200px;
+    }
+    p {
+      padding: 0 10px;
+      line-height: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+    .memory {
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+    .network,
+    .disk {
+      margin-left: 1%;
+      padding: 0;
+      width: 29%;
+    }
+    .leftCommon {
+      position: relative;
+      padding-top: 170px;
+      float: left;
+      width: 50%;
+      height: 240px;
+      border-right: 1px solid #E5E5E5;
+    }
+    .rightCommon {
+      float: left;
+      width: 50%;
+      height: 240px;
+      .titleBox {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #E5E5E5;
+      }
+      .leftSpan {
+        padding-left: 10px;
+        display: block;
+        float: left;
+        width: 50%;
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        word-break: break-all;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .rightSpan {
+        padding-right: 10px;
+        display: block;
+        float: left;
+        width: 50%;
+        height: 40px;
+        line-height: 40px;
+        text-align: right;
+        word-break: break-all;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .dataBox{
+        height: 200px;
+        overflow-y: auto;
+      }
+    }
+  }
+  .tagBox {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #999999;
+    .fa {
+      margin-right: 10px;
+    }
+  }
+}

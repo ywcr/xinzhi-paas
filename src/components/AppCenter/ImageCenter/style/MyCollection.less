@@ -1,0 +1,147 @@
+.MyCollection {
+  padding-bottom: 50px;
+  #MyCollection {
+    .ant-card-body {
+      padding: 0 !important;
+    }
+    .myImage {
+      .ant-table {
+        font-size: 14px;
+      }
+      .ant-table-thead{
+        display: none;
+      }
+      .ant-table-tbody > tr > td{
+        padding:0;
+      }
+      .imgurl{padding:0 10px;}
+      .ant-table-pagination {
+        position: absolute;
+        top:10px;right: 10px;
+      }
+    }
+    .ant-alert {
+      margin-bottom: 20px !important;
+      padding: 14px 24px !important;
+      line-height: 20px;
+      color: #1a7db6;
+      font-size: 14px !important;
+      background-color: #d9edf6;
+      border: 1px dashed #85d7fd !important;
+    }
+    .noBind {
+      width: 100%;
+      text-align: center;
+      .noBindCard {
+        margin: 0 auto;
+        padding: 24px;
+        width: 500px;
+        height: 220px;
+        &::after {
+          display: block;
+          clear: both;
+          visibility: hidden;
+          content: '';
+        }
+        .leftBox {
+          float: left;
+          width: 50%;
+          height: 172px;
+          line-height: 172px;
+          border-right: 1px solid #efefef;
+          img {
+            margin-top: 10px;
+            width: 169px;
+            height: 141px;
+          }
+        }
+        .rightBox {
+          padding: 10px 0 0 20px;
+          float: left;
+          width: 50%;
+          height: 100%;
+          font-size: 14px;
+          text-align: left;
+          .msgDetail {
+            position: relative;
+            margin-top: 15px;
+            padding-left: 34px;
+            line-height: 22px;
+            color: #707070;
+          }
+          .square {
+            position: absolute;
+            top: 9px;
+            left: 23px;
+            width: 4px;
+            height: 4px;
+            background-color: #00a1ea;
+          }
+        }
+      }
+      .bindBtn {
+        margin-top: 30px;
+      }
+      .alert {
+        margin-top: 15px;
+        color: #999999;
+        font-size: 14px;
+      }
+    }
+    .operaBox {
+      padding: 24px;
+      position: relative;
+      .searchBox {
+        float: left;
+        width: 180px;
+        height: 32px;
+        padding-right: 28px;
+      }
+      .fa-search {
+        position: absolute;
+        left: 180px;
+        top: 31px;
+        font-size: 16px;
+        color: #999;
+      }
+      .logoutBtn {
+        margin-left: 15px;
+      }
+    }
+    .imageList {
+      .imageBox {
+        padding: 17.5px 24px;
+        float: left;
+        width: 113px;
+        height: 100px;
+        svg {
+          width: 65px;
+          height: 65px;
+          padding: 14px;
+          border-radius: 5px;
+          box-shadow: 0 0 5px #C2C2C2;
+        }
+      }
+      .contentBox {
+        padding-top: 25px;
+        float: left;
+        width: calc(~"100% - 123px");
+        .title {
+          // margin-top: 25px;
+          line-height: 25px;
+          font-size: 16px;
+          color: #2db7f5;
+          cursor: pointer;
+        }
+        .type {
+          // float: left;
+          // display: block;
+          // width: 33%;
+          line-height: 25px;
+          font-size: 14px;
+        }
+      }
+
+    }
+  }
+}

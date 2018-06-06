@@ -1,0 +1,234 @@
+#MirrorSafetyBug{
+  text-align: center;
+  .message{
+    font-size: 14px;
+    margin-top: 50px;
+  }
+  .BaseScanRunning{
+    margin-top: 20px;
+    .top{
+      margin: 10px auto;
+    }
+    .bottom{
+      margin:10px auto 0 auto;
+    }
+  }
+  .BaseScanFailed{
+    margin-top: 50px;
+    .top{
+      height: 40px;
+      line-height: 30px;
+      font-size: 14px;
+    }
+  }
+  // Echarts
+  .safetybugEcharts{
+    width:100%;
+    height:220px;
+    position: relative;
+    .safetybugEchartslegend{
+      position: absolute;
+      top:13px;
+      left:41%;
+      color: #606060;
+      .safetybugEchartslegendtitle{
+        height:70px;
+        line-height: 70px;
+        font-size: 18px;
+      }
+      .safetybugEchartslegendcontent{
+        height:24px;
+        line-height: 24px;
+        font-size: 14px;
+        .safetybugEchartslegendcontentleft{
+          width:165px;
+        }
+        .safetybugEchartslegendcontentright{
+          width:55px;
+          text-align: right;
+        }
+        .rightmargin{
+          margin-left: 3px;
+        }
+        .iconmargin{
+          margin:0 8px 0 4px;
+        }
+        .highcolor{
+          color:#fa4f55;
+        }
+        .middlecolor{
+          color: #f7a45e;
+        }
+        .lowcolor{
+          color: #fbc82f;
+        }
+        .ignorecolor{
+          color:#c7eafe;
+        }
+      }
+    }
+  }
+  // 镜像漏洞
+  .safetybugmirror{
+    overflow: hidden;
+    border-top: 1px solid #e9e8ed;
+    .safetybugmirrortitle{
+      height: 68px;
+      padding:18px 3px 0 3px;
+      .safetybugmirrortitleleft{
+        float:left;
+        height: 18px;
+        line-height: 18px;
+        font-size: 18px;
+        text-indent: 13px;
+        border-left: 5px solid #2bb5f4;
+      }
+      .safetybugmirrortitleright{
+        float: right;
+        width:357px;
+      }
+    }
+    //  table
+    .safetybugtable{
+      clear: both;
+      table{
+        table-layout: fixed;
+        word-break: break-all;
+        td{
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      .nodata{
+        margin: 0 auto;
+        text-align: center;
+      }
+      .ant-table-expanded-row{
+        background: white;
+      }
+      .softwarepicturelright{
+        color:#2cb8f5;
+        margin-left: 6px;
+        cursor: pointer;
+      }
+      .safetybugtablepoint{
+        display:inline-block ;
+        color: #ffffff;
+        background: black;
+        width:60px;
+        height:20px;
+        text-align: center;
+        line-height:20px;
+        border-radius: 4px;
+        border-right:4px solid #4fb94b;
+        margin-right: 8px;
+      }
+      .safetybugtableitem{
+        display: inline-block;
+        vertical-align: bottom;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .tableSUBnNo{
+        word-break: keep-all;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+      .CVE{
+        .CVEspan{
+          margin-right: 6px;
+        }
+        .CVEi{
+          color:#9dd8f8;
+        }
+      }
+      .severityUnknown{
+        color: #2abd83;
+        .severityi{
+          margin-right: 8px;
+        }
+      }
+      .severityNegligible{
+        color: #c7eafe;
+        .severityi{
+          margin-right: 8px;
+        }
+      }
+      .severityLow{
+        color: #fbc82f;
+        .severityi{
+          margin-right: 8px;
+        }
+      }
+      .severityMedium{
+        color: #f7a45e;
+        .severityi{
+          margin-right: 8px;
+        }
+      }
+      .severityHigh{
+        color: #fa4f55;
+        .severityi{
+          margin-right: 8px;
+        }
+      }
+      .reversion{
+        .reversioni{
+          margin-right: 2px;
+        }
+      }
+      .layerInfo{
+        .layerInfospan{
+          display: inline-block;
+          width: calc(~"100% - 100px");
+          vertical-align: middle;
+        }
+      }
+      .tablesub{
+        width:75%;
+        .ant-table-thead{
+          border:none;
+        }
+        .tablesubtitle{
+          height:22px;
+          line-height:22px;
+          font-size: 14px;
+          margin-bottom: 13px;
+        }
+        .tablesubbody{
+          .column-visite{
+            font-size: 12px;
+          }
+          .red{
+            color: red;
+          }
+          .yellow{
+            color:yellow;
+          }
+          .green{
+            color: green;
+          }
+          .grey{
+            color: #dbdbdb;
+          }
+        }
+        .tablesubtitlefooter{
+          height: 24px;
+          line-height: 24px;
+          font-size: 14px;
+          margin:6px 0 3px 0;
+        }
+        .tablesubtitlefooteritem{
+          white-space: normal;
+          word-wrap: break-all;
+          word-break: keep-all;
+          //overflow: hidden;
+          //text-overflow: ellipsis;
+          //white-space: nowrap;
+        }
+      }
+    }
+  }
+}

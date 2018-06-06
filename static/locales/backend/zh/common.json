@@ -1,0 +1,27 @@
+{
+  "desc": "防止冗余，保存后端的一些通用字段",
+  "console": "控制台",
+  "login": "登录",
+  "tenxcloud": "新智云",
+  "status": {
+    "status": "状态",
+    "run_status": "运行状态",
+    "run_status_colon": "运行状态：",
+    "use_status": "使用状态",
+    "normal": "正常",
+    "abnormal": "异常",
+    "unknown": "未知",
+    "loading": "加载中...",
+    "failed": "失败",
+    "stopped": "已停止",
+    "closed": "已关闭",
+    "opened": "已开启",
+    "success": "成功"
+  },
+  "license": {
+    "NO_LICENSE": "您的系统尚未添加许可证，请联系管理员添加！",
+    "LICENSE_ERROR": "您的系统许可证异常，请联系管理员！",
+    "LICENSE_OK": "您的系统许可证有效！",
+    "TRAIL_EXPIRED": "您的系统试用期已结束，请联系管理员购买许可证！"
+  }
+}

@@ -1,0 +1,99 @@
+#PhysicalList {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  .operaBox {
+    padding-left: 30px;
+    .searchBox {
+      margin-left: 0;
+    }
+  }
+  .titleBox {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #E5E5E5;
+    .commonTitle {
+      padding-left: 10px;
+      float: left;
+      width: 10%;
+      height: 40px;
+      line-height: 40px;
+    }
+    .id,
+    .pod,
+    .ip,
+    .startTime {
+      width: 12.5%;
+    }
+    .startTime {
+      padding-right: 10px;
+    }
+    .id {
+      padding-left: 30px;
+    }
+  }
+  .podDetail {
+    transition: all 0.3s;
+    width: 100%;
+    min-height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #E5E5E5;
+    .commonTitle {
+      padding-left: 10px;
+      float: left;
+      width: 10%;
+      height: 60px;
+      line-height: 60px;
+      .commonSpan {
+        display: block;
+        width: 100%;
+        word-break: break-all;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .topSpan,
+        .bottomSpan {
+          display: block;
+          height: 20px;
+          line-height: 20px;
+        }
+        .topSpan {
+          margin-top: 10px;
+        }
+        .poweron {
+          .fa {
+            margin-right: 7px;
+          }
+          color: #5CB85C;
+        }
+        .poweroff {
+          .fa {
+            margin-right: 7px;
+          }
+          color: #F85A5A;
+        }
+      }
+    }
+    .id,
+    .pod,
+    .ip,
+    .startTime {
+      width: 12.5%;
+    }
+    .id {
+      .bottomSpan {
+        color: #999999;
+      }
+    }
+    .startTime {
+      padding-right: 10px;
+    }
+    .id {
+      padding-left: 30px;
+    }
+    &:hover {
+      background-color: #F2F2F2;
+    }
+  }
+}

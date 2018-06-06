@@ -1,0 +1,184 @@
+#TeamDetail {
+  .back {
+    display: inline-block;
+    float: left;
+    height: 30px;
+    .backjia {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-bottom: 15px solid transparent;
+      border-top: 15px solid transparent;
+      border-right: 15px solid #00A0E9;
+      font-size: 0;
+      line-height: 0;
+    }
+    .btn-back {
+      display: inline-block;
+      background: #00A0E9;
+      color: white;
+      height: 30px;
+      line-height: 30px;
+      vertical-align: top;
+      width: 43px;
+      padding-left: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
+  .title {
+    height: 18px;
+    line-height: 18px;
+    border-left: 8px solid #24a7eb;
+    font-size: 16px;
+    padding-left: 8px;
+    margin-top: 6px;
+    margin-left: 20px;
+    float: left;
+  }
+  .content {
+    color: #666;
+    background-color: #fff;
+    margin-bottom: 26px;
+    padding: 30px;
+    .balance {
+      font-size: 14px;
+      span {
+        font-size: 20px;
+      }
+    }
+    .ant-alert {
+      line-height: 26px;
+      margin-bottom: 16px;
+      color: #1a7db6;
+      font-size: 13px !important;
+      background-color: #d9edf6;
+      border: 1px dashed #85d7fd !important;
+    }
+    .clusterList {
+      .clusterItem {
+        margin-top: 10px;
+        .ant-card-head {
+          background-color: #f8f8f8;
+          font-weight: normal;
+        }
+        .ant-card {
+          &:hover {
+            border-color: #4bb2ed;
+          }
+        }
+        .ant-card-body {
+          .cardItem {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px dashed #e3e3e3;
+            .clusterIDCol {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+    .addBtn {
+      font-weight: normal;
+      background-color: white;
+      // height: 36px;
+      margin-right: 8px;
+      border-radius: 3px;
+      &:hover {
+        background: #00a0ea;color: white;
+      }
+    }
+    .ant-table {
+      border: 1px solid #e2e2e2;
+      border-bottom: 0;
+      .tablePadding {
+        padding-left: 20px;
+      }
+      .ant-table-thead {
+        border-bottom: 1px solid #e2e2e2;
+        tr {
+          th {
+            background-color: #fff;
+            border-bottom: 1px solid #e2e2e2;
+          }
+        }
+      }
+    }
+  }
+  // .ant-btn {
+  //   background-color: #fff;
+  // }
+  .delBtn {
+    background-color: #fff;
+    border-radius: 3px;
+    margin-right:8px;
+    font-weight: normal;
+    &:hover {
+      background-color: #f75b59;
+      color: #fff;
+      border-color: #f75b59;
+    }
+  }
+  #ClusterState {
+    position: relative;
+    line-height: 40px;
+    .applyBtn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+// .newMemberModal {
+//   .ant-btn {
+//     width: 80px;
+//     height: 36px;
+//     border-radius: 3px;
+//     font-weight: normal;
+//     border: none;
+//     &:hover {
+//       border: none;
+//     }
+//   }
+//   .ant-btn-ghost {
+//     background-color: #efefef;
+//     color: #717171;
+//   }
+// }
+.addSpaceModal {
+  .ant-modal-body {
+    overflow: hidden;
+  }
+  .addSpaceItem {
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    input {
+      border-radius: 0;
+    }
+    textarea {
+      border-radius: 0;
+      resize: none;
+    }
+  }
+  // .ant-btn {
+  //   width: 80px;
+  //   height: 36px;
+  //   border-radius: 3px;
+  //   font-weight: normal;
+  //   border: none;
+  //   &:hover {
+  //     border: none;
+  //   }
+  // }
+  // .ant-btn-ghost {
+  //   background-color: #efefef;
+  //   color: #717171;
+  // }
+}

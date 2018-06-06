@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "creationTimestamp":"",
+    "labels": {
+      "name": ""
+    }
+  },
+  "spec": {
+    "containers": []
+  }
+}

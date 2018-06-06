@@ -1,0 +1,98 @@
+.alarmGroup, .AlarmRecord, .alarmSetting{
+  padding:20px;
+}
+#AlarmGroup{
+  width: 100%;
+  overflow: hidden;
+  // .pageBox {
+  //   height: 35px;
+  //   float: right;
+  //   .totalPage {
+  //     line-height: 35px;
+  //     display: inline-block;
+  //     vertical-align: bottom;
+  //     padding: 0 10px;
+  //   }
+  //   .paginationBox {
+  //     // float: left;
+  //     display: inline-block;
+  //     margin-top: 0;
+  //     padding-top: 5px;
+  //   }
+  // }
+  .pageCount {
+    position: absolute;
+    top:-45px;
+    right: 160px;
+  }
+  .alarmGroupHeader{
+    padding:6px 0 20px 0;
+    .ant-btn-ghost{margin-left: 8px;background: white;}
+    button{
+      i{
+        margin-right: 5px;
+      }
+    }
+    .Search{
+      width:170px;
+      margin-left: 8px;
+      display: inline-block;
+      position: relative;
+      i {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-size: 14px;
+        color: #999;
+        cursor: pointer;
+      }
+    }
+  }
+  .alarmGroupContent{
+    overflow: initial;
+    .ant-card-body{padding:10px 0 0px 0;}
+    .more {
+      display: inline-block;
+      margin-left: 5px;
+      width: 15px;
+      height: 34px;
+      cursor: pointer;
+      vertical-align: middle;
+      fill: #c7cbce;
+    }
+    .more.ant-popover-open {
+      fill: #49b1e2;
+    }
+    // .disableBtn{
+    //   >button:nth-child(1){padding:0}
+    // }
+    // .normalBtn{button:nth-of-type(1){width: 60px;}}
+  }
+  .ant-spin-container {
+    position: relative;
+  }
+  .ant-pagination-simple {
+    position: absolute;
+    top: -75px;
+    right: -20px;
+  }
+  .alarmGroupItem {
+    line-height: 20px;
+    span{
+      color : #49b1e2;
+      cursor: pointer;
+      display:block;
+      float:left;
+      width:130px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .Overflow {
+    width:120px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

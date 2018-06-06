@@ -1,0 +1,110 @@
+#TeamManage {
+  @media screen and (min-width:1290px){
+    .Deleterechargea {
+      display:block;
+    }
+    .Deleterechargeb {
+      display:none;
+    }
+  }
+  @media screen and (max-width:1290px){
+      .Deleterechargea {
+        display:none;
+      }
+      .Deleterechargeb {
+        display:block;
+      }
+    }
+  .ant-alert {
+    color: #1a7db6;
+    font-size: 13px !important;
+    background-color: #d9edf6;
+    border: 1px dashed #85d7fd !important;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .teamOption {
+    .plusBtn {
+      font-weight: normal;
+      background-color: #2db7f5;
+      padding: 5px 10px;
+      float: left;
+      margin-right: 12px;
+      margin-bottom: 20px;
+    }
+    .viewBtn {
+      font-weight: normal;
+      height: 36px;
+      color: #1dabed;
+      border-color: #1dabed;
+      border-radius: 3px;
+    }
+    .total {
+      display: inline-block;
+      line-height: 35px;
+      float: right;
+      margin-right: 160px;
+    }
+  }
+  .teamList {
+    margin-bottom: 26px;
+    .ant-card {
+      overflow: inherit;
+    }
+    .ant-card-body {
+      padding: 0;
+      .ant-table {
+        .addBtn {
+          font-weight: normal;
+          background-color: #fff;
+          width: 100px;
+          margin-right: 12px;
+          border-radius: 3px;
+          &:hover {
+            background-color: #00a1ea;
+            color: #fff;
+          }
+        }
+        .delBtn {
+          font-weight: normal;
+          background-color: #fff;
+          border-radius: 3px;
+          &:hover {
+            background-color: #f75b59;
+            color: #fff;
+            border-color: #f75b59;
+          }
+        }
+        .teamName {
+          padding-left: 24px;
+        }
+      }
+      .ant-table-pagination {
+        margin: 16px 46px;
+        position: absolute;
+        top: -66px;
+        right: -40px;
+      }
+    }
+  }
+}
+.NewTeamForm {
+  .NewTeamItem {
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    input {
+      border-radius: 0;
+    }
+    textarea {
+      border-radius: 0;
+      resize: none;
+    }
+  }
+}
+.Recharge {
+  height:25px;
+  line-height:10px;
+  width:80px;
+  text-align:center;
+}

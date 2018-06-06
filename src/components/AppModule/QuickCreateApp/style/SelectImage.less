@@ -1,0 +1,87 @@
+@borderColor: #E5E5E5;
+#quickCreateAppSelectImage {
+  .selectImage {
+    .imageType {
+      padding-left: 20px;
+    }
+    .searchInputBox {
+      position: relative;
+      padding-left: 20px;
+      height: 35px;
+      input {
+        width: 180px;
+      }
+      i {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        color: #999;
+      }
+    }
+  }
+  .content {
+    .ant-tabs {
+      margin-top: 20px;
+      .ant-tabs-tabpane {
+        position: relative;
+      }
+    }
+    .imageList {
+      position: relative;
+      margin-top: 20px;
+      border: 1px solid @borderColor;
+      .ant-table {
+        font-size: 14px;
+        .deployBox {
+          width: 100%;
+          text-align: right;
+          .deployBtn {
+            margin-right: 32px;
+          }
+        }
+      }
+      .ant-table-thead{
+        display: none;
+      }
+      .ant-table-tbody > tr > td{
+        padding: 0;
+      }
+      .imgurl{
+        padding: 0 10px;
+      }
+      .ant-table-pagination {
+        position: absolute;
+        top: -64px;
+        right: 10px;
+      }
+      .imgUrl {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-right: 32px;
+        margin-left: 32px;
+        float: left;
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #c2c2c2;
+      }
+      .infoBox {
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+        float: left;
+        width: calc(~"100% - 221px");
+        line-height: 25px;
+        .desc {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%;
+          color: #999;
+        }
+      }
+    }
+  }
+}

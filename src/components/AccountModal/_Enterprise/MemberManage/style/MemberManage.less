@@ -1,0 +1,112 @@
+#MemberManage {
+  .addBtn {
+    font-weight: normal;
+    background-color: #2db7f5;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .total {
+    display: inline-block;
+    line-height: 35px;
+    float: right;
+    margin-right: 160px;
+  }
+  .memberList {
+    margin-bottom: 26px;
+    .ant-card {
+      overflow: inherit;
+    }
+    .ant-card-body {
+      padding: 0;
+      .ant-table {
+        .setBtn {
+          background-color: #fff;
+          font-weight: normal;
+          margin-right: 12px;
+          border-radius: 3px;
+          &:hover {
+            background-color: #00a1ea;
+            color: #fff;
+          }
+        }
+        .delBtn {
+          background-color: #fff;
+          border-radius: 3px;
+          font-weight: normal;
+          &:hover {
+            background-color: #f75b59;
+            color: #fff;
+            border-color: #f75b59;
+          }
+        }
+        .memberName {
+          padding-left: 24px;
+        }
+        .action{min-width: 160px;}
+      }
+      /* .ant-table-pagination {
+        margin: 16px 46px;
+
+      } */
+      .ant-table-pagination {
+        margin: 16px 46px;
+        position: absolute;
+        top: -66px;
+        right: -40px;
+      }
+    }
+  }
+}
+.NewMemberForm {
+  .ant-modal-header {
+    padding: 14px 16px 14px 30px;
+  }
+  .ant-modal-body {
+    padding: 30px 0 0 0;
+    .ant-form-item {
+      height: 36px;
+      line-height: 24px;
+      margin-bottom: 24px;
+      .has-success.has-feedback:after, .has-warning.has-feedback:after, .has-error.has-feedback:after, .is-validating.has-feedback:after{
+        position: absolute;
+        top: 4px !important;
+      }
+      .is-validating.has-feedback:after {
+        position: absolute;
+        top: 4px !important;
+      }
+      .ant-form-item-label {
+        padding: 0 0 0 30px;
+        text-align: left;
+        width: 110px;
+        label {
+          display: inline-block;
+          height: 38px;
+          line-height: 38px;
+          &::after {
+            content: '';
+          }
+        }
+        .ant-form-item-required {
+          &::before {
+            display: none;
+          }
+          &::after {
+            content: '';
+          }
+        }
+      }
+      .ant-form-item-control {
+        height: 38px;
+        line-height: 38px;
+        width: 340px;
+      }
+      .ant-checkbox-vertical {
+        width: 340px;
+        margin-left: 110px;
+      }
+    }
+  }
+}

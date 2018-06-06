@@ -1,0 +1,116 @@
+#ProgressBox {
+  height:100%;
+  .boxContainer {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    .wrapper {
+      background-color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -o-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -o-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -o-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 100%;
+      .green {
+        .progress {
+          width: 90px;
+          height: 90px;
+          position: relative;
+          border-radius: 50%;
+          -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+          .inner {
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            overflow: hidden;
+            z-index: 2;
+            border-radius: 50%;
+            border: 2px solid #00aaee;
+            -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+            .water {
+              position: absolute;
+              width: 200%;
+              height: 200%;
+              left: -50%;
+              border-radius: 40%;
+              -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+              -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+              -webkit-animation-name: spin;
+              animation-name: spin;
+              z-index: 114;
+              background: #00aaee;
+              -webkit-transition: all 1s ease;
+              transition: all 1s ease;
+              -webkit-animation-duration: 10s;
+              animation-duration: 10s;
+            }
+            .w2 {
+              background: #68cff7;
+              left: 20%;
+              z-index: 110;
+            }
+          }
+          .percent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 90px;
+            font-size: 22px;
+            font-weight: normal;
+            color: #000000;
+            z-index: 1000;
+            -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+          }
+          .highLightSpan {
+            color: #FFFFFF !important;
+          }
+        }
+      }
+    }
+  }
+
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+}

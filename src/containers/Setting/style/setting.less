@@ -1,0 +1,38 @@
+#Setting {
+  width: 100%;
+  overflow-x: hidden;
+  .settingMenu {
+    transition: all 0.3s;
+    position: fixed;
+    width: 140px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-right: 1px solid #E5E5E5;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 0 0 7px #999999;
+    }
+  }
+  .hiddenMenu {
+    transform: translateX(-140px) !important;
+    .btnBack {
+      border-top: 7px solid transparent;
+      border-left: 15px solid #e7eaea;
+      border-bottom: 7px solid transparent;
+      border-right: 0 !important;
+    }
+  }
+  .settingContent {
+    transition: all 0.3s;
+    margin-left: 140px;
+    height: auto;
+    width: calc(~"100% - 140px");
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hiddenContent {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,305 @@
+#TeamManage {
+  .ant-alert {
+    color: #1a7db6;
+    font-size: 13px !important;
+    background-color: #d9edf6;
+    border: 1px dashed #85d7fd !important;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .teamOption {
+    margin-bottom: 20px;
+    .total {
+      display: inline-block;
+      line-height: 35px;
+      float: right;
+      margin-right: 160px;
+    }
+    .plusBtn {
+      float: left;
+      font-weight: normal;
+      background-color: #2db7f5;
+      padding: 5px 10px;
+      margin-right: 10px;
+    }
+    .viewBtn {
+      font-weight: normal;
+      height: 36px;
+      color: #1dabed;
+      border-color: #1dabed;
+      border-radius: 3px;
+    }
+  }
+  .teamList {
+    margin-bottom: 26px;
+    .ant-card {
+      overflow: inherit;
+      .ant-card-body {
+        padding: 0;
+        .ant-table {
+          font-size: 12px;
+          .ant-table-thead {
+            tr {
+              th {
+                font-weight: normal;
+              }
+            }
+          }
+          .addBtn {
+            font-weight: normal;
+            background-color: #fff;
+            width: 100px;
+            margin-right: 12px;
+            border-radius: 3px;
+            &:hover {
+              background-color: #00a1ea;
+              color: #fff;
+            }
+          }
+          .delBtn {
+            width: 126px;
+            font-weight: normal;
+            background-color: #fff;
+            border-radius: 3px;
+            &:hover {
+              background-color: #f75b59;
+              color: #fff;
+              border-color: #f75b59;
+            }
+          }
+          .teamName {
+            padding-left: 24px;
+          }
+          .tabDrop {
+            .ant-btn:first-child:not(:last-child) {
+              padding-left: 10px;
+            }
+          }
+        }
+        .ant-table-pagination {
+          margin: 16px 46px;
+          position: absolute;
+          top: -70px;
+          right: -40px;
+        }
+      }
+    }
+  }
+}
+.NewTeamForm {
+  .NewTeamItem {
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    input {
+      border-radius: 0;
+    }
+    textarea {
+      border-radius: 0;
+      resize: none;
+    }
+  }
+}
+.DelTeamModal,.ExitTeamModal{
+  .ant-alert {
+    background-color: #fffbf5;
+    border: 1px dashed #fedb9f;
+  }
+  .ant-btn[disabled] {
+    color: #ccc !important;
+    background-color: #f7f7f7 !important;
+    border-color: #d9d9d9 !important;
+  }
+  .delBtn {
+    background-color: #fb6e72;
+    color: #fff;
+    border: 1px solid #e3373d;
+  }
+
+  .delTip {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding: 8px 0 0 16px;
+    border-bottom: 1px dashed #fedb9f;
+  }
+  .tip {
+    font-size: 12px;
+    .tipIcon {
+      text-align: center;
+      height:30px;
+      line-height: 30px;
+    }
+    .tipText {
+      line-height: 30px;
+    }
+
+  }
+  .confirm {
+    padding: 8px 8px 8px 16px;
+    font-size: 12px;
+    color: #119fdf;
+    .confirmIcon {
+      text-align: center;
+      height:30px;
+      line-height: 30px;
+    }
+    .confirmText {
+      line-height: 30px;
+      .confirmInt {
+        width: 140px;
+        font-size: 12px;
+        border: none;
+        border-bottom: 1px solid #119fdf;
+        border-radius: 0;
+        box-shadow: none;
+        margin-left: 10px;
+        outline: none;
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+      color: #119fdf;
+      font-size: 12px;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: #119fdf;
+      font-size: 12px;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: #119fdf;
+      font-size: 12px;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: #119fdf;
+      font-size: 12px;
+    }
+  }
+}
+.CreateTeamSuccessModal {
+  .ant-modal {
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-modal-footer {
+      display: none;
+    }
+  }
+  .successInf {
+    height: 120px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 16px;
+    margin-bottom: 30px;
+    .successImg {
+      display: inline-block;
+    }
+  }
+  .successOpt {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 36px;
+    border-top:1px solid #e7ecf2;
+    background-color: #f7f8fb;
+    .wrap {
+      -webkit-box-flex: auto;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      .successBtn {
+        float: right;
+      }
+    }
+  }
+}
+.InviteNewMemberModal {
+  .inviteTitle {
+    height: 38px;
+    line-height: 38px;
+    font-size: 12px;
+    .inviteCount {
+      text-align: right;
+      color: #11a7eb;
+      padding-right: 6px;
+    }
+  }
+  .inviteInt  {
+    width: 100%;
+    height: 78px;
+    border: 1px solid #11a7eb;
+  }
+  .inviteModal {
+    .ant-select-dropdown {
+      display: none !important;
+    }
+  }
+  .react-tagsinput {
+    width: 100%;
+    height: 78px;
+    border: 1px solid #24aeed;
+    border-radius: 3px;
+    overflow-y: auto;
+  }
+  .errTags {
+    color: #e5444a !important;
+    &:hover {
+      color: #fff !important;
+      background-color: #fc7478 !important;
+      border: 1px solid #e3373d !important;
+      .react-tagsinput-remove {
+        border: 1px solid #e4393f !important;
+        color: #ea6c70 !important;
+      }
+    }
+  }
+  .react-tagsinput-tag {
+    cursor: pointer;
+    height: 22px;
+    color: #30a7e9;
+    background-color: #fff;
+    line-height: 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    &:hover {
+      color: #fff;
+      background-color: #21ade8;
+      border: 1px solid #008fdb;
+      .react-tagsinput-remove {
+        border: 1px solid #008fdb;
+        color: #43b3e6;
+      }
+    }
+    .react-tagsinput-remove {
+      display: inline-block;
+      margin-top: 3px;
+      margin-left: 5px;
+      width: 14px;
+      height: 14px;
+      line-height: 12px;
+      border-radius: 50%;
+      background-color: #fff;
+      color: #fff;
+      border: 1px solid #fff;
+      text-align: center;
+    }
+  }
+  .react-tagsinput-input {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+  }
+}

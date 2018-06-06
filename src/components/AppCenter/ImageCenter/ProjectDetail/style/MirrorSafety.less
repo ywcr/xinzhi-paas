@@ -1,0 +1,82 @@
+#mirrorsafety{
+  background: #ffffff;
+  border: 1px solid #e8e6e7;
+  border-radius: 1px;
+  overflow: hidden;
+  padding: 10px 30px 70px 30px;
+  .envEdition{
+    padding-top: 14px;
+    .envEditionButton{
+      margin-left: 10px;
+    }
+  }
+  /* 镜像版本选择框 */
+  .safetyselect{
+    height: 76px;
+    position: relative;
+    .safetyselectson{
+      min-width:300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin:-13px 0 0 -150px;
+    }
+  }
+
+  .safetytabcontainer {
+    overflow: hidden;
+    .safetytabbox{
+      .safetytabIcon{
+        margin:0 8px 0 14px;
+      }
+      .softspan{
+        padding-right:16px;
+      }
+      .textAlignStyle{
+        text-align: center;
+        padding-top: 30px;
+        .textAlignStyleDiv{
+          padding-top: 10px;
+        }
+      }
+      .BaseScanFailed{
+        margin-top: 50px;
+        text-align: center;
+        .top{
+          height: 40px;
+          line-height: 30px;
+          font-size: 14px;
+        }
+      }
+      .ant-tabs-bar{
+        width: 480px;
+        margin: 0 auto;
+        overflow: hidden;
+        .ant-tabs-nav{
+          div:nth-of-type(2){
+            border-left:1px solid #c7c7c7;
+            border-radius:4px 0 0 4px;
+          }
+          div:nth-of-type(5){
+            border-radius:0 4px 4px 0;
+          }
+          .ant-tabs-tab{
+            font-size: 16px;
+            width: 120px;
+            border: 1px solid #c7c7c7;
+            border-left: none;
+            margin: 0;
+            padding:0;
+            .ant-tabs-tab-inner{
+              padding: 0;
+              height: 40px;
+              text-align: right;
+              line-height: 40px;
+              margin-right: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

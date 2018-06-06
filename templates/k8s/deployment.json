@@ -1,0 +1,17 @@
+{
+  "kind": "Deployment",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "",
+    "labels": {
+      "name": ""
+    }
+  },
+  "spec": {
+    "replicas": 1,
+    "selector": {
+      "name": ""
+    },
+    "template": {}
+  }
+}

@@ -1,0 +1,311 @@
+#ContainerList {  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  .clearDiv {
+    clear: both;
+  }
+  //顶部工具栏样式
+  .operationBox {
+    width: 100%;
+    .leftBox {
+      float: left;
+      button {
+        margin-right: 10px;
+        i {
+          margin-right: 5px;
+          font-size: 12px;
+        }
+      }
+      .ant-btn-primary[disabled],.refresh{
+        background-color: #FFFFFF;
+      }
+    }
+    .rightBox {
+      position: relative;
+      float: left;
+      .littleLeft {
+        z-index: 10;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 15px;
+        color: #949494;
+        cursor: pointer;
+      }
+      .littleRight {
+        float: left;
+      }
+    }
+    .pageBox {
+      float: right;
+      height: 35px;
+      .totalPage {
+        float: left;
+        margin-right: 8px;
+        line-height: 35px;
+      }
+      .paginationBox {
+        float: left;
+        margin-top: 0 !important;
+        padding-top: 5px;
+      }
+    }
+  }
+  //数据框
+  .containerBox {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    .selectIconTitle {
+      width: 5%;
+      overflow: hidden;
+      text-align: center;
+    }
+    .containerName,
+    .containerStatus,
+    .serviceName,
+    .imageName {
+      width: 13%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: default;
+    }
+    .visitIp {
+      width: 15%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .createTime {
+      width: 11%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .actionBox {
+      width: 15%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+    .actionBox {
+      svg use {
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        fill: #666;
+      }
+      .ant-btn-group:hover {
+        svg use {
+          fill: #2db7f5;
+        }
+      }
+    }
+    .containerTitle {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #d9d9d9;
+      .commonTitle {
+        float: left;
+        // padding-left: 10px;
+        i {
+          margin-left: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    .dataBox {
+      padding-bottom: 20px;
+      width: 100%;
+      height: auto;
+      .commonData {
+        float: left;
+        // padding-left: 10px;
+        i {
+          cursor: pointer;
+        }
+      }
+      .containerDetail {
+        transition: all 0.3s;
+        width: 100%;
+        line-height: 60px;
+        border-bottom: 1px solid #d9d9d9;
+        // font-size: 1.2em;
+        clear: both;
+        zoom: 1;
+        .containerStatus {
+          i {
+            margin-right: 5px;
+          }
+          .normal {
+            color: #5cb85c;
+          }
+          .error {
+            color: #f85a5a;
+          }
+        }
+        .actionBox {
+          padding-top: 16px;
+          .ant-btn-group {
+            float: left;
+            min-width: 110px;
+          }
+          .viewBtn {
+            padding-left: 32px;
+            use {
+              fill: #666666;
+              transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+              transition-property: all;
+              transition-duration: 0.3s;
+              transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+            }
+          }
+          .viewBtn:hover {
+            use {
+              fill: #57c5f7;
+              transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+              transition-property: all;
+              transition-duration: 0.3s;
+              transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+            }
+          }
+          .moreBtn {
+            width: 28px;
+          }
+          i {
+            line-height: 18px;
+          }
+          svg {
+            width: 15px;
+            height: 13px;
+            position: absolute;
+            top: 6px;
+            left: 12px;
+          }
+        }
+      }
+      .containerDetail:hover {
+        background-color: #eaf8fe;
+      }
+      .selectedContainer {
+        background-color: #effdff;
+        .viewBtn {
+          color: #FFFFFF;
+          border-color: #2db7f5;
+          background-color: #2db7f5;
+          use {
+            fill: #FFFFFF !important;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.exportImage{
+  font-size: 14px;
+  overflow: hidden;
+  .header{
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    .float{
+      float: left;
+    }
+    .imagename{
+      padding-right: 37px;
+    }
+    .imageAddress{
+      width: 220px;
+      .ant-form-item{
+        margin-bottom: 0;
+      }
+    }
+    .point{
+      padding:0 8px;
+    }
+  }
+  .main{
+    clear: both;
+    //height:70px;
+    border:1px solid #d0efe0;
+    border-radius: 3px;
+    background-color: #ebf8f1;
+    padding:13px;
+    margin-bottom: 15px;
+    .preview{
+      margin-bottom: 9px;
+    }
+    .address{
+      word-break: break-all;
+      .imagecolor{
+        color: #42bef4;
+      }
+      .tips{
+        background: #fffbf5;
+        border:1px dashed #fadca0;
+        border-radius: 3px;
+        padding:5px;
+        margin-top: 5px;
+        display: inline-block;
+        .icon{
+          color:#febf00;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .footer{
+    .item{
+      border:1px dashed #fbdc9c;
+      border-radius: 4px;
+      padding:10px;
+      background: #fffaf6;
+      margin-bottom: 10px;
+      .color{
+        color:red;
+      }
+    }
+  }
+}
+
+.exportImageSuccess{
+  font-size: 14px;
+  .container{
+    text-align: center;
+    padding:10px 0;
+    .header{
+      color:#70bc40;
+      .icon{
+        font-size: 88px;
+      }
+      .tips{
+        font-size: 18px;
+        height: 52px;
+        line-height: 52px;
+      }
+    }
+    .footer{
+      .lineone{
+        margin-bottom: 4px;
+      }
+      .item{
+        color: #45bdf9;
+      }
+    }
+  }
+}
+
+.WarningModal{
+  .icon{
+    color: red;
+    margin-right: 8px;
+  }
+}

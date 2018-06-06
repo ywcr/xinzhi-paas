@@ -1,0 +1,18 @@
+{
+  "kind": "Service",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "",
+    "labels": {
+      "name": ""
+    },
+    "annotations": {}
+  },
+  "spec": {
+    "ports": [],
+    "selector": {
+      "name": ""
+    },
+    "externalIPs": []
+  }
+}

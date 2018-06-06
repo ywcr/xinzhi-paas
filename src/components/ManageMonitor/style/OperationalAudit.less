@@ -1,0 +1,173 @@
+.operationalAuditBox {
+  padding: 20px;
+  #operationalAudit {
+    min-height: 340px;
+    .bigTitle {
+      padding-left: 10px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      border-left: 8px solid #00A1EA;
+      cursor: default;
+    }
+    .operaBox {
+      .resourceSelect {
+        float: left;
+        margin-top: 10px;
+        margin-right: 20px;
+        width: 130px;
+      }
+      .eventSelect,
+      .statusSelect {
+        float: left;
+        margin-top: 10px;
+        margin-right: 20px;
+        width: 130px;
+      }
+      .namespaceInput {
+        float: left;
+        margin-top: 10px;
+        margin-right: 20px;
+        width: 220px;
+      }
+      .searchBtn {
+        float: left;
+        margin-top: 10px;
+      }
+      .refresh{
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .bottomBox {
+        float: right;
+        padding-top: 18px;
+        width: 300px;
+        height: 60px;
+        text-align: center;
+        .pageBox {
+          float: right;
+          margin-left: 20px;
+        }
+      }
+    }
+    .dataCard {
+      .ant-card-body {
+        padding: 0 !important;
+      }
+      .commonTitle {
+        float: left;
+        padding-left: 10px;
+        height: 50px;
+        line-height: 50px;
+      }
+      .during,
+      .event,
+      .status {
+        width: 80px;
+      }
+      .time,
+      .obj,
+      .env,
+      .cluster,
+      .user {
+        width: calc(~"20% - 48px");
+      }
+      .time {
+        padding-left: 30px;
+      }
+      .standardStatus,
+      .standardDuring,
+      .standardTime,
+      .standardUser,
+      .standardObj {
+        width: calc(~"20% - 30px") !important;
+      }
+      .standardEvent {
+        width: 150px;
+      }
+      .standardTime {
+        padding-left: 30px;
+      }
+      .standardUser {
+        .fa {
+          float: left;
+          line-height: 60px;
+        }
+        .commonSpan {
+          float: left;
+          margin-left: 7px;
+          width: calc(~"100% - 30px") !important;
+        }
+      }
+      .titleBox {
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .logDetail {
+        height: 60px;
+        border-bottom: 1px solid #e5e5e5;
+        .commonTitle {
+          height: 60px;
+          line-height: 60px;
+          .commonSpan {
+            display: block;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .objSpan {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        .time {
+          color: #5CB85C;
+        }
+        .status {
+          .fa {
+            margin-right: 5px;
+          }
+          .success {
+            color: #5CB85C;
+          }
+          .fail {
+            color: #F85A5A;
+          }
+          .running {
+            color: #00A1EA;
+            .fa {
+              font-size: 12px !important;
+            }
+          }
+        }
+        .user {
+          .fa {
+            float: left;
+            line-height: 60px;
+          }
+          .commonSpan {
+            float: left;
+            margin-left: 7px;
+            width: calc(~"100% - 30px");
+          }
+        }
+      }
+    }
+  }
+}
+.resourceSelectPopup {
+  .ant-cascader-menu {
+    height: auto !important;
+  }
+}

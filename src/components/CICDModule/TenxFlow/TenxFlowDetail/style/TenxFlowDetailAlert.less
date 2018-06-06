@@ -1,0 +1,87 @@
+#TenxFlowDetailAlert {
+  width: 100%;
+  height: 410px;
+  overflow-y: auto;
+  .ant-card-body {
+    padding-bottom: 0 !important;
+  }
+  .commonBox {
+    margin-bottom: 5px;
+    width: 100%;
+    min-height: 50px;
+    line-height: 50px;
+    .title {
+      padding-right: 30px;
+      float: left;
+      width: 120px;
+      height: 50px;
+      line-height: 50px;
+      text-align: right;
+      font-size: 14px;
+    }
+    .input {
+      float: left;
+      width: calc(~"100% - 150px");
+      min-height: 50px;
+      input {
+        margin-top: 8px;
+        width: 220px !important;
+      }
+      .ant-form-item {
+        margin-bottom: 0 !important;
+      }
+      .ant-form-item-control {
+        line-height: 50px !important;
+      }
+      .ant-form-explain {
+        position: absolute;
+        bottom: -10px;
+      }
+      .ant-switch {
+        width: 55px !important;
+      }
+      .ant-switch-checked:after {
+        left: 33px !important;
+      }
+      .has-success.has-feedback:after,
+      .has-warning.has-feedback:after,
+      .has-error.has-feedback:after,
+      .is-validating.has-feedback:after {
+        top: 8px !important;
+      }
+      .selectedEmail {
+        .ant-form-item-control {
+          line-height: 32px !important;
+        }
+        .emailInputForm {
+          margin-top: 5px;
+          height: 50px;
+          .ant-form-explain {
+            position: absolute;
+            bottom: -20px !important;
+          }
+        }
+      }
+    }
+    .alert {
+      padding-top: 8px;
+      .ant-form-item-control {
+        line-height: 32px !important;
+      }
+    }
+  }
+  .btnBox {
+    position: absolute;
+    // padding-top: 14px;
+    // padding-right: 40px;
+    width: 100%;
+    bottom: 0;
+    // left: 0;
+    padding-left: 120px;
+    height: 60px;
+    button {
+      margin-right: 15px;
+      min-width: 80px;
+    }
+  }
+}

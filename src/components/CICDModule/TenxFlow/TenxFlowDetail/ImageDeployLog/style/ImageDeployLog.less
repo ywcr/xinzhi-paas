@@ -1,0 +1,206 @@
+#ImageDeployLog {
+  clear: both;
+  padding: 24px 3em 24px 24px;
+  .title {
+    padding-left: 10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    border-left: 8px solid #00A1EA;
+  }
+  .ant-alert-info {
+    margin-top: 20px !important;
+    margin-bottom: 30px !important;
+    padding: 14px !important;
+    line-height: 20px;
+    color: #1a7db6;
+    font-size: 14px !important;
+    background-color: #d9edf6;
+    border: 1px dashed #85d7fd !important;
+    cursor: default;
+  }
+  .paddingBox {
+    padding-left: 20px;
+  }
+  .leftBox {
+    float: left;
+    width: 40px;
+    .ant-collapse {
+      width: 40px;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background-color: rgba(0,0,0,0) !important;
+      .ant-collapse-header {
+        position: relative;
+        padding-left: 18px;
+        height: 70px !important;
+        background-color: #FFFFFF;
+        .header {
+          height: 70px;
+          .line {
+            position: absolute;
+            width: 2px;
+            height: 70px;
+            border-left: 2px solid #EFEFEF;
+          }
+          .fa {
+            position: absolute;
+            font-size: 18px;
+            top: 10px;
+            left: 11px;
+            background-color: #FFFFFF;
+          }
+          .normal {
+            color: #5CB85C;
+          }
+          .fail {
+            color: #f85a5a;
+          }
+        }
+        .arrow {
+          display: none;
+        }
+      }
+      .ant-collapse-item {
+        border: 0 !important;
+      }
+      .ant-collapse-content {
+        padding-left: 18px;
+        border: 0;
+        height: 93px;
+        .ant-collapse-content-box {
+          padding: 0 !important;
+          height: 93px;
+        }
+      }
+      .lineDetail {
+        position: relative;
+        .line {
+          position: absolute;
+          width: 2px;
+          height: 93px;
+          border-left: 2px solid #EFEFEF;
+        }
+      }
+    }
+  }
+  .rightBox {
+    float: left;
+    width: calc(~"100% - 40px");
+    .ant-collapse {
+      width: 100%;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background-color: rgba(0,0,0,0) !important;
+      .ant-collapse-header {
+        padding-right: 16px;
+        height: 40px !important;
+        border: 1px solid #DADADA;
+        border-radius: 3px;
+        background-color: #FAFAFA;
+        .header {
+          .commonHeader {
+            float: left;
+            display: block;
+            width: 20%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            i {
+              margin-right: 5px;
+            }
+          }
+          .name {
+            width: 25%;
+          }
+          .status {
+            width: 16%;
+          }
+          .updateTime {
+            width: 25%;
+          }
+          .normal {
+            color: #5CB85C;
+          }
+          .fail {
+            color: #f85a5a;
+          }
+        }
+        .arrow {
+          position: absolute;
+          margin-left: 93%;
+          font-size: 25px;
+        }
+        .arrow:before {
+          content: "\E601" !important;
+        }
+      }
+      .ant-collapse-header[aria-expanded="true"] .arrow {
+        transform: scale(0.58333333) rotate(90deg) !important;
+      }
+      .ant-collapse-item {
+        margin-bottom: 30px;
+        border: 0 !important;
+      }
+      .ant-collapse-content {
+        padding-left: 32px;
+        border: 1px solid #DADADA;
+        border-top: 0;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+  .LogDetail {
+    position: relative;
+    cursor: default;
+    .titleBox {
+      .commonTitle {
+        float: left;
+        display: block;
+        width: 16%;
+        height: 30px;
+        line-height: 30px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .name {
+        width: 25%;
+      }
+      .cluster {
+        width: 25%;
+      }
+    }
+    .infoBox {
+      margin-bottom: 0;
+      .commonInfo {
+        float: left;
+        width: 16%;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .name {
+        width: 25%;
+      }
+      .cluster {
+        width: 25%;
+      }
+      .status {
+        i {
+          margin-right: 5px;
+        }
+      }
+      .normal {
+        color: #5CB85C;
+      }
+      .fail {
+        color: #f85a5a;
+      }
+    }
+  }
+}

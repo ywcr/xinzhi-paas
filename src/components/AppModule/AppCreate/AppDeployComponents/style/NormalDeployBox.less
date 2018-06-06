@@ -1,0 +1,265 @@
+#NormalDeployBox {
+  .topBox {
+    .serviceNameForm {
+      position: relative;
+      margin-bottom: 10px !important;
+      float: left;
+      width: 220px !important;
+      .ant-form-explain {
+        position: absolute;
+      }
+      .has-success.has-feedback:after,
+      .has-warning.has-feedback:after,
+      .has-error.has-feedback:after,
+      .is-validating.has-feedback:after {
+        right: -35px;
+      }
+    }
+    .imageUrlForm {
+      position: relative;
+      margin-bottom: 10px !important;
+      float: left;
+      width: 350px !important;
+      .ant-form-explain {
+        position: absolute;
+        bottom: -20px;
+      }
+    }
+    .imageTagForm {
+      position: relative;
+      margin-bottom: 10px !important;
+      float: left;
+      width: 220px !important;
+      .ant-form-explain {
+        position: absolute;
+        bottom: -20px;
+      }
+    }
+    .serviceNameInput {
+      margin-top: 4px;
+      float: left;
+      width: 220px;
+    }
+    .imageInput {
+      margin-top: 4px;
+      float: left;
+      width: 350px;
+    }
+    .checkBtn {
+      margin-top: 4px;
+      margin-left: 10px;
+      float: left;
+    }
+    .imageTag {
+      margin-top: 4px;
+      float: left;
+    }
+  }
+  .infoBox {
+    margin-top: 35px;
+    width: 100%;
+    padding-bottom: 40px;
+    .operaBox {
+      padding-left: 40px;
+      .selectCompose {
+        margin-top: 10px;
+      }
+      .composeList {
+        float: left;
+        width: calc(~"100% - 120px");
+      }
+      .composeDetail {
+        margin-top: 10px;
+        margin-right: 20px;
+        float: left;
+        .ant-btn-primary {
+          width: 100px;
+          padding: 0;
+          position: relative;
+          overflow: hidden;
+          .topBox {
+            height: 25px;
+            line-height: 25px;
+            font-size: 16px;
+          }
+          .bottomBox {
+            width: 100%;
+            height: 70px;
+            padding: 15px 10px;
+            text-align: center;
+            background-color: #FFFFFF;
+            color: #2db7f5;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+          }
+          .triangle {
+            display: block;
+            width: 0;
+            height: 0;
+            border-bottom: 0 solid transparent;
+            border-top: 20px solid transparent;
+            border-right: 22px solid #2db7f5;
+            font-size: 0;
+            line-height: 0;
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+          }
+          .anticon-check {
+            display: inline-block;
+            font-size: 8px;
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            z-index: 2;
+            color: #fff;
+          }
+        }
+        .ant-btn-ghost {
+          width: 100px;
+          padding: 0;
+          .topBox {
+            height: 25px;
+            line-height: 25px;
+            font-size: 16px;
+            background-color: #d9d9d9;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+          }
+          .bottomBox {
+            width: 100%;
+            height: 70px;
+            padding: 15px 10px;
+            text-align: center;
+            background-color: #FFFFFF;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+          }
+          .triangle,.anticon-check{
+            display: none;
+          }
+        }
+        .ant-btn-ghost:hover {
+          .topBox {
+            background-color: #2db7f5;
+            color: #FFFFFF;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+        }
+      }
+      .composeDetail.DIY {
+        width: 140px;
+        .btn {
+          width: 140px;
+          border-radius: 6px;
+          .topBox {
+            font-size: 14px;text-align: center;
+            }
+          .bottomBox {
+            cursor: pointer;
+            padding: 0 7px;
+            text-align: left;
+            .DIYKey {padding-top: 5px;}
+            .ant-input-number {width: 70px;}
+          }
+        }
+        .btn.ant-btn-ghost{border:1px solid #d9d9d9;}
+        .btn.ant-btn-primary{border:1px solid #2db7f5;}
+      }
+      .composeDetail:first {
+        margin-left: 0 !important;
+      }
+      .stateService {
+        margin-top: 10px;
+        .changeBtn {
+          line-height: 40px;
+        }
+        .stateSpan {
+          margin-left: 15px;
+          line-height: 40px;
+          font-size: 14px;
+        }
+        .serviceOpen {
+          margin-left: 140px;
+          line-height: 40px;
+          .url {
+            font-size: 14px;
+            padding: 0 8px;
+          }
+          .urlInt {
+            width: 100px;
+          }
+          .imageTag {
+            margin-left: 10px;
+          }
+          .readOnlyBtn,
+          i {
+            margin-left: 15px;
+            cursor: pointer;
+          }
+        }
+        .volumeDetail {
+          padding-left: 120px;
+          .volumeInt {
+            float: left;
+            width: 90px;
+            margin-right: 20px;
+          }
+          .ant-select {
+            float: left;
+            width: 90px;
+            margin-right: 20px;
+          }
+        }
+        .volumeAddBtn {
+          cursor: pointer;
+          font-size: 14px;
+          height: 30px;
+          line-height: 30px;
+          i {
+            margin-left: 0px;
+            margin-right: 7px;
+          }
+        }
+        .createVolumeDetail {
+          line-height: 40px;
+          .volumeInt {
+            margin-top: 6px;
+            margin-right: 20px;
+            float: left;
+            width: 90px;
+          }
+          .ant-select {
+            margin-top: 6px;
+            margin-right: 20px;
+            float: left;
+            width: 90px;
+          }
+        }
+        .volumeAddBtn {
+          cursor: pointer;
+          font-size: 14px;
+          height: 30px;
+          line-height: 30px;
+          i {
+            margin-left: 0px;
+            margin-right: 7px;
+          }
+        }
+      }
+      .containerNum {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 40px;
+      }
+      .bindNode {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 40px;
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

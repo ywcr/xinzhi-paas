@@ -1,0 +1,137 @@
+#ContainerLogs {
+  font-size: 14px;
+  .bottomBox {
+    top: 350px;
+    left: 200px;
+    width: auto;
+    .introBox {
+      position: relative;
+      transition: all 0.3s;
+      width: 100%;
+      height: 500px;
+      overflow-y: auto;
+      background-color: #353535;
+      border-radius: 5px;
+      .operaBox {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #3f3f40;
+        span {
+          float: right;
+          margin-right: 20px;
+          .ant-input:hover {
+            border-color: inherit;
+          }
+          i {
+            font-size: 13px;
+          }
+        }
+        .fa {
+          float: right;
+          color: #5CB85C;
+          line-height: 40px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        .ant-calendar-picker-clear {
+          margin-right: 20px !important;
+        }
+      }
+      .infoBox {
+        padding-left: 0;
+        width: 100%;
+        height: 420px;
+        overflow: auto;
+        color: #37fc34;
+        .logDetail {
+          margin-top: 5px;
+          padding: 0 10px;
+          display: block;
+          width: 100%;
+          min-height: 21px;
+          white-space: normal;
+          word-break: break-word;
+          color: #e9e9e9;
+          background-color: #444444;
+        }
+      }
+      .operaBottomBox {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #3f3f40;
+        .fa {
+          transition: all 0.3s;
+          float: right;
+          margin-top: 5px;
+          margin-right: 20px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 16px;
+          text-align: center;
+          border: 1px solid #1d1d1d;
+          border-radius: 3px;
+          background-color: #4c4c4c;
+          cursor: pointer;
+          color: #a2a3a3;
+          &:hover {
+            color: #e8e8e8;
+            box-shadow: 0 0 3px #1a1a1a;
+          }
+        }
+      }
+    }
+  }
+  .bigBox {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .introBox {
+      height: 100%;
+      border: 0;
+    }
+    .infoBox {
+      height: calc(~'100% - 78px') !important;
+    }
+    .operaBottomBox {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .bigBox::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: white;
+  }
+}
+
+.logModal {
+  height: 100%;
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  .ant-modal-body {
+    padding:0;
+    .closeBtn {
+      border:1px dashed #666;
+      padding:3px 6px !important;
+      &:hover {
+        color:#2db7f5;
+        border-color: #2db7f5;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+#ContainerDetail {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  .imgBox {
+    float: left;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #C2C2C2;
+    svg {
+      width: 118px;
+      height: 118px;
+      border-radius: 10px;
+      padding: 20px;
+    }
+  }
+  .infoBox {
+    float: left;
+    width: calc(~"100% - 120px");
+    padding-left: 20px;
+    color: #666666;
+    .appTitle {
+      font-size: 16px;
+      color: #333333;
+    }
+    .leftInfo {
+      float: left;
+      width: 33%;
+      line-height: 35px;
+      .status {
+        span {
+
+        }
+        i {
+          margin: 0 5px;
+        }
+      }
+    }
+    .middleInfo {
+      width: 33%;
+      float: left;
+      line-height: 35px;
+    }
+    .rightInfo {
+      width: 33%;
+      float: left;
+      svg {
+        width: 15px;
+        height: 13px;
+        position: absolute;
+        top: 8px;
+        left: 12px;
+        use{
+          fill: #FFFFFF;
+        }
+      }
+      .viewBtn {
+        padding-left: 32px;
+        margin-right: 20px;
+      }
+    }
+  }
+  .bottomCard {
+    margin-top: 20px;
+    overflow: visible !important;
+    .ant-menu-item {
+      padding: 0 30px;
+      font-size: 14px;
+      color: #333333;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.TenxFlowList {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  #CodeStore {
+    .ant-alert {
+      margin-bottom: 0 !important;
+      padding: 14px 24px !important;
+      line-height: 20px;
+      color: #1a7db6;
+      font-size: 14px !important;
+      background-color: #d9edf6;
+      border: 1px dashed #85d7fd !important;
+    }
+    .tenxflowBox {
+      .ant-card-body {
+        padding: 0;
+      }
+    }
+    .operaBox {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      .searchBox {
+        // float: right;
+        margin-left: 20px;
+        width: 180px;
+        height: 32px;
+        padding-right: 28px;
+      }
+      .fa-search {
+        position: relative;
+        // top: 28px;
+        // right: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #999;
+        margin-left: -20px;
+      }
+    }
+    .tenxflowBox {
+      .titleBox,
+      .CodeTable {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #F2F2F2;
+        overflow: hidden;
+        .name {
+          width: 15%;
+          float: left;
+          padding-left: 30px;
+        }
+        .id {
+           width: 15%;
+           float: left;
+           padding-left: 20px;
+         }
+        .codelink {
+          width: 35%;
+          float: left;
+          padding-left: 10px;
+          .fa {
+            font-size: 14px;
+          }
+          .fa-gogs {
+            background: url('../../../../assets/img/cicd/gogs.png')no-repeat;
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+          }
+        }
+        .action {
+          width: 15%;
+          float: left;
+          padding-left: 10px;
+        }
+        .type {
+          position: relative;
+          width: 20%;
+          float: left;
+          padding-left: 10px;
+        }
+        .type.private {
+          color: #5FB962;
+          button {
+            background: #5FB962;
+            color: white;
+          }
+        }
+        .type.public {
+          color: #00A0EA;
+          button {
+            background: #5FB962;
+            color: white;
+          }
+        }
+        .privateSvg,
+        .publicSvg {
+          width: 12px;
+          height: 12px;
+          use {
+            fill: #5FB962;
+          }
+        }
+        .publicSvg {
+          use {
+            fill: #00A0EA;
+          }
+        }
+        .filterSvg {
+          position: absolute;
+          top: 18px;
+          left: 40px;
+          width: 12px;
+          height: 12px;
+          use {
+            fill: #00A0EA;
+          }
+        }
+      }
+      .CodeTable:hover {
+        background-color: #eaf8fe;
+      }
+    }
+  }
+}
+.svnModal {
+  .has-success.has-feedback:after,
+  .has-warning.has-feedback:after,
+  .has-error.has-feedback:after,
+  .is-validating.has-feedback:after {
+    right: -35px !important;
+  }
+}

@@ -1,0 +1,83 @@
+#CodeStoreListModal {
+  width: 100%;
+  margin-bottom: 15px;
+  .codeList {
+    max-height: 400px;
+    min-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .titleBox,
+  .codeDetail {
+    transition: all 0.3s;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .codeDetail {
+    cursor: pointer;
+  }
+  .codeDetail:hover {
+    background-color: #F2F2F2;
+  }
+  .selectedCode{
+    background-color: #eaf8fe;
+  }
+  .commonTitle {
+    padding-left: 10px;
+    float: left;
+    width: 33.3%;
+    height: 55px;
+    line-height: 55px;
+    .forkDropdown {
+      float: left;
+      width: 120px;
+      margin-right: 15px;
+      margin-top:11.5px;
+      position: relative;
+    .ant-select-selection {
+        .ant-select-arrow{
+          display: none;
+        }
+      }
+      .ant-select-selection:before{
+        content: '\E603';
+        -webkit-transition: -webkit-transform 0.2s ease;
+        transition: -webkit-transform 0.2s ease;
+        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+        display: block;
+        font-family: "anticon" !important;
+        position: absolute;
+        top:-10px;
+        right: 7px;
+      }
+      .ant-select-open .ant-select-selection:before{
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg)
+      }
+
+    }
+    .address {
+      width: 100%;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .noSelectCodeStore{
+      .ant-select-selection{
+        border-color: #f50 !important;
+        box-shadow: 0 0 0 2px rgba(255, 85, 0, 0.2);
+        &:hover {
+          border-color: #f50 !important;
+        }
+      }
+    }
+  }
+}
+.tenxFlowCodeStoreModal{
+  width: 700px !important;
+  .ant-modal-footer{
+    display: none;
+  }
+}

@@ -1,0 +1,278 @@
+#MySpaceStd {
+  .svcStateImg {
+    vertical-align: text-bottom;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .stateSvg {
+    width: 15px;
+    height: 18px;
+    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+  #stateSvg {
+    width: 15px;
+    height: 18px;
+    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+  .cdid {
+    .cicdDot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .cicdInf {
+      position: absolute;
+      top: 45%;
+      right: 24px;
+      transform: translate(0,-50%);
+      // padding-right: 24px;
+      .cicdNum {
+        font-size: 13px;
+        min-height: 25px;
+        line-height: 25px;
+        color: #666;
+      }
+      table {
+        font-size: 13px;
+        width: 100%;
+        color: #666;
+        padding-right: 24px;
+        tr {
+          height: 27px;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+  .clusterTab {
+    width: 100%;
+    border-collapse: collapse;
+    tr {
+      border: 1px solid #e2e2e2;
+      color: #666;
+      td {
+        line-height: 29px;
+        font-size: 13px;
+      }
+      .trecordNum {
+        text-align: right;
+        padding-right: 10px;
+      }
+    }
+  }
+  .log {
+    .ant-card-body {
+      padding: 0;
+    }
+    .logItem {
+      height: 50px;
+      .logTitle {
+        height: 30px;
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .logInf {
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px !important;
+        overflow: hidden;
+        color: #999;
+        .logTime {
+          float: right;
+        }
+      }
+    }
+  }
+  .warn {
+    .ant-timeline-item-head-custom {
+      margin: 0;
+      padding: 0;
+    }
+    .warnListWrap {
+      overflow-y: auto;
+      position: relative;
+      height: 100%;
+      .warnList {
+        margin-top: 22px;
+        width: 100%;
+        .warnItem {
+          height: 80px;
+          width: calc(~"100% - 24px");
+          background-color: #f5f5f5;
+          position: relative;
+          top: -18px;
+          padding: 12px;
+          &::before {
+            content: '';
+            position: absolute;
+            left: -14px;
+            top: 15px;
+            height: 0;
+            width: 0;
+            border: 7px solid transparent;
+            border-right: 7px solid #f5f5f5;
+          }
+          .itemTitle {
+            font-size: 14px;
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .itemInf {
+            font-size: 12px;
+            height: 20px;
+            line-height: 20px;
+          }
+        }
+        .fistWarn {
+          background-color: #feeeee;
+          color: #f45c5b;
+          &::before {
+            border-right: 7px solid #feeeee;
+          }
+        }
+        .warnDot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: #dbdbdb;
+          margin: 0 auto;
+        }
+        .noWarnImg {
+          margin-top: 100px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.testingKnowModal {
+  .ant-modal-close,
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-body {
+    padding: 0 !important;
+  }
+  .titleBox {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: url('../../../../../assets/img/version/knownboxbg.png') no-repeat;
+    background-size: 100% 100%;
+    .tagImg {
+      position: absolute;
+      top: -6px;
+      left: 32px;
+      width: 64px;
+      height: 60px;
+    }
+    p {
+      padding-top: 27px;
+      line-height: 28px;
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 28px;
+      font-weight: 400;
+    }
+    .closeBtn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-size: 14px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+  .infoBox {
+    margin-top: 20px;
+    padding: 0 40px;
+    .bigTitle {
+      margin-bottom: 16px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .infoDetail {
+      position: relative;
+      width: 100%;
+      min-height: 24px;
+      line-height: 24px;
+      .circleIcon {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #00A1EA;
+      }
+      .squareIcon {
+        position: absolute;
+        top: 10px;
+        left: 23px;
+        width: 4px;
+        height: 4px;
+        background-color: #00A1EA;
+      }
+      .info {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .littleUrl {
+        float: left;
+        width: 33%;
+        height: 24px;
+        line-height: 24px;
+        .numBox {
+          margin-right: 5px;
+        }
+      }
+      .numBox {
+        display: inline-block;
+        font-size: 12px;
+        width: 14px;
+        height: 14px;
+        line-height: 14px;
+        text-align: center;
+        border-radius: 7px;
+        color: #FFFFFF;
+        background-color: #00A1EA;
+      }
+    }
+  }
+  .btnBox {
+    padding-top: 15px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    .knowBtn {
+      margin: 0 auto;
+      width: 110px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 16px;
+      color: #FFFFFF;
+      border-radius: 17.5px;
+      text-align: center;
+      background-color: #00A1EA;
+      cursor: pointer;
+      -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      &:hover {
+        background-color: #2db7f5;
+      }
+    }
+  }
+}
